@@ -3,7 +3,7 @@
 **Harrison D. Fletcher**
 Revision 4.1 for *Behavior Research Methods*, September 2026.
 
-> DOI of this versioned release: [assigned upon OSF/Zenodo publication]
+> DOI of this versioned release: https://doi.org/10.5281/zenodo.22681002
 
 ---
 

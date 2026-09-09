@@ -21,8 +21,8 @@
     },
     {
       "path": "Response_to_Reviewers_v4_1_REVISED.docx",
-      "bytes": 30389,
-      "sha256": "06698ab4260093b0eaa0bc6708ca615977c427531c4ca48bd9f62b3b81ee7cde"
+      "bytes": 30388,
+      "sha256": "e3806e083aead41301bacfc9ca39c3577935f6ab501429d21a39a3b2ceabcd7b"
     },
     {
       "path": "Response_to_Reviewers_v4_1_REVISED.md",
@@ -31,8 +31,8 @@
     },
     {
       "path": "Supplementary_Tables_S0_S8_v4_1_REVISED.docx",
-      "bytes": 41612,
-      "sha256": "48afddc2951ae4cae80aeaec5f6665e0e16c7741638c9c9d4e24d2b1ced040c6"
+      "bytes": 41611,
+      "sha256": "bf1d91f2eb5b7dac0b4198d56433eadf3a0c973e01cd56108f1cd7aacb27b137"
     },
     {
       "path": "Supplementary_Tables_S0_S8_v4_1_REVISED.md",
@@ -46,18 +46,18 @@
     },
     {
       "path": "The_Accuracy_Illusion_v4_1_REVISED.docx",
-      "bytes": 64358,
-      "sha256": "d5aae15fb449587aa137a1a2ef50c4e06c46accffe70c3d07406a14e472ec683"
+      "bytes": 64301,
+      "sha256": "eab45b2ebfb7e64993f98989732b63bb845871196fa292c1e4eba20034109e3d"
     },
     {
       "path": "The_Accuracy_Illusion_v4_1_REVISED.md",
-      "bytes": 76389,
-      "sha256": "fffad9a22f5a635e462d235da141626efe9e7ce8a0cf9617d4f304a32fabe0ee"
+      "bytes": 76361,
+      "sha256": "dade2ba1bfa9a8679132b2f07744755543d9d58ea4bc7ac8de7cb12f5a48f2aa"
     },
     {
       "path": "The_Accuracy_Illusion_v4_1_SOURCE_LINES.txt",
-      "bytes": 80834,
-      "sha256": "24969dc14861ad0358d6a57a821469fd13cf045675c2c21eb277afc40b44512f"
+      "bytes": 80806,
+      "sha256": "55d352b6e2e43c79ef71457672f185569a65df2202ed0dcf7344cc6abbdbaa66"
     },
     {
       "path": "evidence/BCI_EXTENDED_TABLES.csv",
@@ -81,13 +81,13 @@
     },
     {
       "path": "evidence/FINAL_VALIDATION_REPORT.json",
-      "bytes": 6977,
-      "sha256": "101bd94ad6a77342db9cdaa789dbcf4f8746d2a535b87865edde946920d6da0f"
+      "bytes": 6996,
+      "sha256": "631bd6d487a4f98b11e24d1f1e526f77a582f49ed2a251755a37ff400393a100"
     },
     {
       "path": "evidence/PORTABLE_REPRODUCTION_TEST.json",
-      "bytes": 1513,
-      "sha256": "40fc5527ed0f4eea70ded45f76cce9c7de200131c02e4e607d8ea6242c0c4b14"
+      "bytes": 1520,
+      "sha256": "517f9b0eface15f686217c74a2898af6b722fe2af5a703b06045832f06ca36b8"
     },
     {
       "path": "evidence/PROOF_FIXTURES.json",
@@ -211,8 +211,8 @@
     },
     {
       "path": "scripts/build_text.py",
-      "bytes": 44631,
-      "sha256": "8d373aa68e3060a30f709bd31c722712d469bd2dd104d5370c1000c7098b9891"
+      "bytes": 44603,
+      "sha256": "d15e7cb13cb83173160e2a38266bf69c6ed9569d3efa614cfc0394a6f19df4aa"
     },
     {
       "path": "scripts/build_word_documents.py",
@@ -660,5 +660,6 @@
       "sha256": "c3390bf99f0d6a076c85e22a0481fa443dc9e7db870c421a9dba9b33651d2df0"
     }
   ],
-  "clerical_variant_note": "2026-09-09: copy of the frozen v4.1 package with three journal-compliance edits only: correspondence address/telephone on the title page; versioned OSF/Zenodo DOI slot in the Data availability and Open Practices statements ([INSERT OSF/ZENODO DOI...] to be filled when the release is minted); Consent to participate / Consent for publication split into separate Declarations. No numerical, analytical, or figure content changed. The frozen original is Accuracy_Illusion_v4_1_FROZEN."
+  "clerical_variant_note": "2026-09-09: copy of the frozen v4.1 package with three journal-compliance edits only: correspondence address/telephone on the title page; versioned OSF/Zenodo DOI slot in the Data availability and Open Practices statements ([INSERT OSF/ZENODO DOI...] to be filled when the release is minted); Consent to participate / Consent for publication split into separate Declarations. No numerical, analytical, or figure content changed. The frozen original is Accuracy_Illusion_v4_1_FROZEN.",
+  "doi": "10.5281/zenodo.22681002"
 }

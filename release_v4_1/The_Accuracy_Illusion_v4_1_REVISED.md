@@ -8,7 +8,7 @@ Correspondence: Harrison D. Fletcher, 2233 Gainsborough Ave, Santa Rosa, CA, USA
 
 Revised manuscript for *Behavior Research Methods*. Version 4.1, September 2026.
 
-**Data and code availability.** Simulation code, the executed BCI code and prediction records, and revision-specific reporting scripts are supplied in the accompanying reproducibility releases. The exact Version 4.1 package is archived at [INSERT OSF/ZENODO DOI OF THE PUBLISHED V4.1 RELEASE]. The project repository is https://github.com/harrisondfletcher/accuracy-illusion. The Open Practices Statement identifies the distinction between the project repository and the versioned archived release.
+**Data and code availability.** Simulation code, the executed BCI code and prediction records, and revision-specific reporting scripts are supplied in the accompanying reproducibility releases. The exact Version 4.1 package is archived at https://doi.org/10.5281/zenodo.22681002. The project repository is https://github.com/harrisondfletcher/accuracy-illusion. The Open Practices Statement identifies the distinction between the project repository and the versioned archived release.
 
 ## Abstract
 
@@ -539,7 +539,7 @@ All simulation code, synthetic data, analysis scripts, and simulation figure gen
 
 ## Open Practices Statement
 
-The materials supporting this revision are supplied in the accompanying simulation and BCI reproducibility releases, together with the Version 4.1 reporting supplement. They include synthetic worked-example data, simulation outputs and code, executed BCI configuration and environment records, prediction CSVs, the trial ledger, and reporting scripts. The exact Version 4.1 package supporting this revision is archived at [INSERT OSF/ZENODO DOI OF THE PUBLISHED V4.1 RELEASE]; that versioned archive, rather than the unversioned project page (https://github.com/harrisondfletcher/accuracy-illusion), identifies the numerical sources of this revision. Raw BCI data are available from the official BNCI 001-2014 source (https://bnci-horizon-2020.eu/database/data-sets/001-2014/).
+The materials supporting this revision are supplied in the accompanying simulation and BCI reproducibility releases, together with the Version 4.1 reporting supplement. They include synthetic worked-example data, simulation outputs and code, executed BCI configuration and environment records, prediction CSVs, the trial ledger, and reporting scripts. The exact Version 4.1 package supporting this revision is archived at https://doi.org/10.5281/zenodo.22681002; that versioned archive, rather than the unversioned project page (https://github.com/harrisondfletcher/accuracy-illusion), identifies the numerical sources of this revision. Raw BCI data are available from the official BNCI 001-2014 source (https://bnci-horizon-2020.eu/database/data-sets/001-2014/).
 
 No public preregistration is claimed for these analyses. The replacement BCI analysis specification was frozen on September 9, 2026, before evaluation-session decoding in that replacement run; its design fingerprint and pre-evaluation amendments are archived. This local analysis freeze is not presented as a public preregistration. The subject-pair illustration in Section 6.2 is explicitly exploratory. The Version 4.1 additions are post-execution reporting corrections and deterministic reconstruction of already specified simulation runs, not new confirmatory studies.
 

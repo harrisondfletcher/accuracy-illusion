@@ -3,11 +3,11 @@
   "exit_code": 0,
   "no_BCI_refit": true,
   "copied_package_reproduction": true,
-  "note": "re-run 2026-09-09 for the FINAL SUBMISSION 4.1 clerical variant",
+  "note": "re-run 2026-09-09 after Zenodo DOI insertion (10.5281/zenodo.22681002)",
   "comparisons": [
     {
       "file": "The_Accuracy_Illusion_v4_1_REVISED.md",
-      "sha256": "fffad9a22f5a635e462d235da141626efe9e7ce8a0cf9617d4f304a32fabe0ee",
+      "sha256": "dade2ba1bfa9a8679132b2f07744755543d9d58ea4bc7ac8de7cb12f5a48f2aa",
       "sha256_identical": true
     },
     {
