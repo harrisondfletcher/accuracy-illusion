@@ -1,117 +1,63 @@
 # The Accuracy Illusion: Measuring What Accuracy Cannot in Communicative Behavior
 
 **Harrison D. Fletcher**
-Submitted to *Behavior Research Methods*, March 2026.
+Revision 4.1 for *Behavior Research Methods*, September 2026.
 
-> DOI: [assigned upon publication]
+> DOI of this versioned release: [assigned upon OSF/Zenodo publication]
 
 ---
 
-## What This Repository Contains
+## Version history
 
-This is **Supplementary Code S1** for the manuscript. It contains everything needed to reproduce every table, figure, and statistical claim in the paper from deterministic seeds.
+| Version | Date | Status |
+|---|---|---|
+| Original submission (Supplementary Code S1) | March 2026 | Superseded. Its BCI results were **withdrawn** during revision; the original tree is preserved in this repository's git history (commit `73ce0bc`). |
+| Revision 4 | September 2026 | Executed replacement BCI analysis (9 subjects, 2 decoders, frozen pre-evaluation design) plus rebuilt simulation/power program. Code in `code_revision4/`. |
+| **Revision 4.1 (this release)** | September 2026 | Reporting/proof corrections on top of the frozen Revision-4 results. Package in `release_v4_1/`. **This is the release cited by the manuscript's Open Practices Statement.** |
 
-- **Simulation engine** — 5 agent types: random, class-biased, overproduction, memorizer, compositional
-- **Parameter sweep and power analysis pipelines** — noise sweeps, matched-accuracy analyses, bootstrap power curves
-- **All JSON data files** reproducing every table and figure in the manuscript
-- **Figure generation scripts** — 5 publication-quality figures
-- **Worked example dataset (S2)** — 800 episodes, |Z|=12, all trial types
-- **Supplementary tables (S3)** — Tables S1–S7, cross-verified against JSON
-- **Adversarial evaluation protocol checklist (S4)** — printable checklist for researchers
+The withdrawn original figures (including the former "compression" figure) and the
+original engine remain available only in git history for provenance; they are not
+part of the current release and must not be cited as current results.
 
-## Quick Start — Reproduce All Figures
+## Layout
+
+```
+release_v4_1/    The Version 4.1 package: revised manuscript, supplement, response
+                 letter (MD + DOCX), figures, reporting scripts, evidence
+                 (recovered uncertainty summaries, BCI table exports,
+                 TRIGGER_SCHEDULE_AUDIT.json, proof fixtures, diffs), source
+                 inputs, release manifest, and the archived Revision-4
+                 scientific packages (simulation package + executed BCI run) in
+                 release_v4_1/scientific_archives/.
+code_revision4/  The executed Revision-4 analysis code: simulation engine and
+                 archived simulation results, BCI pipeline (direct local-MAT
+                 adapter, explicit organizer artifact masks, six-fold
+                 leave-one-source-run-out tuning), recomputing validator,
+                 population scripts, tests, pinned requirements, and the audit
+                 trail (protocol amendments, design freeze, claim-to-field map).
+```
+
+## Reproduce the Version 4.1 reporting revision
 
 ```bash
-pip install -r requirements.txt
-cd src
-python build_figures.py
-# outputs appear in figures/
+cd release_v4_1
+pip install -r scripts/requirements-reporting.txt
+python scripts/reproduce_revision.py     # replays core seeds, exports tables, rebuilds documents
+python scripts/validate_revision.py      # 59-check validation of the shipped package
 ```
 
-## Reproduce From Scratch (Full Simulation)
+This does not refit either BCI decoder; the executed results are frozen.
 
-```bash
-# Phase A: core simulation (generates table1.json, counterexamples.json, null_models.json)
-cd src
-python phase_a.py
+## Reproduce the Revision-4 BCI analysis from raw data
 
-# Phase B: parameter sweeps (generates sweep_noise.json, matched_c2.json)
-python phase_b_sweeps.py
-
-# Phase C: power analysis (generates power_analysis.json)
-python phase_c_power.py
-
-# Generate all figures
-python build_figures.py
-```
-
-Note: Full simulation takes ~15 minutes. Pre-computed JSON files are provided in `data/json/` for convenience.
-
-## BCI Competition IV-2a Data
-
-The empirical application uses the publicly available BCI Competition IV Dataset 2a (Brunner et al., 2008). The processed confusion matrices and per-subject metrics are in `data/json/bci_real_application.json`. Raw EEG data is available from the original competition at: http://www.bbci.de/competition/iv/
-
-## Deterministic Reproducibility
-
-All simulations use deterministic seeds. The seed structure is defined in `phase_a.py` lines 10–14:
-
-```python
-SEED_OFFSETS = {"random":0, "class_biased":100000, "overproduction":200000,
-                "memorizer":300000, "compositional":400000, ...}
-```
-
-Running `phase_a.py` on any machine with the same numpy version will produce identical JSON outputs.
-
-## Simulation Parameters (Default Configuration)
-
-| Parameter | Value |
-|-----------|-------|
-| Intent space \|Z\| | 12 |
-| Episodes per agent N | 500 |
-| Monte Carlo runs | 400 |
-| p_correct (memorizer) | 0.85 |
-| p_correct (compositional) | 0.90 |
-| Compositional split | 80/20 training/held-out |
-| Repair fraction | 20% |
-| Uncertainty split | 70% easy / 30% hard |
-| Bootstrap resamples (power) | 50 per cell |
-| Power experiments | 20 per cell |
-
-## Key Data Files
-
-| File | Description | Manuscript Reference |
-|------|-------------|---------------------|
-| `table1.json` | 5 agents x all metrics, 400 runs | Table 1, Figure 1 |
-| `counterexamples.json` | 3 CEs proving irreducibility | Table S2 |
-| `null_models.json` | Zipf sweep for null models | Table S3 |
-| `sweep_noise.json` | p_correct sweep 0.5–0.95 | Table S4 |
-| `matched_c2.json` | Matched-accuracy analysis, 6 levels | Figure 3, Table S5 |
-| `power_analysis.json` | 3 metrics x 4 delta-p x 5 N | Figure 5, Table 2 |
-| `bci_real_application.json` | 9 subjects, 2,592 trials | Table 3, Figures 2 & 4 |
-| `bci_confusion_matrices.json` | Per-subject confusion matrices | Table 3 |
-
-## Repository Structure
-
-```
-accuracy-illusion/
-├── src/
-│   ├── phase_a.py              # Simulation engine + core data generation
-│   ├── phase_b_sweeps.py       # Noise sweep + matched-accuracy analysis
-│   ├── phase_c_power.py        # Bootstrap power analysis (3 metrics)
-│   ├── brm_protocol.py         # Standalone unified protocol (704 lines)
-│   └── build_figures.py        # Generates all 5 manuscript figures
-├── data/
-│   ├── json/                   # All pre-computed simulation outputs
-│   └── worked_example/
-│       └── S2_worked_example.csv
-├── supplementary/
-│   ├── S3_supplementary_tables.md
-│   └── S4_protocol_checklist.md
-├── figures/                    # Generated publication figures
-└── tests/
-    └── test_reproducibility.py
-```
+See `code_revision4/` (pinned environment in `requirements-bci.txt`; moabb 1.7.1,
+mne 1.12.1, scikit-learn 1.8.0, numpy 2.3.5, scipy 1.17.0, Python 3.12).
+Raw EEG is not redistributed here; the 18 official MAT files are available from
+https://bnci-horizon-2020.eu/database/data-sets/001-2014/ and are validated by
+full parse + schema audit (`code_revision4/tools/acquire_bnci_mat.py`). The
+evaluate phase verifies the archived pre-evaluation design fingerprint before
+running.
 
 ## License
 
-MIT
+MIT (see LICENSE).

@@ -1,0 +1,4250 @@
+{
+  "provenance": {
+    "description": "Deterministic replay of the original 400 core runs per agent using the archived engine and exact original seed offsets. Only previously unreported summaries added; source engine unchanged.",
+    "engine_sha256": "9b34af6de688072f079e22906d63338724e3857ae1b668e275e6f14716564186",
+    "source_table1_sha256": "c3390bf99f0d6a076c85e22a0481fa443dc9e7db870c421a9dba9b33651d2df0",
+    "seed0": 42,
+    "config": {
+      "K": 12,
+      "N": 1000,
+      "zipf_s": 0.0,
+      "heldout_eval_frac": 0.5,
+      "frac_single": 0.5,
+      "frac_comp": 0.15,
+      "frac_repair": 0.2,
+      "frac_unc": 0.15,
+      "hard_fraction": 0.3,
+      "overproduction_rate": 0.7,
+      "veff_beta": 30,
+      "n_base_override": null
+    },
+    "paired_seed_offset": 3000000,
+    "run_count": 2000,
+    "original_summary_fields_compared": 510,
+    "max_absolute_difference": 2.7755575615628914e-17
+  },
+  "summaries": {
+    "random": {
+      "accuracy_base": {
+        "mean": 0.08299,
+        "sd": 0.01209320113884083,
+        "ci_lo": 0.06,
+        "ci_hi": 0.108,
+        "min": 0.056,
+        "max": 0.116,
+        "n": 400,
+        "n_nan": 0
+      },
+      "accuracy_pooled": {
+        "mean": 0.08288076923076923,
+        "sd": 0.010626026718932724,
+        "ci_lo": 0.06307692307692307,
+        "ci_hi": 0.10465384615384611,
+        "min": 0.05692307692307692,
+        "max": 0.11846153846153847,
+        "n": 400,
+        "n_nan": 0
+      },
+      "mi_plugin": {
+        "mean": 0.1949923871578378,
+        "sd": 0.02474458421446854,
+        "ci_lo": 0.14949319547675693,
+        "ci_hi": 0.24335342584565448,
+        "min": 0.13257658520756901,
+        "max": 0.26442102112027055,
+        "n": 400,
+        "n_nan": 0
+      },
+      "mi": {
+        "mean": 0.02698694290871575,
+        "sd": 0.02665249316080208,
+        "ci_lo": -0.02218925706233311,
+        "ci_hi": 0.08031338052293335,
+        "min": -0.037661429617328684,
+        "max": 0.1042818715815956,
+        "n": 400,
+        "n_nan": 0
+      },
+      "b_min": {
+        "mean": 0.0498503985240434,
+        "sd": 0.04923087431819318,
+        "ci_lo": -0.04113098687866355,
+        "ci_hi": 0.15145824507327524,
+        "min": -0.06905134837428994,
+        "max": 0.19038247344715817,
+        "n": 400,
+        "n_nan": 0
+      },
+      "c2": {
+        "mean": 0.0829360704549472,
+        "sd": 0.030985842518693327,
+        "ci_lo": 0.025625,
+        "ci_hi": 0.14473684210526316,
+        "min": 0.012658227848101266,
+        "max": 0.18571428571428572,
+        "n": 400,
+        "n_nan": 0
+      },
+      "r": {
+        "mean": 0.1612,
+        "sd": 0.02598794785249424,
+        "ci_lo": 0.10987500000000001,
+        "ci_hi": 0.215,
+        "min": 0.095,
+        "max": 0.23,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u": {
+        "mean": 0.0020716607670915677,
+        "sd": 0.07455537211730477,
+        "ci_lo": -0.12858875563507627,
+        "ci_hi": 0.15958868110058588,
+        "min": -0.19701280227596019,
+        "max": 0.2205384203957925,
+        "n": 400,
+        "n_nan": 0
+      },
+      "abstain_rate": {
+        "mean": 0.30045,
+        "sd": 0.038361277091114476,
+        "ci_lo": 0.22666666666666666,
+        "ci_hi": 0.38,
+        "min": 0.18,
+        "max": 0.4266666666666667,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u_tpr": {
+        "mean": 0.3016370976829175,
+        "sd": 0.05317698020672505,
+        "ci_lo": 0.20506756756756755,
+        "ci_hi": 0.41333333333333333,
+        "min": 0.16216216216216217,
+        "max": 0.45569620253164556,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u_fpr": {
+        "mean": 0.29956543691582593,
+        "sd": 0.053766046409346104,
+        "ci_lo": 0.19736378799110452,
+        "ci_hi": 0.4102739726027397,
+        "min": 0.12658227848101267,
+        "max": 0.4864864864864865,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u_n_err": {
+        "mean": 74.785,
+        "sd": 5.621635167358979,
+        "ci_lo": 65.0,
+        "ci_hi": 86.0,
+        "min": 58.0,
+        "max": 95.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u_n_ok": {
+        "mean": 75.215,
+        "sd": 5.621635167358979,
+        "ci_lo": 64.0,
+        "ci_hi": 85.0,
+        "min": 55.0,
+        "max": 92.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "commitment_coverage": {
+        "mean": 0.69955,
+        "sd": 0.038361277091114476,
+        "ci_lo": 0.62,
+        "ci_hi": 0.7733333333333333,
+        "min": 0.5733333333333333,
+        "max": 0.8200000000000001,
+        "n": 400,
+        "n_nan": 0
+      },
+      "uncertainty_trials": {
+        "mean": 150.0,
+        "sd": 0.0,
+        "ci_lo": 150.0,
+        "ci_hi": 150.0,
+        "min": 150.0,
+        "max": 150.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "veff_60": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "veff_70": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "veff_80": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "veff_90": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "repair_repeat": {
+        "mean": 0.2519875,
+        "sd": 0.031343954000428095,
+        "ci_lo": 0.195,
+        "ci_hi": 0.32,
+        "min": 0.16,
+        "max": 0.35,
+        "n": 400,
+        "n_nan": 0
+      },
+      "repair_modify": {
+        "mean": 0.245875,
+        "sd": 0.030068582842985195,
+        "ci_lo": 0.18987500000000002,
+        "ci_hi": 0.30012499999999986,
+        "min": 0.16,
+        "max": 0.33,
+        "n": 400,
+        "n_nan": 0
+      },
+      "repair_escalate": {
+        "mean": 0.2489875,
+        "sd": 0.030889687206076127,
+        "ci_lo": 0.19,
+        "ci_hi": 0.32,
+        "min": 0.165,
+        "max": 0.34,
+        "n": 400,
+        "n_nan": 0
+      },
+      "repair_abandon": {
+        "mean": 0.25315,
+        "sd": 0.030238442561105944,
+        "ci_lo": 0.19,
+        "ci_hi": 0.31,
+        "min": 0.16,
+        "max": 0.345,
+        "n": 400,
+        "n_nan": 0
+      }
+    },
+    "class_biased": {
+      "accuracy_base": {
+        "mean": 0.28683,
+        "sd": 0.02008431101313113,
+        "ci_lo": 0.24795,
+        "ci_hi": 0.328,
+        "min": 0.23,
+        "max": 0.344,
+        "n": 400,
+        "n_nan": 0
+      },
+      "accuracy_pooled": {
+        "mean": 0.23956153846153846,
+        "sd": 0.01618681809489967,
+        "ci_lo": 0.20765384615384616,
+        "ci_hi": 0.27076923076923076,
+        "min": 0.18461538461538463,
+        "max": 0.2846153846153846,
+        "n": 400,
+        "n_nan": 0
+      },
+      "mi_plugin": {
+        "mean": 0.7758310882092831,
+        "sd": 0.05971245086578004,
+        "ci_lo": 0.6587330242036622,
+        "ci_hi": 0.8951660895700099,
+        "min": 0.6078190259300815,
+        "max": 0.9846394445137037,
+        "n": 400,
+        "n_nan": 0
+      },
+      "mi": {
+        "mean": 0.6383278238621558,
+        "sd": 0.06200529094958355,
+        "ci_lo": 0.5178593210246865,
+        "ci_hi": 0.7628415571357701,
+        "min": 0.46499221688207415,
+        "max": 0.8562395858745859,
+        "n": 400,
+        "n_nan": 0
+      },
+      "b_min": {
+        "mean": 1.1775559724856446,
+        "sd": 0.11563347681969781,
+        "ci_lo": 0.9501335236471283,
+        "ci_hi": 1.4042114147487106,
+        "min": 0.8587828442114872,
+        "max": 1.6369758110137689,
+        "n": 400,
+        "n_nan": 0
+      },
+      "c2": {
+        "mean": 0.08188656598172495,
+        "sd": 0.031586744696373015,
+        "ci_lo": 0.028169014084507043,
+        "ci_hi": 0.14474160945842868,
+        "min": 0.014492753623188406,
+        "max": 0.22058823529411764,
+        "n": 400,
+        "n_nan": 0
+      },
+      "r": {
+        "mean": 0.1598,
+        "sd": 0.025670653597841073,
+        "ci_lo": 0.11487500000000002,
+        "ci_hi": 0.21012499999999987,
+        "min": 0.075,
+        "max": 0.245,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "abstain_rate": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u_tpr": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u_fpr": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u_n_err": {
+        "mean": 30.815,
+        "sd": 4.9174412116644,
+        "ci_lo": 21.0,
+        "ci_hi": 41.0,
+        "min": 19.0,
+        "max": 46.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u_n_ok": {
+        "mean": 119.185,
+        "sd": 4.917441211664399,
+        "ci_lo": 109.0,
+        "ci_hi": 129.0,
+        "min": 104.0,
+        "max": 131.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "commitment_coverage": {
+        "mean": 1.0,
+        "sd": 0.0,
+        "ci_lo": 1.0,
+        "ci_hi": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "uncertainty_trials": {
+        "mean": 150.0,
+        "sd": 0.0,
+        "ci_lo": 150.0,
+        "ci_hi": 150.0,
+        "min": 150.0,
+        "max": 150.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "veff_60": {
+        "mean": 2.7075,
+        "sd": 0.5025685903137249,
+        "ci_lo": 2.0,
+        "ci_hi": 3.0,
+        "min": 1.0,
+        "max": 3.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "veff_70": {
+        "mean": 0.8575,
+        "sd": 0.7705049934050755,
+        "ci_lo": 0.0,
+        "ci_hi": 2.0,
+        "min": 0.0,
+        "max": 3.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "veff_80": {
+        "mean": 0.0125,
+        "sd": 0.11124156919421795,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 1.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "veff_90": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "repair_repeat": {
+        "mean": 0.297875,
+        "sd": 0.034060750311457444,
+        "ci_lo": 0.23,
+        "ci_hi": 0.37,
+        "min": 0.215,
+        "max": 0.405,
+        "n": 400,
+        "n_nan": 0
+      },
+      "repair_modify": {
+        "mean": 0.20013750000000002,
+        "sd": 0.026934778623533308,
+        "ci_lo": 0.15,
+        "ci_hi": 0.25,
+        "min": 0.12,
+        "max": 0.285,
+        "n": 400,
+        "n_nan": 0
+      },
+      "repair_escalate": {
+        "mean": 0.10108750000000001,
+        "sd": 0.02165472608125384,
+        "ci_lo": 0.06487500000000002,
+        "ci_hi": 0.14512499999999987,
+        "min": 0.045,
+        "max": 0.175,
+        "n": 400,
+        "n_nan": 0
+      },
+      "repair_abandon": {
+        "mean": 0.40090000000000003,
+        "sd": 0.034221598362528534,
+        "ci_lo": 0.33,
+        "ci_hi": 0.465,
+        "min": 0.29,
+        "max": 0.49,
+        "n": 400,
+        "n_nan": 0
+      }
+    },
+    "overproduction": {
+      "accuracy_base": {
+        "mean": 0.31393499999999996,
+        "sd": 0.021170409552049387,
+        "ci_lo": 0.27195,
+        "ci_hi": 0.358,
+        "min": 0.26,
+        "max": 0.378,
+        "n": 400,
+        "n_nan": 0
+      },
+      "accuracy_pooled": {
+        "mean": 0.26058846153846155,
+        "sd": 0.017181454240834802,
+        "ci_lo": 0.22765384615384615,
+        "ci_hi": 0.2969230769230769,
+        "min": 0.21384615384615385,
+        "max": 0.3123076923076923,
+        "n": 400,
+        "n_nan": 0
+      },
+      "mi_plugin": {
+        "mean": 0.7951026432848769,
+        "sd": 0.06900896045784886,
+        "ci_lo": 0.6674130368988923,
+        "ci_hi": 0.9318625971580778,
+        "min": 0.6096154515090615,
+        "max": 0.9904777477425811,
+        "n": 400,
+        "n_nan": 0
+      },
+      "mi": {
+        "mean": 0.7678212800616668,
+        "sd": 0.07103297441831227,
+        "ci_lo": 0.6350961887871868,
+        "ci_hi": 0.9101588294801802,
+        "min": 0.5831074543205085,
+        "max": 0.9731654072519136,
+        "n": 400,
+        "n_nan": 0
+      },
+      "b_min": {
+        "mean": 1.417950617646194,
+        "sd": 0.13417818377792984,
+        "ci_lo": 1.1801567492213705,
+        "ci_hi": 1.6759073650863905,
+        "min": 1.046474230984576,
+        "max": 1.7644316838290939,
+        "n": 400,
+        "n_nan": 0
+      },
+      "c2": {
+        "mean": 0.08389958930785561,
+        "sd": 0.03213296100745497,
+        "ci_lo": 0.02666666666666667,
+        "ci_hi": 0.15069687798661993,
+        "min": 0.0,
+        "max": 0.18181818181818182,
+        "n": 400,
+        "n_nan": 0
+      },
+      "r": {
+        "mean": 0.1596625,
+        "sd": 0.025845571723106368,
+        "ci_lo": 0.115,
+        "ci_hi": 0.21,
+        "min": 0.085,
+        "max": 0.225,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "abstain_rate": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u_tpr": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u_fpr": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u_n_err": {
+        "mean": 30.25,
+        "sd": 4.8936048492959285,
+        "ci_lo": 21.975,
+        "ci_hi": 41.0,
+        "min": 16.0,
+        "max": 45.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u_n_ok": {
+        "mean": 119.75,
+        "sd": 4.8936048492959285,
+        "ci_lo": 109.0,
+        "ci_hi": 128.02499999999998,
+        "min": 105.0,
+        "max": 134.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "commitment_coverage": {
+        "mean": 1.0,
+        "sd": 0.0,
+        "ci_lo": 1.0,
+        "ci_hi": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "uncertainty_trials": {
+        "mean": 150.0,
+        "sd": 0.0,
+        "ci_lo": 150.0,
+        "ci_hi": 150.0,
+        "min": 150.0,
+        "max": 150.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "veff_60": {
+        "mean": 0.04,
+        "sd": 0.19620458863518908,
+        "ci_lo": 0.0,
+        "ci_hi": 1.0,
+        "min": 0.0,
+        "max": 1.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "veff_70": {
+        "mean": 0.0025,
+        "sd": 0.05,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 1.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "veff_80": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "veff_90": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "repair_repeat": {
+        "mean": 0.2997375,
+        "sd": 0.03338832947472487,
+        "ci_lo": 0.234875,
+        "ci_hi": 0.365,
+        "min": 0.2,
+        "max": 0.385,
+        "n": 400,
+        "n_nan": 0
+      },
+      "repair_modify": {
+        "mean": 0.20103749999999998,
+        "sd": 0.02811070299382457,
+        "ci_lo": 0.15,
+        "ci_hi": 0.255,
+        "min": 0.125,
+        "max": 0.305,
+        "n": 400,
+        "n_nan": 0
+      },
+      "repair_escalate": {
+        "mean": 0.10006250000000001,
+        "sd": 0.02238999494045463,
+        "ci_lo": 0.055,
+        "ci_hi": 0.14512499999999987,
+        "min": 0.03,
+        "max": 0.18,
+        "n": 400,
+        "n_nan": 0
+      },
+      "repair_abandon": {
+        "mean": 0.3991625,
+        "sd": 0.035107940875695465,
+        "ci_lo": 0.32987500000000003,
+        "ci_hi": 0.47,
+        "min": 0.29,
+        "max": 0.49,
+        "n": 400,
+        "n_nan": 0
+      }
+    },
+    "memorizer": {
+      "accuracy_base": {
+        "mean": 0.8499349999999999,
+        "sd": 0.015631911804595975,
+        "ci_lo": 0.818,
+        "ci_hi": 0.88,
+        "min": 0.81,
+        "max": 0.894,
+        "n": 400,
+        "n_nan": 0
+      },
+      "accuracy_pooled": {
+        "mean": 0.7613923076923078,
+        "sd": 0.015017084781767562,
+        "ci_lo": 0.7291923076923077,
+        "ci_hi": 0.7892692307692307,
+        "min": 0.7123076923076923,
+        "max": 0.8061538461538461,
+        "n": 400,
+        "n_nan": 0
+      },
+      "mi_plugin": {
+        "mean": 2.639142265262576,
+        "sd": 0.0890798433872007,
+        "ci_lo": 2.4533027912965597,
+        "ci_hi": 2.820995756065478,
+        "min": 2.414940792097909,
+        "max": 2.89021664368005,
+        "n": 400,
+        "n_nan": 0
+      },
+      "mi": {
+        "mean": 2.5724212263590633,
+        "sd": 0.09593232074470882,
+        "ci_lo": 2.373990631423689,
+        "ci_hi": 2.771944124675253,
+        "min": 2.32982178468546,
+        "max": 2.839722317248936,
+        "n": 400,
+        "n_nan": 0
+      },
+      "b_min": {
+        "mean": 4.747720123747497,
+        "sd": 0.19918410792490032,
+        "ci_lo": 4.3398547135234695,
+        "ci_hi": 5.116679062013255,
+        "min": 4.2199941347263294,
+        "max": 5.282558609159957,
+        "n": 400,
+        "n_nan": 0
+      },
+      "c2": {
+        "mean": 0.08222687966060949,
+        "sd": 0.03004018232550033,
+        "ci_lo": 0.028985507246376812,
+        "ci_hi": 0.14609220092531391,
+        "min": 0.012048192771084338,
+        "max": 0.16049382716049382,
+        "n": 400,
+        "n_nan": 0
+      },
+      "r": {
+        "mean": 0.16122499999999998,
+        "sd": 0.02631264454892162,
+        "ci_lo": 0.115,
+        "ci_hi": 0.215,
+        "min": 0.095,
+        "max": 0.24,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "abstain_rate": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u_tpr": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u_fpr": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u_n_err": {
+        "mean": 30.9925,
+        "sd": 4.781170644500108,
+        "ci_lo": 22.0,
+        "ci_hi": 41.0,
+        "min": 17.0,
+        "max": 45.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u_n_ok": {
+        "mean": 119.0075,
+        "sd": 4.781170644500107,
+        "ci_lo": 109.0,
+        "ci_hi": 128.0,
+        "min": 105.0,
+        "max": 133.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "commitment_coverage": {
+        "mean": 1.0,
+        "sd": 0.0,
+        "ci_lo": 1.0,
+        "ci_hi": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "uncertainty_trials": {
+        "mean": 150.0,
+        "sd": 0.0,
+        "ci_lo": 150.0,
+        "ci_hi": 150.0,
+        "min": 150.0,
+        "max": 150.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "veff_60": {
+        "mean": 11.7875,
+        "sd": 0.4721239270639285,
+        "ci_lo": 10.0,
+        "ci_hi": 12.0,
+        "min": 10.0,
+        "max": 12.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "veff_70": {
+        "mean": 11.77,
+        "sd": 0.4875389580217897,
+        "ci_lo": 10.0,
+        "ci_hi": 12.0,
+        "min": 10.0,
+        "max": 12.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "veff_80": {
+        "mean": 10.435,
+        "sd": 1.2707525447840693,
+        "ci_lo": 8.0,
+        "ci_hi": 12.0,
+        "min": 6.0,
+        "max": 12.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "veff_90": {
+        "mean": 1.2525,
+        "sd": 1.2520634597607943,
+        "ci_lo": 0.0,
+        "ci_hi": 4.0,
+        "min": 0.0,
+        "max": 7.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "repair_repeat": {
+        "mean": 1.0,
+        "sd": 0.0,
+        "ci_lo": 1.0,
+        "ci_hi": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "repair_modify": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "repair_escalate": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "repair_abandon": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 400,
+        "n_nan": 0
+      }
+    },
+    "compositional": {
+      "accuracy_base": {
+        "mean": 0.8499349999999999,
+        "sd": 0.015631911804595975,
+        "ci_lo": 0.818,
+        "ci_hi": 0.88,
+        "min": 0.81,
+        "max": 0.894,
+        "n": 400,
+        "n_nan": 0
+      },
+      "accuracy_pooled": {
+        "mean": 0.8504923076923078,
+        "sd": 0.014251513390066802,
+        "ci_lo": 0.8184615384615385,
+        "ci_hi": 0.8785000000000001,
+        "min": 0.8107692307692308,
+        "max": 0.8876923076923077,
+        "n": 400,
+        "n_nan": 0
+      },
+      "mi_plugin": {
+        "mean": 2.639142265262576,
+        "sd": 0.0890798433872007,
+        "ci_lo": 2.4533027912965597,
+        "ci_hi": 2.820995756065478,
+        "min": 2.414940792097909,
+        "max": 2.89021664368005,
+        "n": 400,
+        "n_nan": 0
+      },
+      "mi": {
+        "mean": 2.5724212263590633,
+        "sd": 0.09593232074470882,
+        "ci_lo": 2.373990631423689,
+        "ci_hi": 2.771944124675253,
+        "min": 2.32982178468546,
+        "max": 2.839722317248936,
+        "n": 400,
+        "n_nan": 0
+      },
+      "b_min": {
+        "mean": 4.747720123747497,
+        "sd": 0.19918410792490032,
+        "ci_lo": 4.3398547135234695,
+        "ci_hi": 5.116679062013255,
+        "min": 4.2199941347263294,
+        "max": 5.282558609159957,
+        "n": 400,
+        "n_nan": 0
+      },
+      "c2": {
+        "mean": 0.8555625547794307,
+        "sd": 0.04239090894035955,
+        "ci_lo": 0.7720261834576037,
+        "ci_hi": 0.9420289855072463,
+        "min": 0.7285714285714285,
+        "max": 0.9714285714285714,
+        "n": 400,
+        "n_nan": 0
+      },
+      "r": {
+        "mean": 0.34975,
+        "sd": 0.03432028854065455,
+        "ci_lo": 0.27987500000000004,
+        "ci_hi": 0.42,
+        "min": 0.26,
+        "max": 0.455,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u": {
+        "mean": 0.21717843355229852,
+        "sd": 0.1320806336300516,
+        "ci_lo": -0.050603991596638635,
+        "ci_hi": 0.4738475408411535,
+        "min": -0.31724137931034485,
+        "max": 0.6365546218487395,
+        "n": 400,
+        "n_nan": 0
+      },
+      "abstain_rate": {
+        "mean": 0.2505833333333333,
+        "sd": 0.03343999226535148,
+        "ci_lo": 0.18,
+        "ci_hi": 0.32,
+        "min": 0.15333333333333332,
+        "max": 0.3333333333333333,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u_tpr": {
+        "mean": 0.4436102696923122,
+        "sd": 0.12322359037909472,
+        "ci_lo": 0.2,
+        "ci_hi": 0.6842105263157895,
+        "min": 0.0,
+        "max": 0.8571428571428571,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u_fpr": {
+        "mean": 0.22643183614001366,
+        "sd": 0.03602349509609002,
+        "ci_lo": 0.15436826448136506,
+        "ci_hi": 0.2954755892255892,
+        "min": 0.12598425196850394,
+        "max": 0.3262411347517731,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u_n_err": {
+        "mean": 16.7,
+        "sd": 3.8355937543777436,
+        "ci_lo": 10.0,
+        "ci_hi": 25.0,
+        "min": 5.0,
+        "max": 27.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "u_n_ok": {
+        "mean": 133.3,
+        "sd": 3.835593754377743,
+        "ci_lo": 125.0,
+        "ci_hi": 140.0,
+        "min": 123.0,
+        "max": 145.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "commitment_coverage": {
+        "mean": 0.7494166666666666,
+        "sd": 0.03343999226535148,
+        "ci_lo": 0.6799999999999999,
+        "ci_hi": 0.8200000000000001,
+        "min": 0.6666666666666667,
+        "max": 0.8466666666666667,
+        "n": 400,
+        "n_nan": 0
+      },
+      "uncertainty_trials": {
+        "mean": 150.0,
+        "sd": 0.0,
+        "ci_lo": 150.0,
+        "ci_hi": 150.0,
+        "min": 150.0,
+        "max": 150.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "veff_60": {
+        "mean": 11.7875,
+        "sd": 0.4721239270639285,
+        "ci_lo": 10.0,
+        "ci_hi": 12.0,
+        "min": 10.0,
+        "max": 12.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "veff_70": {
+        "mean": 11.77,
+        "sd": 0.4875389580217897,
+        "ci_lo": 10.0,
+        "ci_hi": 12.0,
+        "min": 10.0,
+        "max": 12.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "veff_80": {
+        "mean": 10.435,
+        "sd": 1.2707525447840693,
+        "ci_lo": 8.0,
+        "ci_hi": 12.0,
+        "min": 6.0,
+        "max": 12.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "veff_90": {
+        "mean": 1.2525,
+        "sd": 1.2520634597607943,
+        "ci_lo": 0.0,
+        "ci_hi": 4.0,
+        "min": 0.0,
+        "max": 7.0,
+        "n": 400,
+        "n_nan": 0
+      },
+      "repair_repeat": {
+        "mean": 0.196375,
+        "sd": 0.02859025851938932,
+        "ci_lo": 0.145,
+        "ci_hi": 0.2501249999999999,
+        "min": 0.11,
+        "max": 0.275,
+        "n": 400,
+        "n_nan": 0
+      },
+      "repair_modify": {
+        "mean": 0.4515625,
+        "sd": 0.03576407087656774,
+        "ci_lo": 0.38,
+        "ci_hi": 0.52,
+        "min": 0.33,
+        "max": 0.555,
+        "n": 400,
+        "n_nan": 0
+      },
+      "repair_escalate": {
+        "mean": 0.20195,
+        "sd": 0.02863997416725008,
+        "ci_lo": 0.15,
+        "ci_hi": 0.26,
+        "min": 0.125,
+        "max": 0.28,
+        "n": 400,
+        "n_nan": 0
+      },
+      "repair_abandon": {
+        "mean": 0.15011249999999998,
+        "sd": 0.025662643510165208,
+        "ci_lo": 0.105,
+        "ci_hi": 0.205,
+        "min": 0.075,
+        "max": 0.245,
+        "n": 400,
+        "n_nan": 0
+      }
+    }
+  },
+  "comparison": [
+    {
+      "agent": "random",
+      "metric": "accuracy_base",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "accuracy_base",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "accuracy_base",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "accuracy_base",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "accuracy_base",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "accuracy_base",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "accuracy_pooled",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "accuracy_pooled",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "accuracy_pooled",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "accuracy_pooled",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "accuracy_pooled",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "accuracy_pooled",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "mi_plugin",
+      "field": "mean",
+      "absolute_difference": 2.7755575615628914e-17
+    },
+    {
+      "agent": "random",
+      "metric": "mi_plugin",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "mi_plugin",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "mi_plugin",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "mi_plugin",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "mi_plugin",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "mi",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "mi",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "mi",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "mi",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "mi",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "mi",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "b_min",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "b_min",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "b_min",
+      "field": "ci_lo",
+      "absolute_difference": 6.938893903907228e-18
+    },
+    {
+      "agent": "random",
+      "metric": "b_min",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "b_min",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "b_min",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "c2",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "c2",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "c2",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "c2",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "c2",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "c2",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "r",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "r",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "r",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "r",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "r",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "r",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "u",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "u",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "u",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "u",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "u",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "u",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "abstain_rate",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "abstain_rate",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "abstain_rate",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "abstain_rate",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "abstain_rate",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "abstain_rate",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_60",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_60",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_60",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_60",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_60",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_60",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_70",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_70",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_70",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_70",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_70",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_70",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_80",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_80",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_80",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_80",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_80",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_80",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_90",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_90",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_90",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_90",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_90",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "veff_90",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_repeat",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_repeat",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_repeat",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_repeat",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_repeat",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_repeat",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_modify",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_modify",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_modify",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_modify",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_modify",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_modify",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_escalate",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_escalate",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_escalate",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_escalate",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_escalate",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_escalate",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_abandon",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_abandon",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_abandon",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_abandon",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_abandon",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "random",
+      "metric": "repair_abandon",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "accuracy_base",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "accuracy_base",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "accuracy_base",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "accuracy_base",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "accuracy_base",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "accuracy_base",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "accuracy_pooled",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "accuracy_pooled",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "accuracy_pooled",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "accuracy_pooled",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "accuracy_pooled",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "accuracy_pooled",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "mi_plugin",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "mi_plugin",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "mi_plugin",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "mi_plugin",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "mi_plugin",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "mi_plugin",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "mi",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "mi",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "mi",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "mi",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "mi",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "mi",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "b_min",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "b_min",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "b_min",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "b_min",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "b_min",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "b_min",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "c2",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "c2",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "c2",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "c2",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "c2",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "c2",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "r",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "r",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "r",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "r",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "r",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "r",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "u",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "u",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "u",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "u",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "u",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "u",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "abstain_rate",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "abstain_rate",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "abstain_rate",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "abstain_rate",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "abstain_rate",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "abstain_rate",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_60",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_60",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_60",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_60",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_60",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_60",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_70",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_70",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_70",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_70",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_70",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_70",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_80",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_80",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_80",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_80",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_80",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_80",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_90",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_90",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_90",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_90",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_90",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "veff_90",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_repeat",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_repeat",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_repeat",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_repeat",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_repeat",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_repeat",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_modify",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_modify",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_modify",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_modify",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_modify",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_modify",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_escalate",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_escalate",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_escalate",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_escalate",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_escalate",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_escalate",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_abandon",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_abandon",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_abandon",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_abandon",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_abandon",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "class_biased",
+      "metric": "repair_abandon",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "accuracy_base",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "accuracy_base",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "accuracy_base",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "accuracy_base",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "accuracy_base",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "accuracy_base",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "accuracy_pooled",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "accuracy_pooled",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "accuracy_pooled",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "accuracy_pooled",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "accuracy_pooled",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "accuracy_pooled",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "mi_plugin",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "mi_plugin",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "mi_plugin",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "mi_plugin",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "mi_plugin",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "mi_plugin",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "mi",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "mi",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "mi",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "mi",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "mi",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "mi",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "b_min",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "b_min",
+      "field": "sd",
+      "absolute_difference": 2.7755575615628914e-17
+    },
+    {
+      "agent": "overproduction",
+      "metric": "b_min",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "b_min",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "b_min",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "b_min",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "c2",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "c2",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "c2",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "c2",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "c2",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "c2",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "r",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "r",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "r",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "r",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "r",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "r",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "u",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "u",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "u",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "u",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "u",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "u",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "abstain_rate",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "abstain_rate",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "abstain_rate",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "abstain_rate",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "abstain_rate",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "abstain_rate",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_60",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_60",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_60",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_60",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_60",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_60",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_70",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_70",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_70",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_70",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_70",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_70",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_80",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_80",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_80",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_80",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_80",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_80",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_90",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_90",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_90",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_90",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_90",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "veff_90",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_repeat",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_repeat",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_repeat",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_repeat",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_repeat",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_repeat",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_modify",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_modify",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_modify",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_modify",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_modify",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_modify",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_escalate",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_escalate",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_escalate",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_escalate",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_escalate",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_escalate",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_abandon",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_abandon",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_abandon",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_abandon",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_abandon",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "overproduction",
+      "metric": "repair_abandon",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "accuracy_base",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "accuracy_base",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "accuracy_base",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "accuracy_base",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "accuracy_base",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "accuracy_base",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "accuracy_pooled",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "accuracy_pooled",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "accuracy_pooled",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "accuracy_pooled",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "accuracy_pooled",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "accuracy_pooled",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "mi_plugin",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "mi_plugin",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "mi_plugin",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "mi_plugin",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "mi_plugin",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "mi_plugin",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "mi",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "mi",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "mi",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "mi",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "mi",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "mi",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "b_min",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "b_min",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "b_min",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "b_min",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "b_min",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "b_min",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "c2",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "c2",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "c2",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "c2",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "c2",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "c2",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "r",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "r",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "r",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "r",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "r",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "r",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "u",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "u",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "u",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "u",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "u",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "u",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "abstain_rate",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "abstain_rate",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "abstain_rate",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "abstain_rate",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "abstain_rate",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "abstain_rate",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_60",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_60",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_60",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_60",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_60",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_60",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_70",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_70",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_70",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_70",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_70",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_70",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_80",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_80",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_80",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_80",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_80",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_80",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_90",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_90",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_90",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_90",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_90",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "veff_90",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_repeat",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_repeat",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_repeat",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_repeat",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_repeat",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_repeat",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_modify",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_modify",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_modify",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_modify",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_modify",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_modify",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_escalate",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_escalate",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_escalate",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_escalate",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_escalate",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_escalate",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_abandon",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_abandon",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_abandon",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_abandon",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_abandon",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "memorizer",
+      "metric": "repair_abandon",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "accuracy_base",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "accuracy_base",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "accuracy_base",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "accuracy_base",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "accuracy_base",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "accuracy_base",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "accuracy_pooled",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "accuracy_pooled",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "accuracy_pooled",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "accuracy_pooled",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "accuracy_pooled",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "accuracy_pooled",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "mi_plugin",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "mi_plugin",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "mi_plugin",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "mi_plugin",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "mi_plugin",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "mi_plugin",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "mi",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "mi",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "mi",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "mi",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "mi",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "mi",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "b_min",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "b_min",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "b_min",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "b_min",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "b_min",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "b_min",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "c2",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "c2",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "c2",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "c2",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "c2",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "c2",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "r",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "r",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "r",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "r",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "r",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "r",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "u",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "u",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "u",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "u",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "u",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "u",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "abstain_rate",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "abstain_rate",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "abstain_rate",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "abstain_rate",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "abstain_rate",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "abstain_rate",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_60",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_60",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_60",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_60",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_60",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_60",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_70",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_70",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_70",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_70",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_70",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_70",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_80",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_80",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_80",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_80",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_80",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_80",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_90",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_90",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_90",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_90",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_90",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "veff_90",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_repeat",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_repeat",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_repeat",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_repeat",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_repeat",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_repeat",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_modify",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_modify",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_modify",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_modify",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_modify",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_modify",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_escalate",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_escalate",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_escalate",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_escalate",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_escalate",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_escalate",
+      "field": "n_nan",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_abandon",
+      "field": "mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_abandon",
+      "field": "sd",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_abandon",
+      "field": "ci_lo",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_abandon",
+      "field": "ci_hi",
+      "absolute_difference": 0.0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_abandon",
+      "field": "n",
+      "absolute_difference": 0
+    },
+    {
+      "agent": "compositional",
+      "metric": "repair_abandon",
+      "field": "n_nan",
+      "absolute_difference": 0
+    }
+  ]
+}

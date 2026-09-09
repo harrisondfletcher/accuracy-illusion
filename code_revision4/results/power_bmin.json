@@ -1,0 +1,264 @@
+{
+ "method": "two-sided system-label permutation conditional on pooled joint table",
+ "replications": 1000,
+ "permutations_per_replication": 1000,
+ "population_delta_bmin_bpm": {
+  "0.0": 0.0,
+  "0.01": 0.12039161851982971,
+  "0.03": 0.3685247759763053,
+  "0.05": 0.6276325841179631,
+  "0.1": 1.3387730189283422
+ },
+ "cells": {
+  "0.0": {
+   "100": {
+    "rejection_probability": 0.05,
+    "power": 0.05,
+    "ci": [
+     0.0381,
+     0.0653
+    ]
+   },
+   "200": {
+    "rejection_probability": 0.039,
+    "power": 0.039,
+    "ci": [
+     0.0287,
+     0.0529
+    ]
+   },
+   "500": {
+    "rejection_probability": 0.044,
+    "power": 0.044,
+    "ci": [
+     0.0329,
+     0.0586
+    ]
+   },
+   "750": {
+    "rejection_probability": 0.057,
+    "power": 0.057,
+    "ci": [
+     0.0443,
+     0.0731
+    ]
+   },
+   "1000": {
+    "rejection_probability": 0.052,
+    "power": 0.052,
+    "ci": [
+     0.0399,
+     0.0676
+    ]
+   },
+   "2000": {
+    "rejection_probability": 0.047,
+    "power": 0.047,
+    "ci": [
+     0.0355,
+     0.0619
+    ]
+   }
+  },
+  "0.01": {
+   "100": {
+    "rejection_probability": 0.047,
+    "power": 0.047,
+    "ci": [
+     0.0355,
+     0.0619
+    ]
+   },
+   "200": {
+    "rejection_probability": 0.06,
+    "power": 0.06,
+    "ci": [
+     0.0469,
+     0.0765
+    ]
+   },
+   "500": {
+    "rejection_probability": 0.071,
+    "power": 0.071,
+    "ci": [
+     0.0567,
+     0.0886
+    ]
+   },
+   "750": {
+    "rejection_probability": 0.081,
+    "power": 0.081,
+    "ci": [
+     0.0656,
+     0.0996
+    ]
+   },
+   "1000": {
+    "rejection_probability": 0.086,
+    "power": 0.086,
+    "ci": [
+     0.0702,
+     0.105
+    ]
+   },
+   "2000": {
+    "rejection_probability": 0.13,
+    "power": 0.13,
+    "ci": [
+     0.1106,
+     0.1523
+    ]
+   }
+  },
+  "0.03": {
+   "100": {
+    "rejection_probability": 0.107,
+    "power": 0.107,
+    "ci": [
+     0.0893,
+     0.1277
+    ]
+   },
+   "200": {
+    "rejection_probability": 0.126,
+    "power": 0.126,
+    "ci": [
+     0.1069,
+     0.148
+    ]
+   },
+   "500": {
+    "rejection_probability": 0.289,
+    "power": 0.289,
+    "ci": [
+     0.2618,
+     0.3179
+    ]
+   },
+   "750": {
+    "rejection_probability": 0.365,
+    "power": 0.365,
+    "ci": [
+     0.3357,
+     0.3953
+    ]
+   },
+   "1000": {
+    "rejection_probability": 0.488,
+    "power": 0.488,
+    "ci": [
+     0.4571,
+     0.519
+    ]
+   },
+   "2000": {
+    "rejection_probability": 0.798,
+    "power": 0.798,
+    "ci": [
+     0.772,
+     0.8217
+    ]
+   }
+  },
+  "0.05": {
+   "100": {
+    "rejection_probability": 0.155,
+    "power": 0.155,
+    "ci": [
+     0.1339,
+     0.1787
+    ]
+   },
+   "200": {
+    "rejection_probability": 0.31,
+    "power": 0.31,
+    "ci": [
+     0.2821,
+     0.3393
+    ]
+   },
+   "500": {
+    "rejection_probability": 0.665,
+    "power": 0.665,
+    "ci": [
+     0.6352,
+     0.6936
+    ]
+   },
+   "750": {
+    "rejection_probability": 0.823,
+    "power": 0.823,
+    "ci": [
+     0.7981,
+     0.8454
+    ]
+   },
+   "1000": {
+    "rejection_probability": 0.929,
+    "power": 0.929,
+    "ci": [
+     0.9114,
+     0.9433
+    ]
+   },
+   "2000": {
+    "rejection_probability": 1.0,
+    "power": 1.0,
+    "ci": [
+     0.9962,
+     1.0
+    ]
+   }
+  },
+  "0.1": {
+   "100": {
+    "rejection_probability": 0.655,
+    "power": 0.655,
+    "ci": [
+     0.625,
+     0.6838
+    ]
+   },
+   "200": {
+    "rejection_probability": 0.905,
+    "power": 0.905,
+    "ci": [
+     0.8852,
+     0.9217
+    ]
+   },
+   "500": {
+    "rejection_probability": 1.0,
+    "power": 1.0,
+    "ci": [
+     0.9962,
+     1.0
+    ]
+   },
+   "750": {
+    "rejection_probability": 1.0,
+    "power": 1.0,
+    "ci": [
+     0.9962,
+     1.0
+    ]
+   },
+   "1000": {
+    "rejection_probability": 1.0,
+    "power": 1.0,
+    "ci": [
+     0.9962,
+     1.0
+    ]
+   },
+   "2000": {
+    "rejection_probability": 1.0,
+    "power": 1.0,
+    "ci": [
+     0.9962,
+     1.0
+    ]
+   }
+  }
+ }
+}

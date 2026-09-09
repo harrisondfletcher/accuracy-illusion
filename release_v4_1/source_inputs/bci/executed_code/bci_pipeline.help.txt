@@ -1,0 +1,21 @@
+usage: bci_pipeline.py [-h] --mat-dir MAT_DIR [--subjects SUBJECTS]
+                       [--decoders {primary,fbcsp} [{primary,fbcsp} ...]]
+                       --phase {preflight,train-smoke,evaluate} --run-dir
+                       RUN_DIR --output OUTPUT [--seed SEED]
+                       [--n-bootstrap N_BOOTSTRAP]
+                       [--n-permutations N_PERMUTATIONS] [--resume]
+                       [--mne-log-level MNE_LOG_LEVEL]
+
+options:
+  -h, --help            show this help message and exit
+  --mat-dir MAT_DIR
+  --subjects SUBJECTS
+  --decoders {primary,fbcsp} [{primary,fbcsp} ...]
+  --phase {preflight,train-smoke,evaluate}
+  --run-dir RUN_DIR
+  --output OUTPUT
+  --seed SEED
+  --n-bootstrap N_BOOTSTRAP
+  --n-permutations N_PERMUTATIONS
+  --resume
+  --mne-log-level MNE_LOG_LEVEL

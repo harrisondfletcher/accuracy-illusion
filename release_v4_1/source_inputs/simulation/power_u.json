@@ -1,0 +1,583 @@
+{
+ "method": "two-sided Fisher exact",
+ "replications": 1000,
+ "baseline_abstention_nonerror": 0.1,
+ "cells": {
+  "0.1": {
+   "0.0": {
+    "100": {
+     "rejection_probability": 0.021,
+     "power": 0.021,
+     "ci": [
+      0.0138,
+      0.0319
+     ],
+     "valid_replications": 1000
+    },
+    "200": {
+     "rejection_probability": 0.025,
+     "power": 0.025,
+     "ci": [
+      0.017,
+      0.0366
+     ],
+     "valid_replications": 1000
+    },
+    "500": {
+     "rejection_probability": 0.037,
+     "power": 0.037,
+     "ci": [
+      0.027,
+      0.0506
+     ],
+     "valid_replications": 1000
+    },
+    "1000": {
+     "rejection_probability": 0.035,
+     "power": 0.035,
+     "ci": [
+      0.0253,
+      0.0483
+     ],
+     "valid_replications": 1000
+    }
+   },
+   "0.1": {
+    "100": {
+     "rejection_probability": 0.154,
+     "power": 0.154,
+     "ci": [
+      0.133,
+      0.1777
+     ],
+     "valid_replications": 1000
+    },
+    "200": {
+     "rejection_probability": 0.234,
+     "power": 0.234,
+     "ci": [
+      0.2088,
+      0.2612
+     ],
+     "valid_replications": 1000
+    },
+    "500": {
+     "rejection_probability": 0.469,
+     "power": 0.469,
+     "ci": [
+      0.4382,
+      0.5
+     ],
+     "valid_replications": 1000
+    },
+    "1000": {
+     "rejection_probability": 0.793,
+     "power": 0.793,
+     "ci": [
+      0.7668,
+      0.817
+     ],
+     "valid_replications": 1000
+    }
+   },
+   "0.2": {
+    "100": {
+     "rejection_probability": 0.378,
+     "power": 0.378,
+     "ci": [
+      0.3485,
+      0.4085
+     ],
+     "valid_replications": 1000
+    },
+    "200": {
+     "rejection_probability": 0.606,
+     "power": 0.606,
+     "ci": [
+      0.5754,
+      0.6358
+     ],
+     "valid_replications": 1000
+    },
+    "500": {
+     "rejection_probability": 0.939,
+     "power": 0.939,
+     "ci": [
+      0.9224,
+      0.9522
+     ],
+     "valid_replications": 1000
+    },
+    "1000": {
+     "rejection_probability": 1.0,
+     "power": 1.0,
+     "ci": [
+      0.9962,
+      1.0
+     ],
+     "valid_replications": 1000
+    }
+   },
+   "0.3": {
+    "100": {
+     "rejection_probability": 0.595,
+     "power": 0.595,
+     "ci": [
+      0.5643,
+      0.625
+     ],
+     "valid_replications": 1000
+    },
+    "200": {
+     "rejection_probability": 0.868,
+     "power": 0.868,
+     "ci": [
+      0.8456,
+      0.8876
+     ],
+     "valid_replications": 1000
+    },
+    "500": {
+     "rejection_probability": 0.997,
+     "power": 0.997,
+     "ci": [
+      0.9912,
+      0.999
+     ],
+     "valid_replications": 1000
+    },
+    "1000": {
+     "rejection_probability": 1.0,
+     "power": 1.0,
+     "ci": [
+      0.9962,
+      1.0
+     ],
+     "valid_replications": 1000
+    }
+   },
+   "0.4": {
+    "100": {
+     "rejection_probability": 0.786,
+     "power": 0.786,
+     "ci": [
+      0.7595,
+      0.8103
+     ],
+     "valid_replications": 1000
+    },
+    "200": {
+     "rejection_probability": 0.961,
+     "power": 0.961,
+     "ci": [
+      0.9471,
+      0.9713
+     ],
+     "valid_replications": 1000
+    },
+    "500": {
+     "rejection_probability": 1.0,
+     "power": 1.0,
+     "ci": [
+      0.9962,
+      1.0
+     ],
+     "valid_replications": 1000
+    },
+    "1000": {
+     "rejection_probability": 1.0,
+     "power": 1.0,
+     "ci": [
+      0.9962,
+      1.0
+     ],
+     "valid_replications": 1000
+    }
+   }
+  },
+  "0.2": {
+   "0.0": {
+    "100": {
+     "rejection_probability": 0.017,
+     "power": 0.017,
+     "ci": [
+      0.0106,
+      0.0271
+     ],
+     "valid_replications": 1000
+    },
+    "200": {
+     "rejection_probability": 0.038,
+     "power": 0.038,
+     "ci": [
+      0.0278,
+      0.0517
+     ],
+     "valid_replications": 1000
+    },
+    "500": {
+     "rejection_probability": 0.043,
+     "power": 0.043,
+     "ci": [
+      0.0321,
+      0.0574
+     ],
+     "valid_replications": 1000
+    },
+    "1000": {
+     "rejection_probability": 0.031,
+     "power": 0.031,
+     "ci": [
+      0.0219,
+      0.0437
+     ],
+     "valid_replications": 1000
+    }
+   },
+   "0.1": {
+    "100": {
+     "rejection_probability": 0.21,
+     "power": 0.21,
+     "ci": [
+      0.1859,
+      0.2363
+     ],
+     "valid_replications": 1000
+    },
+    "200": {
+     "rejection_probability": 0.364,
+     "power": 0.364,
+     "ci": [
+      0.3348,
+      0.3943
+     ],
+     "valid_replications": 1000
+    },
+    "500": {
+     "rejection_probability": 0.726,
+     "power": 0.726,
+     "ci": [
+      0.6975,
+      0.7527
+     ],
+     "valid_replications": 1000
+    },
+    "1000": {
+     "rejection_probability": 0.95,
+     "power": 0.95,
+     "ci": [
+      0.9347,
+      0.9619
+     ],
+     "valid_replications": 1000
+    }
+   },
+   "0.2": {
+    "100": {
+     "rejection_probability": 0.569,
+     "power": 0.569,
+     "ci": [
+      0.5381,
+      0.5994
+     ],
+     "valid_replications": 1000
+    },
+    "200": {
+     "rejection_probability": 0.805,
+     "power": 0.805,
+     "ci": [
+      0.7793,
+      0.8284
+     ],
+     "valid_replications": 1000
+    },
+    "500": {
+     "rejection_probability": 0.994,
+     "power": 0.994,
+     "ci": [
+      0.987,
+      0.9972
+     ],
+     "valid_replications": 1000
+    },
+    "1000": {
+     "rejection_probability": 1.0,
+     "power": 1.0,
+     "ci": [
+      0.9962,
+      1.0
+     ],
+     "valid_replications": 1000
+    }
+   },
+   "0.3": {
+    "100": {
+     "rejection_probability": 0.861,
+     "power": 0.861,
+     "ci": [
+      0.8382,
+      0.8811
+     ],
+     "valid_replications": 1000
+    },
+    "200": {
+     "rejection_probability": 0.985,
+     "power": 0.985,
+     "ci": [
+      0.9754,
+      0.9909
+     ],
+     "valid_replications": 1000
+    },
+    "500": {
+     "rejection_probability": 1.0,
+     "power": 1.0,
+     "ci": [
+      0.9962,
+      1.0
+     ],
+     "valid_replications": 1000
+    },
+    "1000": {
+     "rejection_probability": 1.0,
+     "power": 1.0,
+     "ci": [
+      0.9962,
+      1.0
+     ],
+     "valid_replications": 1000
+    }
+   },
+   "0.4": {
+    "100": {
+     "rejection_probability": 0.96,
+     "power": 0.96,
+     "ci": [
+      0.946,
+      0.9705
+     ],
+     "valid_replications": 1000
+    },
+    "200": {
+     "rejection_probability": 1.0,
+     "power": 1.0,
+     "ci": [
+      0.9962,
+      1.0
+     ],
+     "valid_replications": 1000
+    },
+    "500": {
+     "rejection_probability": 1.0,
+     "power": 1.0,
+     "ci": [
+      0.9962,
+      1.0
+     ],
+     "valid_replications": 1000
+    },
+    "1000": {
+     "rejection_probability": 1.0,
+     "power": 1.0,
+     "ci": [
+      0.9962,
+      1.0
+     ],
+     "valid_replications": 1000
+    }
+   }
+  },
+  "0.35": {
+   "0.0": {
+    "100": {
+     "rejection_probability": 0.037,
+     "power": 0.037,
+     "ci": [
+      0.027,
+      0.0506
+     ],
+     "valid_replications": 1000
+    },
+    "200": {
+     "rejection_probability": 0.041,
+     "power": 0.041,
+     "ci": [
+      0.0304,
+      0.0551
+     ],
+     "valid_replications": 1000
+    },
+    "500": {
+     "rejection_probability": 0.045,
+     "power": 0.045,
+     "ci": [
+      0.0338,
+      0.0597
+     ],
+     "valid_replications": 1000
+    },
+    "1000": {
+     "rejection_probability": 0.041,
+     "power": 0.041,
+     "ci": [
+      0.0304,
+      0.0551
+     ],
+     "valid_replications": 1000
+    }
+   },
+   "0.1": {
+    "100": {
+     "rejection_probability": 0.244,
+     "power": 0.244,
+     "ci": [
+      0.2184,
+      0.2716
+     ],
+     "valid_replications": 1000
+    },
+    "200": {
+     "rejection_probability": 0.455,
+     "power": 0.455,
+     "ci": [
+      0.4244,
+      0.486
+     ],
+     "valid_replications": 1000
+    },
+    "500": {
+     "rejection_probability": 0.844,
+     "power": 0.844,
+     "ci": [
+      0.8202,
+      0.8652
+     ],
+     "valid_replications": 1000
+    },
+    "1000": {
+     "rejection_probability": 0.988,
+     "power": 0.988,
+     "ci": [
+      0.9791,
+      0.9931
+     ],
+     "valid_replications": 1000
+    }
+   },
+   "0.2": {
+    "100": {
+     "rejection_probability": 0.653,
+     "power": 0.653,
+     "ci": [
+      0.623,
+      0.6819
+     ],
+     "valid_replications": 1000
+    },
+    "200": {
+     "rejection_probability": 0.918,
+     "power": 0.918,
+     "ci": [
+      0.8994,
+      0.9334
+     ],
+     "valid_replications": 1000
+    },
+    "500": {
+     "rejection_probability": 1.0,
+     "power": 1.0,
+     "ci": [
+      0.9962,
+      1.0
+     ],
+     "valid_replications": 1000
+    },
+    "1000": {
+     "rejection_probability": 1.0,
+     "power": 1.0,
+     "ci": [
+      0.9962,
+      1.0
+     ],
+     "valid_replications": 1000
+    }
+   },
+   "0.3": {
+    "100": {
+     "rejection_probability": 0.906,
+     "power": 0.906,
+     "ci": [
+      0.8863,
+      0.9226
+     ],
+     "valid_replications": 1000
+    },
+    "200": {
+     "rejection_probability": 0.996,
+     "power": 0.996,
+     "ci": [
+      0.9898,
+      0.9984
+     ],
+     "valid_replications": 1000
+    },
+    "500": {
+     "rejection_probability": 1.0,
+     "power": 1.0,
+     "ci": [
+      0.9962,
+      1.0
+     ],
+     "valid_replications": 1000
+    },
+    "1000": {
+     "rejection_probability": 1.0,
+     "power": 1.0,
+     "ci": [
+      0.9962,
+      1.0
+     ],
+     "valid_replications": 1000
+    }
+   },
+   "0.4": {
+    "100": {
+     "rejection_probability": 0.989,
+     "power": 0.989,
+     "ci": [
+      0.9804,
+      0.9938
+     ],
+     "valid_replications": 1000
+    },
+    "200": {
+     "rejection_probability": 1.0,
+     "power": 1.0,
+     "ci": [
+      0.9962,
+      1.0
+     ],
+     "valid_replications": 1000
+    },
+    "500": {
+     "rejection_probability": 1.0,
+     "power": 1.0,
+     "ci": [
+      0.9962,
+      1.0
+     ],
+     "valid_replications": 1000
+    },
+    "1000": {
+     "rejection_probability": 1.0,
+     "power": 1.0,
+     "ci": [
+      0.9962,
+      1.0
+     ],
+     "valid_replications": 1000
+    }
+   }
+  }
+ }
+}

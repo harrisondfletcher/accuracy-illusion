@@ -1,0 +1,3 @@
+-r requirements-simulation.txt
+moabb==1.7.1
+mne==1.12.1

@@ -1,0 +1,305 @@
+{
+  "scope": "Reporting and document consistency checks; not a claim of rerunning EEG fitting or inferential streams.",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "abstract_word_limit",
+      "passed": true,
+      "detail": {
+        "words": 228,
+        "limit": 250
+      }
+    },
+    {
+      "name": "open_practices_before_references",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stale_text_absent:after its execution gates pass",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stale_text_absent:execution-gated BCI shell",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stale_text_absent:non-rejection for the remaining subjects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stale_text_absent:This table is not populated in the pre-execution revision",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "set_difference_editable_markup",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "proposition_reference_scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "intermediate_noise_step",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "readable_ITR_table",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "both_decoder_curves",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "uncertainty_companions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reviewer_defect_disclosures",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "core_original_510_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "core_original_fields_reproduced",
+      "passed": true,
+      "detail": 2.7755575615628914e-17
+    },
+    {
+      "name": "core_recovery_2000_original_runs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "BCI_108_point_checks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "BCI_point_tolerance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "BCI_18_prediction_hashes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "BCI_18_reconstructed_matrices",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "timing_18_files_5184_trials",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "timing_identical_vectors",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "timing_six_runs_48_trials",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "displayed_equal_MI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "noise_fixtures",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "portable_reproduction_pass",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "portable_output_current:The_Accuracy_Illusion_v4_1_REVISED.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "portable_output_current:Supplementary_Tables_S0_S8_v4_1_REVISED.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "portable_output_current:Response_to_Reviewers_v4_1_REVISED.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "portable_output_current:evidence/CORE_UNCERTAINTY_REPORT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "portable_output_current:evidence/TRIGGER_SCHEDULE_AUDIT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "portable_output_current:evidence/BCI_EXTENDED_TABLES.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "portable_output_current:evidence/BCI_REPORTING_CHECKS.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Supplementary_Tables_S0_S8_v4_1_REVISED:no_split_table_rows",
+      "passed": true,
+      "detail": 215
+    },
+    {
+      "name": "Supplementary_Tables_S0_S8_v4_1_REVISED:repeating_headers",
+      "passed": true,
+      "detail": 26
+    },
+    {
+      "name": "Supplementary_Tables_S0_S8_v4_1_REVISED:no_tool_citation_tokens",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Supplementary_Tables_S0_S8_v4_1_REVISED:no_tracked_edits",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Response_to_Reviewers_v4_1_REVISED:no_split_table_rows",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "Response_to_Reviewers_v4_1_REVISED:repeating_headers",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "Response_to_Reviewers_v4_1_REVISED:no_tool_citation_tokens",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Response_to_Reviewers_v4_1_REVISED:no_tracked_edits",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "The_Accuracy_Illusion_v4_1_REVISED:no_split_table_rows",
+      "passed": true,
+      "detail": 78
+    },
+    {
+      "name": "The_Accuracy_Illusion_v4_1_REVISED:repeating_headers",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "name": "The_Accuracy_Illusion_v4_1_REVISED:no_tool_citation_tokens",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "The_Accuracy_Illusion_v4_1_REVISED:no_tracked_edits",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "The_Accuracy_Illusion_v4_1_REVISED:editable_equations",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main_numerical_table_1_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main_numerical_table_2_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main_numerical_table_3_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main_numerical_table_4_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main_numerical_table_5_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main_numerical_table_6_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main_numerical_table_7_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main_numerical_table_8_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main_numerical_table_9_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main_numerical_table_10_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "The_Accuracy_Illusion_v4_1_REVISED.md:not_identical_to_old",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Supplementary_Tables_S0_S8_v4_1_REVISED.md:not_identical_to_old",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Response_to_Reviewers_v4_1_REVISED.md:not_identical_to_old",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "checks_passed": 59
+}

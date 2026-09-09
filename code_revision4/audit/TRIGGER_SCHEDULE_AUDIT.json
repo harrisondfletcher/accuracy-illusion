@@ -1,0 +1,189 @@
+{
+  "dataset": "BNCI 001-2014 / BCI Competition IV Dataset 2a",
+  "sampling_rate_hz": 250.0,
+  "n_files": 18,
+  "n_distinct_interval_vectors": 1,
+  "conclusion": "all files share one identical trigger-interval sequence",
+  "files": [
+    {
+      "file": "A01T.mat",
+      "n_within_run_intervals": 282,
+      "interval_vector_sha256": "2caffa8ddcf96a614fda8f7faeed75f72bcbdd57e35a50ba67d837844b192ab7",
+      "mean_sec": 8.043148936170212,
+      "sd_sec": 0.27069092922106824,
+      "min_sec": 7.58,
+      "max_sec": 8.48,
+      "n_unique_values": 43
+    },
+    {
+      "file": "A01E.mat",
+      "n_within_run_intervals": 282,
+      "interval_vector_sha256": "2caffa8ddcf96a614fda8f7faeed75f72bcbdd57e35a50ba67d837844b192ab7",
+      "mean_sec": 8.043148936170212,
+      "sd_sec": 0.27069092922106824,
+      "min_sec": 7.58,
+      "max_sec": 8.48,
+      "n_unique_values": 43
+    },
+    {
+      "file": "A02T.mat",
+      "n_within_run_intervals": 282,
+      "interval_vector_sha256": "2caffa8ddcf96a614fda8f7faeed75f72bcbdd57e35a50ba67d837844b192ab7",
+      "mean_sec": 8.043148936170212,
+      "sd_sec": 0.27069092922106824,
+      "min_sec": 7.58,
+      "max_sec": 8.48,
+      "n_unique_values": 43
+    },
+    {
+      "file": "A02E.mat",
+      "n_within_run_intervals": 282,
+      "interval_vector_sha256": "2caffa8ddcf96a614fda8f7faeed75f72bcbdd57e35a50ba67d837844b192ab7",
+      "mean_sec": 8.043148936170212,
+      "sd_sec": 0.27069092922106824,
+      "min_sec": 7.58,
+      "max_sec": 8.48,
+      "n_unique_values": 43
+    },
+    {
+      "file": "A03T.mat",
+      "n_within_run_intervals": 282,
+      "interval_vector_sha256": "2caffa8ddcf96a614fda8f7faeed75f72bcbdd57e35a50ba67d837844b192ab7",
+      "mean_sec": 8.043148936170212,
+      "sd_sec": 0.27069092922106824,
+      "min_sec": 7.58,
+      "max_sec": 8.48,
+      "n_unique_values": 43
+    },
+    {
+      "file": "A03E.mat",
+      "n_within_run_intervals": 282,
+      "interval_vector_sha256": "2caffa8ddcf96a614fda8f7faeed75f72bcbdd57e35a50ba67d837844b192ab7",
+      "mean_sec": 8.043148936170212,
+      "sd_sec": 0.27069092922106824,
+      "min_sec": 7.58,
+      "max_sec": 8.48,
+      "n_unique_values": 43
+    },
+    {
+      "file": "A04T.mat",
+      "n_within_run_intervals": 282,
+      "interval_vector_sha256": "2caffa8ddcf96a614fda8f7faeed75f72bcbdd57e35a50ba67d837844b192ab7",
+      "mean_sec": 8.043148936170212,
+      "sd_sec": 0.27069092922106824,
+      "min_sec": 7.58,
+      "max_sec": 8.48,
+      "n_unique_values": 43
+    },
+    {
+      "file": "A04E.mat",
+      "n_within_run_intervals": 282,
+      "interval_vector_sha256": "2caffa8ddcf96a614fda8f7faeed75f72bcbdd57e35a50ba67d837844b192ab7",
+      "mean_sec": 8.043148936170212,
+      "sd_sec": 0.27069092922106824,
+      "min_sec": 7.58,
+      "max_sec": 8.48,
+      "n_unique_values": 43
+    },
+    {
+      "file": "A05T.mat",
+      "n_within_run_intervals": 282,
+      "interval_vector_sha256": "2caffa8ddcf96a614fda8f7faeed75f72bcbdd57e35a50ba67d837844b192ab7",
+      "mean_sec": 8.043148936170212,
+      "sd_sec": 0.27069092922106824,
+      "min_sec": 7.58,
+      "max_sec": 8.48,
+      "n_unique_values": 43
+    },
+    {
+      "file": "A05E.mat",
+      "n_within_run_intervals": 282,
+      "interval_vector_sha256": "2caffa8ddcf96a614fda8f7faeed75f72bcbdd57e35a50ba67d837844b192ab7",
+      "mean_sec": 8.043148936170212,
+      "sd_sec": 0.27069092922106824,
+      "min_sec": 7.58,
+      "max_sec": 8.48,
+      "n_unique_values": 43
+    },
+    {
+      "file": "A06T.mat",
+      "n_within_run_intervals": 282,
+      "interval_vector_sha256": "2caffa8ddcf96a614fda8f7faeed75f72bcbdd57e35a50ba67d837844b192ab7",
+      "mean_sec": 8.043148936170212,
+      "sd_sec": 0.27069092922106824,
+      "min_sec": 7.58,
+      "max_sec": 8.48,
+      "n_unique_values": 43
+    },
+    {
+      "file": "A06E.mat",
+      "n_within_run_intervals": 282,
+      "interval_vector_sha256": "2caffa8ddcf96a614fda8f7faeed75f72bcbdd57e35a50ba67d837844b192ab7",
+      "mean_sec": 8.043148936170212,
+      "sd_sec": 0.27069092922106824,
+      "min_sec": 7.58,
+      "max_sec": 8.48,
+      "n_unique_values": 43
+    },
+    {
+      "file": "A07T.mat",
+      "n_within_run_intervals": 282,
+      "interval_vector_sha256": "2caffa8ddcf96a614fda8f7faeed75f72bcbdd57e35a50ba67d837844b192ab7",
+      "mean_sec": 8.043148936170212,
+      "sd_sec": 0.27069092922106824,
+      "min_sec": 7.58,
+      "max_sec": 8.48,
+      "n_unique_values": 43
+    },
+    {
+      "file": "A07E.mat",
+      "n_within_run_intervals": 282,
+      "interval_vector_sha256": "2caffa8ddcf96a614fda8f7faeed75f72bcbdd57e35a50ba67d837844b192ab7",
+      "mean_sec": 8.043148936170212,
+      "sd_sec": 0.27069092922106824,
+      "min_sec": 7.58,
+      "max_sec": 8.48,
+      "n_unique_values": 43
+    },
+    {
+      "file": "A08T.mat",
+      "n_within_run_intervals": 282,
+      "interval_vector_sha256": "2caffa8ddcf96a614fda8f7faeed75f72bcbdd57e35a50ba67d837844b192ab7",
+      "mean_sec": 8.043148936170212,
+      "sd_sec": 0.27069092922106824,
+      "min_sec": 7.58,
+      "max_sec": 8.48,
+      "n_unique_values": 43
+    },
+    {
+      "file": "A08E.mat",
+      "n_within_run_intervals": 282,
+      "interval_vector_sha256": "2caffa8ddcf96a614fda8f7faeed75f72bcbdd57e35a50ba67d837844b192ab7",
+      "mean_sec": 8.043148936170212,
+      "sd_sec": 0.27069092922106824,
+      "min_sec": 7.58,
+      "max_sec": 8.48,
+      "n_unique_values": 43
+    },
+    {
+      "file": "A09T.mat",
+      "n_within_run_intervals": 282,
+      "interval_vector_sha256": "2caffa8ddcf96a614fda8f7faeed75f72bcbdd57e35a50ba67d837844b192ab7",
+      "mean_sec": 8.043148936170212,
+      "sd_sec": 0.27069092922106824,
+      "min_sec": 7.58,
+      "max_sec": 8.48,
+      "n_unique_values": 43
+    },
+    {
+      "file": "A09E.mat",
+      "n_within_run_intervals": 282,
+      "interval_vector_sha256": "2caffa8ddcf96a614fda8f7faeed75f72bcbdd57e35a50ba67d837844b192ab7",
+      "mean_sec": 8.043148936170212,
+      "sd_sec": 0.27069092922106824,
+      "min_sec": 7.58,
+      "max_sec": 8.48,
+      "n_unique_values": 43
+    }
+  ]
+}

@@ -1,0 +1,287 @@
+--- supplement_original.md
++++ Supplementary_Tables_S0_S8_v4_1_REVISED.md
+@@ -1,6 +1,6 @@
+-# Supplementary Tables S0-S8 — Revision 4
+-
+-All simulation tables are machine-generated from seed 42. Table S8 is an execution-gated BCI shell and must be replaced only from a validated `bci_real_application_v4.json`.
++# Supplementary Tables S0-S8 — Revision 4.1
++
++Simulation values are retained from the archived seed-42 analyses. Tables S1b–S1c add deterministic reconstructions of the same 400 core runs per agent; the reconstructed original summary fields match the archive within numerical tolerance. Table S8 reports the completed BCI analysis. New BCI displays are exported from the archived result JSON without refitting either decoder.
+ 
+ 
+ ## Table S0. Programmed-agent specification
+@@ -33,17 +33,48 @@
+ | Strategic Random | .30/.20/.10/.40 | Simulation null | Structured cyclic-neighbor errors rather than uniform errors. |
+ | CE3 | .20/.45/.20/.15 | Repeat: null; Modify: .55; Escalate: .35; Abandon: 0 | High MI, C2, and R; U=0 because it never abstains. |
+ 
+-## Table S1. Core agent profiles (400 runs, |Z| = 12, N = 1000; base channel 500 trials). Mean (SD).
+-
+-| Agent | Acc (base) | MI (bits) | B_min (bpm) | V_eff(.60) | V_eff(.80) | C2 | R | U |
+-|---|---|---|---|---|---|---|---|---|
+-| random | 0.083 (0.012) | 0.027 (0.027) | 0.050 (0.049) | 0.00 (0.00) | 0.00 (0.00) | 0.083 (0.031) | 0.161 (0.026) | 0.002 (0.075) |
+-| class_biased | 0.287 (0.020) | 0.638 (0.062) | 1.178 (0.116) | 2.71 (0.50) | 0.01 (0.11) | 0.082 (0.032) | 0.160 (0.026) | 0.000 (0.000) |
+-| overproduction | 0.314 (0.021) | 0.768 (0.071) | 1.418 (0.134) | 0.04 (0.20) | 0.00 (0.00) | 0.084 (0.032) | 0.160 (0.026) | 0.000 (0.000) |
+-| memorizer | 0.850 (0.016) | 2.572 (0.096) | 4.748 (0.199) | 11.79 (0.47) | 10.44 (1.27) | 0.082 (0.030) | 0.161 (0.026) | 0.000 (0.000) |
+-| compositional | 0.850 (0.016) | 2.572 (0.096) | 4.748 (0.199) | 11.79 (0.47) | 10.44 (1.27) | 0.856 (0.042) | 0.350 (0.034) | 0.217 (0.132) |
+-
+-Reference values: C2 = 1/12 = 0.083 under uniform response; R = 1 - (11/12)^2 = 0.160 under the simulation's independent-uniform receiver null; U = 0 under abstention-error independence.
++## Table S1. Core agent profiles
++
++### Table S1a. Existing metric profiles
++
++400 runs per agent; |Z|=12, total N=1,000, 500 base trials per run. Cells are mean (sample SD) across runs. These are the original numerical profiles, reorganized for readability.
++
++| Measure | Random | Class-Biased | Overproduction | Memorizer | Compositional |
++|---|---:|---:|---:|---:|---:|
++| Base accuracy | 0.083 (0.012) | 0.287 (0.020) | 0.314 (0.021) | 0.850 (0.016) | 0.850 (0.016) |
++| MI, bits | 0.027 (0.027) | 0.638 (0.062) | 0.768 (0.071) | 2.572 (0.096) | 2.572 (0.096) |
++| B_min, bits/min | 0.050 (0.049) | 1.178 (0.116) | 1.418 (0.134) | 4.748 (0.199) | 4.748 (0.199) |
++| V_eff(.60) | 0.00 (0.00) | 2.71 (0.50) | 0.04 (0.20) | 11.79 (0.47) | 11.79 (0.47) |
++| V_eff(.80) | 0.00 (0.00) | 0.01 (0.11) | 0.00 (0.00) | 10.44 (1.27) | 10.44 (1.27) |
++| C2 | 0.083 (0.031) | 0.082 (0.032) | 0.084 (0.032) | 0.082 (0.030) | 0.856 (0.042) |
++| R | 0.161 (0.026) | 0.160 (0.026) | 0.160 (0.026) | 0.161 (0.026) | 0.350 (0.034) |
++| U | 0.002 (0.075) | 0.000 (0.000) | 0.000 (0.000) | 0.000 (0.000) | 0.217 (0.132) |
++
++Reference values: C2=1/12 under uniform response; R=1−(11/12)² under the simulation's independent-uniform two-attempt receiver null; U=0 under abstention-error independence.
++
++### Table S1b. Uncertainty selectivity and operating behavior
++
++Each original core run contains 150 uncertainty trials. Conditional rates are computed within each run, then summarized; they are not ratios of pooled counts. Commitment coverage equals one minus the abstention rate. Cells are mean (sample SD) across the same 400 runs.
++
++| Agent | U | Abstention rate | Commitment coverage | P(A=1 given E=1) | P(A=1 given E=0) |
++|---|---:|---:|---:|---:|---:|
++| Random | 0.002 (0.075) | 0.300 (0.038) | 0.700 (0.038) | 0.302 (0.053) | 0.300 (0.054) |
++| Class-Biased | 0.000 (0.000) | 0.000 (0.000) | 1.000 (0.000) | 0.000 (0.000) | 0.000 (0.000) |
++| Overproduction | 0.000 (0.000) | 0.000 (0.000) | 1.000 (0.000) | 0.000 (0.000) | 0.000 (0.000) |
++| Memorizer | 0.000 (0.000) | 0.000 (0.000) | 1.000 (0.000) | 0.000 (0.000) | 0.000 (0.000) |
++| Compositional | 0.217 (0.132) | 0.251 (0.033) | 0.749 (0.033) | 0.444 (0.123) | 0.226 (0.036) |
++
++### Table S1c. Forced-commitment denominators
++
++| Agent | Error count, mean (SD) | Error count range | Correct count, mean (SD) | Correct count range | Non-estimable U runs |
++|---|---:|---:|---:|---:|---:|
++| Random | 74.78 (5.62) | 58–95 | 75.22 (5.62) | 55–92 | 0/400 |
++| Class-Biased | 30.82 (4.92) | 19–46 | 119.19 (4.92) | 104–131 | 0/400 |
++| Overproduction | 30.25 (4.89) | 16–45 | 119.75 (4.89) | 105–134 | 0/400 |
++| Memorizer | 30.99 (4.78) | 17–45 | 119.01 (4.78) | 105–133 | 0/400 |
++| Compositional | 16.70 (3.84) | 5–27 | 133.30 (3.84) | 123–145 | 0/400 |
++
++The complete per-run denominators and conditional rates are in `evidence/core_uncertainty_runs.csv`; source hashes, summary comparisons, and aggregation definitions are in `evidence/CORE_UNCERTAINTY_REPORT.json`. These records reconstruct the original seeded core runs using the unchanged archived engine. Data S2 is a different illustrative dataset.
+ 
+ ## Table S2. Counterexamples (400 runs)
+ 
+@@ -92,7 +123,7 @@
+ 
+ ## Table S5. Parameter grid summary
+ 
+-Cells: 480 (|Z| in {6,12,24,48} x p in {.5,...,.95} x Zipf s in {0,.5,1,1.5} x N in {100,...,2000}), 100 paired runs each. The manuscript protocol assumes an 80/20 grammar partition, but this Bernoulli engine does not represent combination identities or a split parameter; held-out-labelled trials receive 50% of compositional evaluation allocations.
++Cells: 480 (|Z| in {6,12,24,48} x p in {.5,.6,.7,.8,.9,.95} x Zipf s in {0,.5,1,1.5} x N in {100,200,500,1000,2000}), 100 paired runs each. The manuscript protocol assumes an 80/20 grammar partition, but this Bernoulli engine does not represent combination identities or a split parameter; held-out-labelled trials receive 50% of compositional evaluation allocations.
+ 
+ - C2 separation (Cohen's d, compositional - memorizer): min 1.80, median 11.48; min by N: {'100': 1.7990665645732073, '200': 2.7242138168288235, '500': 4.220398527339975, '1000': 6.333734862636938, '2000': 9.048569524065496}
+ - R separation (Cohen's d): min 0.53, median 4.36; min by N: {'100': 0.5277612371335976, '200': 0.8737678708074401, '500': 1.3214000868061868, '1000': 1.8231103604460055, '2000': 2.6774108619382155}
+@@ -109,8 +140,10 @@
+ | R | -0.01 | -0.00 | 0.00 | 1.00 | 0.02 |
+ | U | -0.00 | -0.04 | 0.02 | 0.02 | 1.00 |
+ 
+-Eigenvalues: [2.262, 1.033, 0.973, 0.626, 0.106]; cumulative variance: [0.452, 0.659, 0.854, 0.979, 1.0].
+-
++Pearson-correlation eigenvalues: [2.262, 1.033, 0.973, 0.626, 0.106]; cumulative variance: [0.452, 0.659, 0.854, 0.979, 1.0]. The displayed matrix above contains Spearman correlations. This distinction is preserved from the analysis.
++
++
++## Table S7. Metric-specific power
+ 
+ All cells use 1000 Monte Carlo replications. C2, R, and U use two-sided Fisher exact tests. B_min uses 1000 system-label permutations per replication.
+ 
+@@ -164,11 +197,46 @@
+ | 0.05 | 0.628 |
+ | 0.10 | 1.339 |
+ 
+-## Table S8. BCI execution-gated supplementary report
+-
+-This table is not populated in the pre-execution revision. After `validate_bci_output.py` passes, report for each subject and both decoders: all/clean/excluded trials by class, software versions, filter specification, selected hyperparameters, accuracy and kappa with intervals, plug-in MI, correction amount, corrected MI with interval, raw and Holm-adjusted permutation p-values, full-cycle `B_min`, conventional ITR, class precision/recall/F1, `V_eff(.40-.90,30)`, and the complete confusion matrix. A micro-average may be included only as a reference aggregation and must not be interpreted as an operating subject-specific system.
+-
+-## Supplementary Table S8 (executed): FBCSP-style robustness decoder and decoder contrasts
++## S7e. Uncertainty selectivity at error fraction 0.1
++
++Each cell reports rejection probability [95% Wilson Monte Carlo interval], with 1,000 replications. Trial count is the total uncertainty-channel count. These are archived results newly displayed here, not rerun experiments.
++
++| effect | 100 | 200 | 500 | 1000 |
++|---|---|---|---|---|
++| 0 (size) | 0.021 [0.014, 0.032] | 0.025 [0.017, 0.037] | 0.037 [0.027, 0.051] | 0.035 [0.025, 0.048] |
++| 0.1 | 0.154 [0.133, 0.178] | 0.234 [0.209, 0.261] | 0.469 [0.438, 0.500] | 0.793 [0.767, 0.817] |
++| 0.2 | 0.378 [0.348, 0.408] | 0.606 [0.575, 0.636] | 0.939 [0.922, 0.952] | 1.000 [0.996, 1.000] |
++| 0.3 | 0.595 [0.564, 0.625] | 0.868 [0.846, 0.888] | 0.997 [0.991, 0.999] | 1.000 [0.996, 1.000] |
++| 0.4 | 0.786 [0.759, 0.810] | 0.961 [0.947, 0.971] | 1.000 [0.996, 1.000] | 1.000 [0.996, 1.000] |
++
++## S7f. Uncertainty selectivity at error fraction 0.35
++
++Each cell reports rejection probability [95% Wilson Monte Carlo interval], with 1,000 replications. Trial count is the total uncertainty-channel count. These are archived results newly displayed here, not rerun experiments.
++
++| effect | 100 | 200 | 500 | 1000 |
++|---|---|---|---|---|
++| 0 (size) | 0.037 [0.027, 0.051] | 0.041 [0.030, 0.055] | 0.045 [0.034, 0.060] | 0.041 [0.030, 0.055] |
++| 0.1 | 0.244 [0.218, 0.272] | 0.455 [0.424, 0.486] | 0.844 [0.820, 0.865] | 0.988 [0.979, 0.993] |
++| 0.2 | 0.653 [0.623, 0.682] | 0.918 [0.899, 0.933] | 1.000 [0.996, 1.000] | 1.000 [0.996, 1.000] |
++| 0.3 | 0.906 [0.886, 0.923] | 0.996 [0.990, 0.998] | 1.000 [0.996, 1.000] | 1.000 [0.996, 1.000] |
++| 0.4 | 0.989 [0.980, 0.994] | 1.000 [0.996, 1.000] | 1.000 [0.996, 1.000] | 1.000 [0.996, 1.000] |
++
++## S7g. Presence contrast for compositional generalization
++
++Chance (1/12) versus .86, two-sided Fisher test. Each system receives the listed held-out trial count; intervals quantify Monte Carlo uncertainty across 1,000 replications.
++
++| Held-out trials per system | Implied default total N | Power | 95% Monte Carlo interval |
++|---|---|---|---|
++| 4 | 53 | 0.384 | [0.354, 0.414] |
++| 8 | 107 | 0.897 | [0.877, 0.914] |
++| 15 | 200 | 0.994 | [0.987, 0.997] |
++| 38 | 507 | 1.000 | [0.996, 1.000] |
++| 75 | 1000 | 1.000 | [0.996, 1.000] |
++| 150 | 2000 | 1.000 | [0.996, 1.000] |
++
++## Table S8. Executed subject-specific BCI results
++
++### Table S8a. FBCSP-style robustness decoder
+ 
+ Generated from the validated final result JSON (sha256 5b8075d274a57153...). Micro-averages are descriptive aggregations of heterogeneous subject-specific systems, not an operating-system claim.
+ 
+@@ -184,7 +252,9 @@
+ | S8 | 271 | 0.812 | 0.749 | 1.064 [0.940, 1.245] | 0.002 | 7.94 [7.01, 9.29] | 96 |
+ | S9 | 264 | 0.697 | 0.595 | 0.808 [0.703, 0.968] | 0.002 | 6.03 [5.24, 7.22] | 96 |
+ 
+-### Paired decoder contrasts (FBCSP minus primary; identical bootstrap resamples)
++### Table S8b. Paired decoder contrasts (FBCSP minus primary)
++
++Intervals use identical bootstrap resamples of the shared evaluation trials. They are descriptive, not multiplicity-adjusted confirmatory between-decoder tests.
+ 
+ | Subject | dAccuracy [95% CI] | dKappa [95% CI] | dCorrected MI, bits [95% CI] |
+ |---|---|---|---|
+@@ -198,7 +268,7 @@
+ | S8 | +0.037 [-0.011, +0.085] | +0.049 [-0.015, +0.113] | +0.068 [-0.098, +0.230] |
+ | S9 | -0.034 [-0.087, +0.019] | -0.046 [-0.116, +0.025] | -0.197 [-0.344, -0.048] |
+ 
+-### Artifact exclusions by subject and session (organizer flags)
++### Table S8c. Artifact exclusions by subject and session (organizer flags)
+ 
+ | Subject | T clean/288 | E clean/288 | E dropped by class (LH/RH/Ft/Tg) |
+ |---|---:|---:|---|
+@@ -212,7 +282,62 @@
+ | S8 | 264 | 271 | 6/4/3/4 |
+ | S9 | 237 | 264 | 7/7/3/7 |
+ 
+-### All-scheduled sensitivity (frozen decoders, flagged epochs included)
++### Table S8d. Information-rate comparison
++
++Both rates use the same measured full cycle of 8.043148936 s. B_min uses the subject's observed joint distribution and first-order MI correction. Conventional Wolpaw ITR uses accuracy, four equiprobable classes, and symmetric errors; it is a reference calculation, not a second measurement of the same error geometry. Every observed accuracy exceeds .25, so the stored formula and below-chance-clipped ITR agree here.
++
++| Subject | Decoder | n | Corrected MI, bits | B_min, bits/min | Wolpaw ITR, bits/min |
++|---|---|---|---|---|---|
++| S1 | Primary | 281 | 1.195 | 8.92 | 6.63 |
++| S1 | FBCSP-style | 281 | 1.391 | 10.38 | 8.72 |
++| S2 | Primary | 283 | 0.198 | 1.48 | 0.97 |
++| S2 | FBCSP-style | 283 | 0.172 | 1.28 | 0.60 |
++| S3 | Primary | 273 | 0.935 | 6.97 | 5.68 |
++| S3 | FBCSP-style | 273 | 1.174 | 8.76 | 7.53 |
++| S4 | Primary | 228 | 0.591 | 4.41 | 2.75 |
++| S4 | FBCSP-style | 228 | 0.783 | 5.84 | 4.39 |
++| S5 | Primary | 276 | 0.087 | 0.65 | 0.57 |
++| S5 | FBCSP-style | 276 | 0.554 | 4.14 | 3.09 |
++| S6 | Primary | 215 | 0.099 | 0.74 | 0.69 |
++| S6 | FBCSP-style | 215 | 0.257 | 1.92 | 1.52 |
++| S7 | Primary | 277 | 0.894 | 6.67 | 4.96 |
++| S7 | FBCSP-style | 277 | 1.376 | 10.27 | 9.11 |
++| S8 | Primary | 271 | 0.996 | 7.43 | 6.52 |
++| S8 | FBCSP-style | 271 | 1.064 | 7.94 | 7.49 |
++| S9 | Primary | 264 | 1.005 | 7.49 | 5.47 |
++| S9 | FBCSP-style | 264 | 0.808 | 6.03 | 4.74 |
++
++### Table S8e. Full V_eff threshold curves
++
++**Primary decoder.** Counts use alpha values shown and beta=30; all evaluation classes satisfy the support requirement.
++
++| Subject | .40 | .50 | .60 | .70 | .80 | .90 |
++|---|---:|---:|---:|---:|---:|---:|
++| S1 | 4 | 4 | 4 | 3 | 2 | 0 |
++| S2 | 3 | 1 | 1 | 0 | 0 | 0 |
++| S3 | 4 | 4 | 3 | 3 | 1 | 0 |
++| S4 | 4 | 3 | 2 | 0 | 0 | 0 |
++| S5 | 2 | 0 | 0 | 0 | 0 | 0 |
++| S6 | 2 | 1 | 0 | 0 | 0 | 0 |
++| S7 | 4 | 4 | 4 | 2 | 0 | 0 |
++| S8 | 4 | 4 | 4 | 3 | 1 | 0 |
++| S9 | 4 | 3 | 3 | 2 | 2 | 0 |
++
++**FBCSP-style decoder.** The same thresholds and support rule apply.
++
++| Subject | .40 | .50 | .60 | .70 | .80 | .90 |
++|---|---|---|---|---|---|---|
++| S1 | 4 | 4 | 4 | 4 | 3 | 2 |
++| S2 | 1 | 1 | 0 | 0 | 0 | 0 |
++| S3 | 4 | 4 | 4 | 3 | 2 | 1 |
++| S4 | 4 | 4 | 3 | 2 | 0 | 0 |
++| S5 | 3 | 3 | 2 | 2 | 0 | 0 |
++| S6 | 3 | 3 | 0 | 0 | 0 | 0 |
++| S7 | 4 | 4 | 4 | 4 | 4 | 1 |
++| S8 | 4 | 4 | 4 | 4 | 2 | 0 |
++| S9 | 4 | 4 | 3 | 3 | 1 | 0 |
++
++### Table S8f. All-scheduled sensitivity (frozen decoders, flagged epochs included)
+ 
+ | Subject | Primary clean MI | Primary all-scheduled MI | FBCSP clean MI | FBCSP all-scheduled MI |
+ |---|---:|---:|---:|---:|
+@@ -226,20 +351,39 @@
+ | S8 | 0.996 | 0.970 | 1.064 | 1.063 |
+ | S9 | 1.005 | 0.962 | 0.808 | 0.826 |
+ 
+-### Full V_eff threshold curves per subject (primary decoder)
+-
+-| Subject | .40 | .50 | .60 | .70 | .80 | .90 |
+-|---|---:|---:|---:|---:|---:|---:|
+-| S1 | 4 | 4 | 4 | 3 | 2 | 0 |
+-| S2 | 3 | 1 | 1 | 0 | 0 | 0 |
+-| S3 | 4 | 4 | 3 | 3 | 1 | 0 |
+-| S4 | 4 | 3 | 2 | 0 | 0 | 0 |
+-| S5 | 2 | 0 | 0 | 0 | 0 | 0 |
+-| S6 | 2 | 1 | 0 | 0 | 0 | 0 |
+-| S7 | 4 | 4 | 4 | 2 | 0 | 0 |
+-| S8 | 4 | 4 | 4 | 3 | 1 | 0 |
+-| S9 | 4 | 3 | 3 | 2 | 2 | 0 |
+-
+-### S8 methods note: epoch sample-index arithmetic and timing evidence
+-
+-MAT `trial` values are one-based sample indices of the trial trigger and are converted to zero-based indexing exactly once. For a trigger at zero-based sample s0 (250 Hz): cue = s0+500; the 0.5-2.5 s post-cue decision window spans samples [s0+625, s0+1125] inclusive, 501 samples. Both a missing and a doubled 2-s cue offset are rejected by an impulse-fixture test in the released test suite. Per-trial coordinates for all 5,184 trials are in the released trial ledger. Within-run inter-trigger interval vectors (282 per evaluation session) are stored per subject in the result JSON; a per-file audit of all 18 source files (both sessions, all subjects), documenting that they share one fixed pseudorandom trigger schedule, is released as `TRIGGER_SCHEDULE_AUDIT.json`.
++### Table S8g. Methods note: epoch sample-index arithmetic and timing evidence
++
++MAT `trial` values are one-based sample indices of the trial trigger and are converted to zero-based indexing exactly once. For a trigger at zero-based sample s0 (250 Hz): cue = s0+500; the 0.5-2.5 s post-cue decision window spans samples [s0+625, s0+1125] inclusive, 501 samples. Both a missing and a doubled 2-s cue offset are rejected by an impulse-fixture test in the released test suite. Per-trial coordinates for all 5,184 trials are in the released trial ledger. Within-run inter-trigger interval vectors (282 per evaluation session) are stored per subject in the result JSON; a per-file audit of all 18 source files (both sessions, all subjects), documenting that they share one fixed pseudorandom trigger schedule, is provided as `evidence/TRIGGER_SCHEDULE_AUDIT.json`. This reporting-stage audit recomputes the schedule comparison from the archived trial ledger; it does not claim to have reread the MAT binaries. It carries the ledger and result hashes, all six trigger vectors per file, all within-run interval vectors, and comparisons for all 18 file identities.
++
++### Table S8h. Observed-support MI correction components
++
++| Subject | Decoder | Plug-in MI | Subtraction term | Corrected MI | Ky / Kz / Kyz |
++|---|---|---|---|---|---|
++| S1 | Primary | 1.208029 | 0.012835 | 1.195193 | 4/4/12 |
++| S1 | FBCSP | 1.398542 | 0.007701 | 1.390841 | 4/4/10 |
++| S2 | Primary | 0.218878 | 0.020391 | 0.198486 | 4/4/15 |
++| S2 | FBCSP | 0.189545 | 0.017843 | 0.171703 | 4/4/14 |
++| S3 | Primary | 0.950570 | 0.015854 | 0.934716 | 4/4/13 |
++| S3 | FBCSP | 1.192303 | 0.018496 | 1.173807 | 4/4/14 |
++| S4 | Primary | 0.616238 | 0.025310 | 0.590927 | 4/4/15 |
++| S4 | FBCSP | 0.811344 | 0.028474 | 0.782870 | 4/4/16 |
++| S5 | Primary | 0.110726 | 0.023522 | 0.087204 | 4/4/16 |
++| S5 | FBCSP | 0.572692 | 0.018295 | 0.554397 | 4/4/14 |
++| S6 | Primary | 0.125527 | 0.026841 | 0.098686 | 4/4/15 |
++| S6 | FBCSP | 0.280871 | 0.023486 | 0.257385 | 4/4/14 |
++| S7 | Primary | 0.906934 | 0.013021 | 0.893914 | 4/4/12 |
++| S7 | FBCSP | 1.384014 | 0.007812 | 1.376202 | 4/4/10 |
++| S8 | Primary | 1.014987 | 0.018633 | 0.996355 | 4/4/14 |
++| S8 | FBCSP | 1.082882 | 0.018633 | 1.064249 | 4/4/14 |
++| S9 | Primary | 1.021058 | 0.016394 | 1.004663 | 4/4/13 |
++| S9 | FBCSP | 0.827134 | 0.019127 | 0.808007 | 4/4/14 |
++
++All MI quantities are in bits. Corrections are subject- and decoder-specific; rounded displays may differ in their last digit. Full precision remains in the source JSON.
++
++### Table S8i. Execution and reporting provenance
++
++The executed BCI configuration uses 10,000 run-by-class stratified bootstrap resamples and 5,000 within-run label permutations per subject and decoder, with Holm correction across nine subjects separately by decoder. Source result SHA-256: `5b8075d274a57153421ba078212df9554bc48e8609d42d6684c1c08b6915da38`.
++
++Software versions recorded by the executed analysis: moabb: 1.7.1; mne: 1.12.1; scikit-learn: 1.8.0; numpy: 2.3.5; scipy: 1.17.0; matplotlib: 3.10.8.
++
++The reporting revision does not refit CSP, LDA, or feature selection and does not replace any saved prediction, confidence interval, or permutation result. `evidence/BCI_EXTENDED_TABLES.csv` contains the expanded tabulations; `evidence/BCI_REPORTING_CHECKS.json` records the point-metric reconstruction. The executed-code archive remains the source for the full preprocessing environment and model-fitting workflow.

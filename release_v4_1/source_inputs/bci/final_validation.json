@@ -1,0 +1,3574 @@
+{
+  "mode": "final",
+  "input": "bci_runs/bci_20260909T031855Z/final/bci_real_application_v4.json",
+  "n_checks": 713,
+  "n_failures": 0,
+  "failures": [],
+  "checks": [
+    {
+      "gate": "R3",
+      "pass": true,
+      "detail": "strict JSON (no NaN/Infinity)"
+    },
+    {
+      "gate": "R1",
+      "pass": true,
+      "detail": "status='complete'"
+    },
+    {
+      "gate": "R1",
+      "pass": true,
+      "detail": "result_kind='final'"
+    },
+    {
+      "gate": "R1",
+      "pass": true,
+      "detail": "design fingerprint present"
+    },
+    {
+      "gate": "R1",
+      "pass": true,
+      "detail": "subjects ['S1', 'S2', 'S3', 'S4', 'S5', 'S6', 'S7', 'S8', 'S9']"
+    },
+    {
+      "gate": "D1",
+      "pass": true,
+      "detail": "18 data files listed"
+    },
+    {
+      "gate": "D1",
+      "pass": true,
+      "detail": "all data hashes distinct (T != E)"
+    },
+    {
+      "gate": "D1",
+      "pass": true,
+      "detail": "manifest hash mismatches: []"
+    },
+    {
+      "gate": "D1",
+      "pass": true,
+      "detail": "manifest validated count 18"
+    },
+    {
+      "gate": "T2",
+      "pass": true,
+      "detail": "S1: n_eeg_channels"
+    },
+    {
+      "gate": "T2",
+      "pass": true,
+      "detail": "S1: EOG exclusion list"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S1/training: n_all=288"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S1/training: clean+dropped=288"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S1/training: six task runs"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S1/training: flagged==15 dropped"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S1/evaluation: n_all=288"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S1/evaluation: clean+dropped=288"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S1/evaluation: six task runs"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S1/evaluation: flagged==7 dropped"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S1: 282 intervals"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S1: interval vector valid"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S1: tau_mean recomputed"
+    },
+    {
+      "gate": "T1",
+      "pass": true,
+      "detail": "S1: timing constants (trigger anchor, 0.5-2.5 s post-cue)"
+    },
+    {
+      "gate": "L2",
+      "pass": true,
+      "detail": "S1: both predeclared decoders present"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S1/primary: bootstrap=10000, permutations=5000"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S1/primary: inference provenance recorded"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/primary: no duplicate trial UIDs"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/primary: analysis_role={'clean_primary'}"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S1/primary: prediction rows from expected session"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S1/primary: no organizer-flagged trial in clean predictions"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/primary: confusion matrix recomputed from CSV"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/primary: mi_plugin_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/primary: mi_mm_correction_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/primary: mi_corrected_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/primary: K_y"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/primary: K_z"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/primary: K_yz"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/primary: N"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/primary: accuracy"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/primary: kappa"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/primary: per-class F1"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/primary: V_eff curve"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/primary: V_eff keys"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/primary: b_min consistent with corrected MI and tau"
+    },
+    {
+      "gate": "I3",
+      "pass": true,
+      "detail": "S1/primary: p=(exceed+1)/(B+1), strictly positive"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S1/primary: mi_ci_bits well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S1/primary: accuracy_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S1/primary: kappa_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S1/primary: b_min_ci_bpm well-formed"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S1/primary: LOGO tuning evidence present (folds=6)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S1/primary: kappa reported without admission gating (value=0.7057293426119856)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S1/primary: ITR formula and clipped fields both present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S1/primary: all_scheduled_sensitivity present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S1/primary: sensitivity covers all scheduled trials (N=288)"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/primary: sensitivity CM recomputed from CSV"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S1/fbcsp: bootstrap=10000, permutations=5000"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S1/fbcsp: inference provenance recorded"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/fbcsp: no duplicate trial UIDs"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/fbcsp: analysis_role={'clean_primary'}"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S1/fbcsp: prediction rows from expected session"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S1/fbcsp: no organizer-flagged trial in clean predictions"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/fbcsp: confusion matrix recomputed from CSV"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/fbcsp: mi_plugin_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/fbcsp: mi_mm_correction_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/fbcsp: mi_corrected_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/fbcsp: K_y"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/fbcsp: K_z"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/fbcsp: K_yz"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/fbcsp: N"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/fbcsp: accuracy"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/fbcsp: kappa"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/fbcsp: per-class F1"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/fbcsp: V_eff curve"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/fbcsp: V_eff keys"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/fbcsp: b_min consistent with corrected MI and tau"
+    },
+    {
+      "gate": "I3",
+      "pass": true,
+      "detail": "S1/fbcsp: p=(exceed+1)/(B+1), strictly positive"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S1/fbcsp: mi_ci_bits well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S1/fbcsp: accuracy_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S1/fbcsp: kappa_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S1/fbcsp: b_min_ci_bpm well-formed"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S1/fbcsp: LOGO tuning evidence present (folds=6)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S1/fbcsp: kappa reported without admission gating (value=0.8053424796404555)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S1/fbcsp: ITR formula and clipped fields both present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S1/fbcsp: all_scheduled_sensitivity present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S1/fbcsp: sensitivity covers all scheduled trials (N=288)"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S1/fbcsp: sensitivity CM recomputed from CSV"
+    },
+    {
+      "gate": "T2",
+      "pass": true,
+      "detail": "S2: n_eeg_channels"
+    },
+    {
+      "gate": "T2",
+      "pass": true,
+      "detail": "S2: EOG exclusion list"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S2/training: n_all=288"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S2/training: clean+dropped=288"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S2/training: six task runs"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S2/training: flagged==18 dropped"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S2/evaluation: n_all=288"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S2/evaluation: clean+dropped=288"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S2/evaluation: six task runs"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S2/evaluation: flagged==5 dropped"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S2: 282 intervals"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S2: interval vector valid"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S2: tau_mean recomputed"
+    },
+    {
+      "gate": "T1",
+      "pass": true,
+      "detail": "S2: timing constants (trigger anchor, 0.5-2.5 s post-cue)"
+    },
+    {
+      "gate": "L2",
+      "pass": true,
+      "detail": "S2: both predeclared decoders present"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S2/primary: bootstrap=10000, permutations=5000"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S2/primary: inference provenance recorded"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/primary: no duplicate trial UIDs"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/primary: analysis_role={'clean_primary'}"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S2/primary: prediction rows from expected session"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S2/primary: no organizer-flagged trial in clean predictions"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/primary: confusion matrix recomputed from CSV"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/primary: mi_plugin_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/primary: mi_mm_correction_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/primary: mi_corrected_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/primary: K_y"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/primary: K_z"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/primary: K_yz"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/primary: N"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/primary: accuracy"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/primary: kappa"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/primary: per-class F1"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/primary: V_eff curve"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/primary: V_eff keys"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/primary: b_min consistent with corrected MI and tau"
+    },
+    {
+      "gate": "I3",
+      "pass": true,
+      "detail": "S2/primary: p=(exceed+1)/(B+1), strictly positive"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S2/primary: mi_ci_bits well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S2/primary: accuracy_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S2/primary: kappa_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S2/primary: b_min_ci_bpm well-formed"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S2/primary: LOGO tuning evidence present (folds=6)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S2/primary: kappa reported without admission gating (value=0.2612808831842518)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S2/primary: ITR formula and clipped fields both present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S2/primary: all_scheduled_sensitivity present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S2/primary: sensitivity covers all scheduled trials (N=288)"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/primary: sensitivity CM recomputed from CSV"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S2/fbcsp: bootstrap=10000, permutations=5000"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S2/fbcsp: inference provenance recorded"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/fbcsp: no duplicate trial UIDs"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/fbcsp: analysis_role={'clean_primary'}"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S2/fbcsp: prediction rows from expected session"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S2/fbcsp: no organizer-flagged trial in clean predictions"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/fbcsp: confusion matrix recomputed from CSV"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/fbcsp: mi_plugin_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/fbcsp: mi_mm_correction_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/fbcsp: mi_corrected_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/fbcsp: K_y"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/fbcsp: K_z"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/fbcsp: K_yz"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/fbcsp: N"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/fbcsp: accuracy"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/fbcsp: kappa"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/fbcsp: per-class F1"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/fbcsp: V_eff curve"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/fbcsp: V_eff keys"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/fbcsp: b_min consistent with corrected MI and tau"
+    },
+    {
+      "gate": "I3",
+      "pass": true,
+      "detail": "S2/fbcsp: p=(exceed+1)/(B+1), strictly positive"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S2/fbcsp: mi_ci_bits well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S2/fbcsp: accuracy_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S2/fbcsp: kappa_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S2/fbcsp: b_min_ci_bpm well-formed"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S2/fbcsp: LOGO tuning evidence present (folds=6)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S2/fbcsp: kappa reported without admission gating (value=0.20775563617088222)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S2/fbcsp: ITR formula and clipped fields both present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S2/fbcsp: all_scheduled_sensitivity present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S2/fbcsp: sensitivity covers all scheduled trials (N=288)"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S2/fbcsp: sensitivity CM recomputed from CSV"
+    },
+    {
+      "gate": "T2",
+      "pass": true,
+      "detail": "S3: n_eeg_channels"
+    },
+    {
+      "gate": "T2",
+      "pass": true,
+      "detail": "S3: EOG exclusion list"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S3/training: n_all=288"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S3/training: clean+dropped=288"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S3/training: six task runs"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S3/training: flagged==18 dropped"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S3/evaluation: n_all=288"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S3/evaluation: clean+dropped=288"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S3/evaluation: six task runs"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S3/evaluation: flagged==15 dropped"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S3: 282 intervals"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S3: interval vector valid"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S3: tau_mean recomputed"
+    },
+    {
+      "gate": "T1",
+      "pass": true,
+      "detail": "S3: timing constants (trigger anchor, 0.5-2.5 s post-cue)"
+    },
+    {
+      "gate": "L2",
+      "pass": true,
+      "detail": "S3: both predeclared decoders present"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S3/primary: bootstrap=10000, permutations=5000"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S3/primary: inference provenance recorded"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/primary: no duplicate trial UIDs"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/primary: analysis_role={'clean_primary'}"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S3/primary: prediction rows from expected session"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S3/primary: no organizer-flagged trial in clean predictions"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/primary: confusion matrix recomputed from CSV"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/primary: mi_plugin_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/primary: mi_mm_correction_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/primary: mi_corrected_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/primary: K_y"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/primary: K_z"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/primary: K_yz"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/primary: N"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/primary: accuracy"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/primary: kappa"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/primary: per-class F1"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/primary: V_eff curve"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/primary: V_eff keys"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/primary: b_min consistent with corrected MI and tau"
+    },
+    {
+      "gate": "I3",
+      "pass": true,
+      "detail": "S3/primary: p=(exceed+1)/(B+1), strictly positive"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S3/primary: mi_ci_bits well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S3/primary: accuracy_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S3/primary: kappa_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S3/primary: b_min_ci_bpm well-formed"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S3/primary: LOGO tuning evidence present (folds=6)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S3/primary: kappa reported without admission gating (value=0.6528770214366304)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S3/primary: ITR formula and clipped fields both present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S3/primary: all_scheduled_sensitivity present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S3/primary: sensitivity covers all scheduled trials (N=288)"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/primary: sensitivity CM recomputed from CSV"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S3/fbcsp: bootstrap=10000, permutations=5000"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S3/fbcsp: inference provenance recorded"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/fbcsp: no duplicate trial UIDs"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/fbcsp: analysis_role={'clean_primary'}"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S3/fbcsp: prediction rows from expected session"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S3/fbcsp: no organizer-flagged trial in clean predictions"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/fbcsp: confusion matrix recomputed from CSV"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/fbcsp: mi_plugin_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/fbcsp: mi_mm_correction_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/fbcsp: mi_corrected_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/fbcsp: K_y"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/fbcsp: K_z"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/fbcsp: K_yz"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/fbcsp: N"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/fbcsp: accuracy"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/fbcsp: kappa"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/fbcsp: per-class F1"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/fbcsp: V_eff curve"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/fbcsp: V_eff keys"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/fbcsp: b_min consistent with corrected MI and tau"
+    },
+    {
+      "gate": "I3",
+      "pass": true,
+      "detail": "S3/fbcsp: p=(exceed+1)/(B+1), strictly positive"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S3/fbcsp: mi_ci_bits well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S3/fbcsp: accuracy_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S3/fbcsp: kappa_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S3/fbcsp: b_min_ci_bpm well-formed"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S3/fbcsp: LOGO tuning evidence present (folds=6)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S3/fbcsp: kappa reported without admission gating (value=0.7508633801556768)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S3/fbcsp: ITR formula and clipped fields both present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S3/fbcsp: all_scheduled_sensitivity present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S3/fbcsp: sensitivity covers all scheduled trials (N=288)"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S3/fbcsp: sensitivity CM recomputed from CSV"
+    },
+    {
+      "gate": "T2",
+      "pass": true,
+      "detail": "S4: n_eeg_channels"
+    },
+    {
+      "gate": "T2",
+      "pass": true,
+      "detail": "S4: EOG exclusion list"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S4/training: n_all=288"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S4/training: clean+dropped=288"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S4/training: six task runs"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S4/training: flagged==26 dropped"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S4/evaluation: n_all=288"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S4/evaluation: clean+dropped=288"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S4/evaluation: six task runs"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S4/evaluation: flagged==60 dropped"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S4: 282 intervals"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S4: interval vector valid"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S4: tau_mean recomputed"
+    },
+    {
+      "gate": "T1",
+      "pass": true,
+      "detail": "S4: timing constants (trigger anchor, 0.5-2.5 s post-cue)"
+    },
+    {
+      "gate": "L2",
+      "pass": true,
+      "detail": "S4: both predeclared decoders present"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S4/primary: bootstrap=10000, permutations=5000"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S4/primary: inference provenance recorded"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/primary: no duplicate trial UIDs"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/primary: analysis_role={'clean_primary'}"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S4/primary: prediction rows from expected session"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S4/primary: no organizer-flagged trial in clean predictions"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/primary: confusion matrix recomputed from CSV"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/primary: mi_plugin_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/primary: mi_mm_correction_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/primary: mi_corrected_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/primary: K_y"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/primary: K_z"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/primary: K_yz"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/primary: N"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/primary: accuracy"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/primary: kappa"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/primary: per-class F1"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/primary: V_eff curve"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/primary: V_eff keys"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/primary: b_min consistent with corrected MI and tau"
+    },
+    {
+      "gate": "I3",
+      "pass": true,
+      "detail": "S4/primary: p=(exceed+1)/(B+1), strictly positive"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S4/primary: mi_ci_bits well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S4/primary: accuracy_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S4/primary: kappa_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S4/primary: b_min_ci_bpm well-formed"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S4/primary: LOGO tuning evidence present (folds=6)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S4/primary: kappa reported without admission gating (value=0.45169873106835856)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S4/primary: ITR formula and clipped fields both present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S4/primary: all_scheduled_sensitivity present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S4/primary: sensitivity covers all scheduled trials (N=288)"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/primary: sensitivity CM recomputed from CSV"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S4/fbcsp: bootstrap=10000, permutations=5000"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S4/fbcsp: inference provenance recorded"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/fbcsp: no duplicate trial UIDs"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/fbcsp: analysis_role={'clean_primary'}"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S4/fbcsp: prediction rows from expected session"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S4/fbcsp: no organizer-flagged trial in clean predictions"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/fbcsp: confusion matrix recomputed from CSV"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/fbcsp: mi_plugin_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/fbcsp: mi_mm_correction_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/fbcsp: mi_corrected_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/fbcsp: K_y"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/fbcsp: K_z"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/fbcsp: K_yz"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/fbcsp: N"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/fbcsp: accuracy"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/fbcsp: kappa"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/fbcsp: per-class F1"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/fbcsp: V_eff curve"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/fbcsp: V_eff keys"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/fbcsp: b_min consistent with corrected MI and tau"
+    },
+    {
+      "gate": "I3",
+      "pass": true,
+      "detail": "S4/fbcsp: p=(exceed+1)/(B+1), strictly positive"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S4/fbcsp: mi_ci_bits well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S4/fbcsp: accuracy_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S4/fbcsp: kappa_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S4/fbcsp: b_min_ci_bpm well-formed"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S4/fbcsp: LOGO tuning evidence present (folds=6)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S4/fbcsp: kappa reported without admission gating (value=0.5733620424484773)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S4/fbcsp: ITR formula and clipped fields both present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S4/fbcsp: all_scheduled_sensitivity present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S4/fbcsp: sensitivity covers all scheduled trials (N=288)"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S4/fbcsp: sensitivity CM recomputed from CSV"
+    },
+    {
+      "gate": "T2",
+      "pass": true,
+      "detail": "S5: n_eeg_channels"
+    },
+    {
+      "gate": "T2",
+      "pass": true,
+      "detail": "S5: EOG exclusion list"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S5/training: n_all=288"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S5/training: clean+dropped=288"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S5/training: six task runs"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S5/training: flagged==26 dropped"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S5/evaluation: n_all=288"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S5/evaluation: clean+dropped=288"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S5/evaluation: six task runs"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S5/evaluation: flagged==12 dropped"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S5: 282 intervals"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S5: interval vector valid"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S5: tau_mean recomputed"
+    },
+    {
+      "gate": "T1",
+      "pass": true,
+      "detail": "S5: timing constants (trigger anchor, 0.5-2.5 s post-cue)"
+    },
+    {
+      "gate": "L2",
+      "pass": true,
+      "detail": "S5: both predeclared decoders present"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S5/primary: bootstrap=10000, permutations=5000"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S5/primary: inference provenance recorded"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/primary: no duplicate trial UIDs"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/primary: analysis_role={'clean_primary'}"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S5/primary: prediction rows from expected session"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S5/primary: no organizer-flagged trial in clean predictions"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/primary: confusion matrix recomputed from CSV"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/primary: mi_plugin_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/primary: mi_mm_correction_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/primary: mi_corrected_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/primary: K_y"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/primary: K_z"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/primary: K_yz"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/primary: N"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/primary: accuracy"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/primary: kappa"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/primary: per-class F1"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/primary: V_eff curve"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/primary: V_eff keys"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/primary: b_min consistent with corrected MI and tau"
+    },
+    {
+      "gate": "I3",
+      "pass": true,
+      "detail": "S5/primary: p=(exceed+1)/(B+1), strictly positive"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S5/primary: mi_ci_bits well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S5/primary: accuracy_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S5/primary: kappa_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S5/primary: b_min_ci_bpm well-formed"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S5/primary: LOGO tuning evidence present (folds=6)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S5/primary: kappa reported without admission gating (value=0.2002653214404161)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S5/primary: ITR formula and clipped fields both present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S5/primary: all_scheduled_sensitivity present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S5/primary: sensitivity covers all scheduled trials (N=288)"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/primary: sensitivity CM recomputed from CSV"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S5/fbcsp: bootstrap=10000, permutations=5000"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S5/fbcsp: inference provenance recorded"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/fbcsp: no duplicate trial UIDs"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/fbcsp: analysis_role={'clean_primary'}"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S5/fbcsp: prediction rows from expected session"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S5/fbcsp: no organizer-flagged trial in clean predictions"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/fbcsp: confusion matrix recomputed from CSV"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/fbcsp: mi_plugin_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/fbcsp: mi_mm_correction_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/fbcsp: mi_corrected_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/fbcsp: K_y"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/fbcsp: K_z"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/fbcsp: K_yz"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/fbcsp: N"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/fbcsp: accuracy"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/fbcsp: kappa"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/fbcsp: per-class F1"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/fbcsp: V_eff curve"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/fbcsp: V_eff keys"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/fbcsp: b_min consistent with corrected MI and tau"
+    },
+    {
+      "gate": "I3",
+      "pass": true,
+      "detail": "S5/fbcsp: p=(exceed+1)/(B+1), strictly positive"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S5/fbcsp: mi_ci_bits well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S5/fbcsp: accuracy_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S5/fbcsp: kappa_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S5/fbcsp: b_min_ci_bpm well-formed"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S5/fbcsp: LOGO tuning evidence present (folds=6)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S5/fbcsp: kappa reported without admission gating (value=0.4801353378213401)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S5/fbcsp: ITR formula and clipped fields both present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S5/fbcsp: all_scheduled_sensitivity present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S5/fbcsp: sensitivity covers all scheduled trials (N=288)"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S5/fbcsp: sensitivity CM recomputed from CSV"
+    },
+    {
+      "gate": "T2",
+      "pass": true,
+      "detail": "S6: n_eeg_channels"
+    },
+    {
+      "gate": "T2",
+      "pass": true,
+      "detail": "S6: EOG exclusion list"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S6/training: n_all=288"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S6/training: clean+dropped=288"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S6/training: six task runs"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S6/training: flagged==69 dropped"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S6/evaluation: n_all=288"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S6/evaluation: clean+dropped=288"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S6/evaluation: six task runs"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S6/evaluation: flagged==73 dropped"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S6: 282 intervals"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S6: interval vector valid"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S6: tau_mean recomputed"
+    },
+    {
+      "gate": "T1",
+      "pass": true,
+      "detail": "S6: timing constants (trigger anchor, 0.5-2.5 s post-cue)"
+    },
+    {
+      "gate": "L2",
+      "pass": true,
+      "detail": "S6: both predeclared decoders present"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S6/primary: bootstrap=10000, permutations=5000"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S6/primary: inference provenance recorded"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/primary: no duplicate trial UIDs"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/primary: analysis_role={'clean_primary'}"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S6/primary: prediction rows from expected session"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S6/primary: no organizer-flagged trial in clean predictions"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/primary: confusion matrix recomputed from CSV"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/primary: mi_plugin_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/primary: mi_mm_correction_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/primary: mi_corrected_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/primary: K_y"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/primary: K_z"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/primary: K_yz"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/primary: N"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/primary: accuracy"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/primary: kappa"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/primary: per-class F1"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/primary: V_eff curve"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/primary: V_eff keys"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/primary: b_min consistent with corrected MI and tau"
+    },
+    {
+      "gate": "I3",
+      "pass": true,
+      "detail": "S6/primary: p=(exceed+1)/(B+1), strictly positive"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S6/primary: mi_ci_bits well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S6/primary: accuracy_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S6/primary: kappa_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S6/primary: b_min_ci_bpm well-formed"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S6/primary: LOGO tuning evidence present (folds=6)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S6/primary: kappa reported without admission gating (value=0.2172103909613663)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S6/primary: ITR formula and clipped fields both present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S6/primary: all_scheduled_sensitivity present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S6/primary: sensitivity covers all scheduled trials (N=288)"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/primary: sensitivity CM recomputed from CSV"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S6/fbcsp: bootstrap=10000, permutations=5000"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S6/fbcsp: inference provenance recorded"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/fbcsp: no duplicate trial UIDs"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/fbcsp: analysis_role={'clean_primary'}"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S6/fbcsp: prediction rows from expected session"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S6/fbcsp: no organizer-flagged trial in clean predictions"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/fbcsp: confusion matrix recomputed from CSV"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/fbcsp: mi_plugin_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/fbcsp: mi_mm_correction_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/fbcsp: mi_corrected_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/fbcsp: K_y"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/fbcsp: K_z"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/fbcsp: K_yz"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/fbcsp: N"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/fbcsp: accuracy"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/fbcsp: kappa"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/fbcsp: per-class F1"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/fbcsp: V_eff curve"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/fbcsp: V_eff keys"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/fbcsp: b_min consistent with corrected MI and tau"
+    },
+    {
+      "gate": "I3",
+      "pass": true,
+      "detail": "S6/fbcsp: p=(exceed+1)/(B+1), strictly positive"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S6/fbcsp: mi_ci_bits well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S6/fbcsp: accuracy_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S6/fbcsp: kappa_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S6/fbcsp: b_min_ci_bpm well-formed"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S6/fbcsp: LOGO tuning evidence present (folds=6)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S6/fbcsp: kappa reported without admission gating (value=0.33093214234260193)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S6/fbcsp: ITR formula and clipped fields both present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S6/fbcsp: all_scheduled_sensitivity present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S6/fbcsp: sensitivity covers all scheduled trials (N=288)"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S6/fbcsp: sensitivity CM recomputed from CSV"
+    },
+    {
+      "gate": "T2",
+      "pass": true,
+      "detail": "S7: n_eeg_channels"
+    },
+    {
+      "gate": "T2",
+      "pass": true,
+      "detail": "S7: EOG exclusion list"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S7/training: n_all=288"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S7/training: clean+dropped=288"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S7/training: six task runs"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S7/training: flagged==17 dropped"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S7/evaluation: n_all=288"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S7/evaluation: clean+dropped=288"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S7/evaluation: six task runs"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S7/evaluation: flagged==11 dropped"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S7: 282 intervals"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S7: interval vector valid"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S7: tau_mean recomputed"
+    },
+    {
+      "gate": "T1",
+      "pass": true,
+      "detail": "S7: timing constants (trigger anchor, 0.5-2.5 s post-cue)"
+    },
+    {
+      "gate": "L2",
+      "pass": true,
+      "detail": "S7: both predeclared decoders present"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S7/primary: bootstrap=10000, permutations=5000"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S7/primary: inference provenance recorded"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/primary: no duplicate trial UIDs"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/primary: analysis_role={'clean_primary'}"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S7/primary: prediction rows from expected session"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S7/primary: no organizer-flagged trial in clean predictions"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/primary: confusion matrix recomputed from CSV"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/primary: mi_plugin_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/primary: mi_mm_correction_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/primary: mi_corrected_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/primary: K_y"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/primary: K_z"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/primary: K_yz"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/primary: N"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/primary: accuracy"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/primary: kappa"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/primary: per-class F1"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/primary: V_eff curve"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/primary: V_eff keys"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/primary: b_min consistent with corrected MI and tau"
+    },
+    {
+      "gate": "I3",
+      "pass": true,
+      "detail": "S7/primary: p=(exceed+1)/(B+1), strictly positive"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S7/primary: mi_ci_bits well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S7/primary: accuracy_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S7/primary: kappa_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S7/primary: b_min_ci_bpm well-formed"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S7/primary: LOGO tuning evidence present (folds=6)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S7/primary: kappa reported without admission gating (value=0.6115881314267908)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S7/primary: ITR formula and clipped fields both present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S7/primary: all_scheduled_sensitivity present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S7/primary: sensitivity covers all scheduled trials (N=288)"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/primary: sensitivity CM recomputed from CSV"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S7/fbcsp: bootstrap=10000, permutations=5000"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S7/fbcsp: inference provenance recorded"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/fbcsp: no duplicate trial UIDs"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/fbcsp: analysis_role={'clean_primary'}"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S7/fbcsp: prediction rows from expected session"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S7/fbcsp: no organizer-flagged trial in clean predictions"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/fbcsp: confusion matrix recomputed from CSV"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/fbcsp: mi_plugin_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/fbcsp: mi_mm_correction_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/fbcsp: mi_corrected_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/fbcsp: K_y"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/fbcsp: K_z"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/fbcsp: K_yz"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/fbcsp: N"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/fbcsp: accuracy"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/fbcsp: kappa"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/fbcsp: per-class F1"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/fbcsp: V_eff curve"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/fbcsp: V_eff keys"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/fbcsp: b_min consistent with corrected MI and tau"
+    },
+    {
+      "gate": "I3",
+      "pass": true,
+      "detail": "S7/fbcsp: p=(exceed+1)/(B+1), strictly positive"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S7/fbcsp: mi_ci_bits well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S7/fbcsp: accuracy_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S7/fbcsp: kappa_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S7/fbcsp: b_min_ci_bpm well-formed"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S7/fbcsp: LOGO tuning evidence present (folds=6)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S7/fbcsp: kappa reported without admission gating (value=0.8222110430724929)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S7/fbcsp: ITR formula and clipped fields both present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S7/fbcsp: all_scheduled_sensitivity present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S7/fbcsp: sensitivity covers all scheduled trials (N=288)"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S7/fbcsp: sensitivity CM recomputed from CSV"
+    },
+    {
+      "gate": "T2",
+      "pass": true,
+      "detail": "S8: n_eeg_channels"
+    },
+    {
+      "gate": "T2",
+      "pass": true,
+      "detail": "S8: EOG exclusion list"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S8/training: n_all=288"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S8/training: clean+dropped=288"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S8/training: six task runs"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S8/training: flagged==24 dropped"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S8/evaluation: n_all=288"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S8/evaluation: clean+dropped=288"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S8/evaluation: six task runs"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S8/evaluation: flagged==17 dropped"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S8: 282 intervals"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S8: interval vector valid"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S8: tau_mean recomputed"
+    },
+    {
+      "gate": "T1",
+      "pass": true,
+      "detail": "S8: timing constants (trigger anchor, 0.5-2.5 s post-cue)"
+    },
+    {
+      "gate": "L2",
+      "pass": true,
+      "detail": "S8: both predeclared decoders present"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S8/primary: bootstrap=10000, permutations=5000"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S8/primary: inference provenance recorded"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/primary: no duplicate trial UIDs"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/primary: analysis_role={'clean_primary'}"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S8/primary: prediction rows from expected session"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S8/primary: no organizer-flagged trial in clean predictions"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/primary: confusion matrix recomputed from CSV"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/primary: mi_plugin_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/primary: mi_mm_correction_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/primary: mi_corrected_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/primary: K_y"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/primary: K_z"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/primary: K_yz"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/primary: N"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/primary: accuracy"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/primary: kappa"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/primary: per-class F1"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/primary: V_eff curve"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/primary: V_eff keys"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/primary: b_min consistent with corrected MI and tau"
+    },
+    {
+      "gate": "I3",
+      "pass": true,
+      "detail": "S8/primary: p=(exceed+1)/(B+1), strictly positive"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S8/primary: mi_ci_bits well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S8/primary: accuracy_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S8/primary: kappa_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S8/primary: b_min_ci_bpm well-formed"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S8/primary: LOGO tuning evidence present (folds=6)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S8/primary: kappa reported without admission gating (value=0.6997311730301159)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S8/primary: ITR formula and clipped fields both present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S8/primary: all_scheduled_sensitivity present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S8/primary: sensitivity covers all scheduled trials (N=288)"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/primary: sensitivity CM recomputed from CSV"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S8/fbcsp: bootstrap=10000, permutations=5000"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S8/fbcsp: inference provenance recorded"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/fbcsp: no duplicate trial UIDs"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/fbcsp: analysis_role={'clean_primary'}"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S8/fbcsp: prediction rows from expected session"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S8/fbcsp: no organizer-flagged trial in clean predictions"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/fbcsp: confusion matrix recomputed from CSV"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/fbcsp: mi_plugin_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/fbcsp: mi_mm_correction_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/fbcsp: mi_corrected_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/fbcsp: K_y"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/fbcsp: K_z"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/fbcsp: K_yz"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/fbcsp: N"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/fbcsp: accuracy"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/fbcsp: kappa"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/fbcsp: per-class F1"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/fbcsp: V_eff curve"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/fbcsp: V_eff keys"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/fbcsp: b_min consistent with corrected MI and tau"
+    },
+    {
+      "gate": "I3",
+      "pass": true,
+      "detail": "S8/fbcsp: p=(exceed+1)/(B+1), strictly positive"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S8/fbcsp: mi_ci_bits well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S8/fbcsp: accuracy_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S8/fbcsp: kappa_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S8/fbcsp: b_min_ci_bpm well-formed"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S8/fbcsp: LOGO tuning evidence present (folds=6)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S8/fbcsp: kappa reported without admission gating (value=0.7491697065389014)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S8/fbcsp: ITR formula and clipped fields both present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S8/fbcsp: all_scheduled_sensitivity present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S8/fbcsp: sensitivity covers all scheduled trials (N=288)"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S8/fbcsp: sensitivity CM recomputed from CSV"
+    },
+    {
+      "gate": "T2",
+      "pass": true,
+      "detail": "S9: n_eeg_channels"
+    },
+    {
+      "gate": "T2",
+      "pass": true,
+      "detail": "S9: EOG exclusion list"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S9/training: n_all=288"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S9/training: clean+dropped=288"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S9/training: six task runs"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S9/training: flagged==51 dropped"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S9/evaluation: n_all=288"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S9/evaluation: clean+dropped=288"
+    },
+    {
+      "gate": "D2",
+      "pass": true,
+      "detail": "S9/evaluation: six task runs"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S9/evaluation: flagged==24 dropped"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S9: 282 intervals"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S9: interval vector valid"
+    },
+    {
+      "gate": "C1",
+      "pass": true,
+      "detail": "S9: tau_mean recomputed"
+    },
+    {
+      "gate": "T1",
+      "pass": true,
+      "detail": "S9: timing constants (trigger anchor, 0.5-2.5 s post-cue)"
+    },
+    {
+      "gate": "L2",
+      "pass": true,
+      "detail": "S9: both predeclared decoders present"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S9/primary: bootstrap=10000, permutations=5000"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S9/primary: inference provenance recorded"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/primary: no duplicate trial UIDs"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/primary: analysis_role={'clean_primary'}"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S9/primary: prediction rows from expected session"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S9/primary: no organizer-flagged trial in clean predictions"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/primary: confusion matrix recomputed from CSV"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/primary: mi_plugin_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/primary: mi_mm_correction_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/primary: mi_corrected_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/primary: K_y"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/primary: K_z"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/primary: K_yz"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/primary: N"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/primary: accuracy"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/primary: kappa"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/primary: per-class F1"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/primary: V_eff curve"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/primary: V_eff keys"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/primary: b_min consistent with corrected MI and tau"
+    },
+    {
+      "gate": "I3",
+      "pass": true,
+      "detail": "S9/primary: p=(exceed+1)/(B+1), strictly positive"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S9/primary: mi_ci_bits well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S9/primary: accuracy_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S9/primary: kappa_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S9/primary: b_min_ci_bpm well-formed"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S9/primary: LOGO tuning evidence present (folds=6)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S9/primary: kappa reported without admission gating (value=0.6407819087773093)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S9/primary: ITR formula and clipped fields both present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S9/primary: all_scheduled_sensitivity present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S9/primary: sensitivity covers all scheduled trials (N=288)"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/primary: sensitivity CM recomputed from CSV"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S9/fbcsp: bootstrap=10000, permutations=5000"
+    },
+    {
+      "gate": "I1",
+      "pass": true,
+      "detail": "S9/fbcsp: inference provenance recorded"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/fbcsp: no duplicate trial UIDs"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/fbcsp: analysis_role={'clean_primary'}"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S9/fbcsp: prediction rows from expected session"
+    },
+    {
+      "gate": "A1",
+      "pass": true,
+      "detail": "S9/fbcsp: no organizer-flagged trial in clean predictions"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/fbcsp: confusion matrix recomputed from CSV"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/fbcsp: mi_plugin_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/fbcsp: mi_mm_correction_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/fbcsp: mi_corrected_bits"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/fbcsp: K_y"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/fbcsp: K_z"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/fbcsp: K_yz"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/fbcsp: N"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/fbcsp: accuracy"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/fbcsp: kappa"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/fbcsp: per-class F1"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/fbcsp: V_eff curve"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/fbcsp: V_eff keys"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/fbcsp: b_min consistent with corrected MI and tau"
+    },
+    {
+      "gate": "I3",
+      "pass": true,
+      "detail": "S9/fbcsp: p=(exceed+1)/(B+1), strictly positive"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S9/fbcsp: mi_ci_bits well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S9/fbcsp: accuracy_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S9/fbcsp: kappa_ci well-formed"
+    },
+    {
+      "gate": "I4",
+      "pass": true,
+      "detail": "S9/fbcsp: b_min_ci_bpm well-formed"
+    },
+    {
+      "gate": "L1",
+      "pass": true,
+      "detail": "S9/fbcsp: LOGO tuning evidence present (folds=6)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S9/fbcsp: kappa reported without admission gating (value=0.5950609709333539)"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S9/fbcsp: ITR formula and clipped fields both present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S9/fbcsp: all_scheduled_sensitivity present"
+    },
+    {
+      "gate": "R2",
+      "pass": true,
+      "detail": "S9/fbcsp: sensitivity covers all scheduled trials (N=288)"
+    },
+    {
+      "gate": "I2",
+      "pass": true,
+      "detail": "S9/fbcsp: sensitivity CM recomputed from CSV"
+    },
+    {
+      "gate": "I3",
+      "pass": true,
+      "detail": "primary: Holm family recomputed over 9 subjects"
+    },
+    {
+      "gate": "I3",
+      "pass": true,
+      "detail": "fbcsp: Holm family recomputed over 9 subjects"
+    },
+    {
+      "gate": "A2",
+      "pass": true,
+      "detail": "S1: identical ordered clean UID lists across decoders"
+    },
+    {
+      "gate": "A2",
+      "pass": true,
+      "detail": "S2: identical ordered clean UID lists across decoders"
+    },
+    {
+      "gate": "A2",
+      "pass": true,
+      "detail": "S3: identical ordered clean UID lists across decoders"
+    },
+    {
+      "gate": "A2",
+      "pass": true,
+      "detail": "S4: identical ordered clean UID lists across decoders"
+    },
+    {
+      "gate": "A2",
+      "pass": true,
+      "detail": "S5: identical ordered clean UID lists across decoders"
+    },
+    {
+      "gate": "A2",
+      "pass": true,
+      "detail": "S6: identical ordered clean UID lists across decoders"
+    },
+    {
+      "gate": "A2",
+      "pass": true,
+      "detail": "S7: identical ordered clean UID lists across decoders"
+    },
+    {
+      "gate": "A2",
+      "pass": true,
+      "detail": "S8: identical ordered clean UID lists across decoders"
+    },
+    {
+      "gate": "A2",
+      "pass": true,
+      "detail": "S9: identical ordered clean UID lists across decoders"
+    }
+  ]
+}

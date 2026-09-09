@@ -1,0 +1,31 @@
+{
+  "epoch_tmin_postcue": 0.5,
+  "epoch_tmax_postcue": 2.5,
+  "event_anchor": "mat_trial_trigger",
+  "epoch_tmin_post_trigger": 2.5,
+  "epoch_tmax_post_trigger": 4.5,
+  "primary_fmin": 8.0,
+  "primary_fmax": 30.0,
+  "primary_component_grid": [
+    4,
+    6,
+    8
+  ],
+  "fbcsp_components_per_class_band": 4,
+  "fbcsp_feature_grid": [
+    16,
+    32,
+    64,
+    96
+  ],
+  "cv_scheme": "leave-one-source-run-out",
+  "tie_rule": "first-best-in-ascending-grid (simpler candidate wins ties)",
+  "csp_regularization": "ledoit_wolf",
+  "veff_beta": 30,
+  "n_bootstrap": 10000,
+  "n_permutations": 5000,
+  "bootstrap_scheme": "stratified by (E source run x true class), paired across decoders",
+  "permutation_scheme": "true labels permuted within each source E run against frozen predictions; statistic = plug-in MI; Phipson-Smyth (1+exceed)/(B+1)",
+  "artifact_policy": "organizer run.artifacts mask, explicit exclusion",
+  "random_seed": 42
+}

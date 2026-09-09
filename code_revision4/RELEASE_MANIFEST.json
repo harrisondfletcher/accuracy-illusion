@@ -1,0 +1,302 @@
+{
+  "release": "Accuracy Illusion Revision 4",
+  "generated_at_utc": "2026-09-04T23:45:50.691002+00:00",
+  "status": {
+    "simulation_manuscript": "complete and regenerated",
+    "simulation_tests": "9 passed",
+    "grid": "480 substantive cells; 100 paired runs per cell",
+    "power": "1000 Monte Carlo replications; B_min uses 1000 system-label permutations per replication",
+    "docx_visual_qa": "completed for manuscript, reviewer response, audit, BCI documents, and supplements",
+    "bci_empirical_insertion": "execution-gated; original BCI results withdrawn; no replacement value asserted",
+    "bci_required_output": "results/bci_real_application_v4.json (absent until validated run)",
+    "quick_reproduction_smoke_test": "passed; recorded in results/reproduction_manifest.json",
+    "full_reproduction_in_this_final_QA_session": "not rerun end-to-end; included result files were regenerated and cross-checked during revision work"
+  },
+  "primary_documents": [
+    "manuscript/The_Accuracy_Illusion_v4.docx",
+    "manuscript/The_Accuracy_Illusion_v4.md",
+    "docs/Response_to_Reviewers_V4.docx",
+    "RESPONSE_TO_REVIEWERS_V4.md",
+    "docs/Revision_Audit_V4.docx",
+    "REVISION_AUDIT_V4.md",
+    "docs/BCI_Correction_and_Execution_Protocol_V4.docx",
+    "BCI_CORRECTION_AND_EXECUTION_PROTOCOL_V4.md",
+    "docs/BCI_Runbook_V4.docx",
+    "BCI_RUNBOOK.md",
+    "supplements/Supplementary_Tables_S0_S8_v4.docx",
+    "supplements/Supplementary_Protocol_S4_v4.docx"
+  ],
+  "file_count": 54,
+  "files": [
+    {
+      "path": "BCI_CORRECTION_AND_EXECUTION_PROTOCOL_V4.md",
+      "bytes": 7143,
+      "sha256": "307259593934cbb65f77696d1a594a707795d256429d678c13ac25e098d45dda"
+    },
+    {
+      "path": "BCI_RUNBOOK.md",
+      "bytes": 6168,
+      "sha256": "f19140da665e795c0eb146b6c3701bd9ff27e6b6ca8feec011179dc4d5cade3d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4482,
+      "sha256": "518bfe6b8e703ae4e14744fea75a8d173abfa17345b7d26e5a5713f48a8436e2"
+    },
+    {
+      "path": "RESPONSE_TO_REVIEWERS_V4.md",
+      "bytes": 13504,
+      "sha256": "9b4971e9b6982493b944d5246d70a7d4675a942f7abbce4229143936e99fd4b3"
+    },
+    {
+      "path": "REVISION_AUDIT_V4.md",
+      "bytes": 5729,
+      "sha256": "2485ff1b44dea7175545c12ee03367b27b76565e5ef85e0871bb696eadae13ce"
+    },
+    {
+      "path": "bci_pipeline.py",
+      "bytes": 32227,
+      "sha256": "4d59a6556e6ab2d10bf8d663e009a18bc346f7b608dcbc643487d4948fe7d09e"
+    },
+    {
+      "path": "data/S2_worked_example.csv",
+      "bytes": 38206,
+      "sha256": "4e4075f668e80c00fd73aa2cdc54065bc818fa008625049fe6b00a76ab30b8c9"
+    },
+    {
+      "path": "data/S2_worked_example_summary.json",
+      "bytes": 1976,
+      "sha256": "4a89662238c3a1e0fdb011d4cfe76e3c9ab75ea1019470ffadf9b14c564c3281"
+    },
+    {
+      "path": "docs/BCI_Correction_and_Execution_Protocol_V4.docx",
+      "bytes": 14161,
+      "sha256": "220fb8791746155047e97000943ba403c23f30d6acec2ab3e8374de033795fe0"
+    },
+    {
+      "path": "docs/BCI_Runbook_V4.docx",
+      "bytes": 13453,
+      "sha256": "edb545fd742b8ed5ba6c9c82f0cd6d3e9ec83d2ad1dbf5f5d3501a539259b22f"
+    },
+    {
+      "path": "docs/Response_to_Reviewers_V4.docx",
+      "bytes": 16718,
+      "sha256": "2c571d57b78ff060abf4c54cd5e30ef10b03560f184f239d11b22229e16adeb9"
+    },
+    {
+      "path": "docs/Revision_Audit_V4.docx",
+      "bytes": 13608,
+      "sha256": "f8eebc81e2f383415e22a25be585d08990d05269640805d0d2e44b07c5d8d416"
+    },
+    {
+      "path": "engine_v2.py",
+      "bytes": 14467,
+      "sha256": "9b34af6de688072f079e22906d63338724e3857ae1b668e275e6f14716564186"
+    },
+    {
+      "path": "figures/fig1_radar.pdf",
+      "bytes": 39634,
+      "sha256": "2a569351389598764ef6b9f2fedb5fa22682a907b30f1810b4c97454de1edb86"
+    },
+    {
+      "path": "figures/fig1_radar.png",
+      "bytes": 305070,
+      "sha256": "6c42c488c2cb282e9cbd682fc4904bb34f598710432ffe1710a216ef9dfd1cdf"
+    },
+    {
+      "path": "figures/fig3_knife.pdf",
+      "bytes": 29847,
+      "sha256": "be8f9aad1275bef4d6b7c8fed06f1be027a1e8ad803b1475fca17ece387fff12"
+    },
+    {
+      "path": "figures/fig3_knife.png",
+      "bytes": 160107,
+      "sha256": "2f45bc247edea422654223026219349b7c1e23220ac255f3b593f5935cd08a44"
+    },
+    {
+      "path": "figures/fig5_power.pdf",
+      "bytes": 49076,
+      "sha256": "7a68e7f07ef95f623eee495a98a864b2162ec7c1ee4adb4d663c46afece0944b"
+    },
+    {
+      "path": "figures/fig5_power.png",
+      "bytes": 259174,
+      "sha256": "634e566f1823642dd19acd0875ba5dd9b87f9f57268e6e1e817e6ca75b684ce5"
+    },
+    {
+      "path": "generate_worked_example.py",
+      "bytes": 5046,
+      "sha256": "339319c1e6b3e44d7840dd972f07732826ebc2d9522f3198ed152d71a2430d95"
+    },
+    {
+      "path": "make_figures.py",
+      "bytes": 11610,
+      "sha256": "7e823b0ef1aa8a83d2940b528b34aeed7db62ec6913101329173230db189a77e"
+    },
+    {
+      "path": "manuscript/The_Accuracy_Illusion_v4.docx",
+      "bytes": 40140,
+      "sha256": "67a1dffd6d7e3beef10a7b4f49bea394c5f0cc50797fb2b064312f379c933c45"
+    },
+    {
+      "path": "manuscript/The_Accuracy_Illusion_v4.md",
+      "bytes": 64878,
+      "sha256": "e39b886b74e9a61afff69bec502167e898debd9e8edce26b1c13bda541f393b7"
+    },
+    {
+      "path": "metrics_u.py",
+      "bytes": 3977,
+      "sha256": "196f7b1a58d15707bfaad386a6ea6186e2b6b40b30c1e0f79952ced9519b2b7b"
+    },
+    {
+      "path": "populate_bci_manuscript.py",
+      "bytes": 6276,
+      "sha256": "8e247b9631b6bbc1d9c3ccb560ebaa5135ca4408d9d22da53180e71f5cde0019"
+    },
+    {
+      "path": "power_v3.py",
+      "bytes": 9606,
+      "sha256": "1454f57173ee3799896d9b4e0f7455ba44ea248d8d11e221135b249ea2547220"
+    },
+    {
+      "path": "protocol/S4_protocol_checklist.md",
+      "bytes": 7780,
+      "sha256": "28bb000a632e6671cb39e051abfebf4d81e5aa5135b32758edadc42e41711e06"
+    },
+    {
+      "path": "reproduce_all.py",
+      "bytes": 2097,
+      "sha256": "ed5ceac0b6c4e178f5f052f6e02c341b21e51998e334ee2ecaff47d0fc57ed67"
+    },
+    {
+      "path": "requirements-bci.txt",
+      "bytes": 56,
+      "sha256": "ee9bb05362c8919d560fd3659e4e26e357725f879a523afb284c1462875092b9"
+    },
+    {
+      "path": "requirements-simulation.txt",
+      "bytes": 80,
+      "sha256": "a0d2736ea239349b0cb55c65ff9cde9dc026e48631a427d7d188b524cf8c36a1"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 24,
+      "sha256": "0e666292a04036248d64eea77f44983d62a2fe51c424b9ec282cc9657919c398"
+    },
+    {
+      "path": "results/counterexamples.json",
+      "bytes": 8226,
+      "sha256": "5e52a37e735cf40be27582c53cb329a9252a12741147ac59b213fa7e4db2a6bd"
+    },
+    {
+      "path": "results/equal_mi_matrices.json",
+      "bytes": 853,
+      "sha256": "9c981421a87f6eedf7aa5016a7770c7f023ce284900ee45ce3a43bf5784ad06a"
+    },
+    {
+      "path": "results/grid.json",
+      "bytes": 215618,
+      "sha256": "75d0eed5309be97ded1d96700a1e04e4fc704dda006c92598aeda3b28ad0c3ab"
+    },
+    {
+      "path": "results/nonredundancy.json",
+      "bytes": 1851,
+      "sha256": "ef1f2567730ad0e00b9b5e1b01538f2504083dc30b8a3fb6f2874479e234635a"
+    },
+    {
+      "path": "results/null_models.json",
+      "bytes": 26543,
+      "sha256": "6ac4f1a640afc9115ca021b6ff0b57102da6bb412a82322141a04487d60f6d75"
+    },
+    {
+      "path": "results/power_bmin.json",
+      "bytes": 3881,
+      "sha256": "cd185f50002a42570698e1a48e7871f8a88a4cdde41cffe0e5606b84696fde16"
+    },
+    {
+      "path": "results/power_c2.json",
+      "bytes": 4435,
+      "sha256": "8dbc104c86e18c43f6d169545de133d52cadf1f251a5bb699966aeaccb6646e3"
+    },
+    {
+      "path": "results/power_r.json",
+      "bytes": 3075,
+      "sha256": "e3001f5dcfc8b95da333002bc4e6be451b5ae96558e839e59b378c3b6efa5220"
+    },
+    {
+      "path": "results/power_u.json",
+      "bytes": 9772,
+      "sha256": "a66f8d7e5c3ac3787c83044991c721161eac2141405dd1cc343fc0f96d6d6749"
+    },
+    {
+      "path": "results/reproduction_manifest.json",
+      "bytes": 3622,
+      "sha256": "5f57845e4abd2765ded005e3a6f19eec7d8c642eb0a9e4fec804b1a0789c3006"
+    },
+    {
+      "path": "results/sweep_noise.json",
+      "bytes": 36351,
+      "sha256": "8bfe25623e3ed235eae5110dca1ed1eff057c0ba72d5035717788b0330fc3bbb"
+    },
+    {
+      "path": "results/table1.json",
+      "bytes": 14349,
+      "sha256": "c3390bf99f0d6a076c85e22a0481fa443dc9e7db870c421a9dba9b33651d2df0"
+    },
+    {
+      "path": "results/table_S0_spec.md",
+      "bytes": 2203,
+      "sha256": "145390e6c67dfc2822d3d90a1c9f7faf0c2f8c48666285611d55b4dffd232ef1"
+    },
+    {
+      "path": "results/table_S7_power.md",
+      "bytes": 3447,
+      "sha256": "980e4df8ad59d32fc6113f0eb751c800ea012c13d6c4c59662a4bfb83b1c9374"
+    },
+    {
+      "path": "results/tables_S3.md",
+      "bytes": 4439,
+      "sha256": "1a48d1ebd77300c757b1e18b7bd4be3463acc4be64a0ecefff9204088fbfacd5"
+    },
+    {
+      "path": "run_simulations.py",
+      "bytes": 16918,
+      "sha256": "03513d2388c6c8f18a51746e59ac394fc3bd631a5548a0c4edbe88ce035393f1"
+    },
+    {
+      "path": "supplements/Supplementary_Protocol_S4_v4.docx",
+      "bytes": 14355,
+      "sha256": "77948e05ca06d53afc5e6e9a9696fa3bf96fcdeb2195bded78a8215ae3a15254"
+    },
+    {
+      "path": "supplements/Supplementary_Protocol_S4_v4.md",
+      "bytes": 7780,
+      "sha256": "28bb000a632e6671cb39e051abfebf4d81e5aa5135b32758edadc42e41711e06"
+    },
+    {
+      "path": "supplements/Supplementary_Tables_S0_S8_v4.docx",
+      "bytes": 15985,
+      "sha256": "5d37996cbd4ecba31115b050507a0a3fe3e4011044662f7d8d66a82e6fe0ae1a"
+    },
+    {
+      "path": "supplements/Supplementary_Tables_S0_S8_v4.md",
+      "bytes": 10752,
+      "sha256": "e71c1cc1c029d04abf138de6da88e055d3eafd7b757cb64a5c17aeefec6f043a"
+    },
+    {
+      "path": "tests/conftest.py",
+      "bytes": 97,
+      "sha256": "61d917466d000f076e8c5ed631cbc461fbb128df7dc8b8dfc89aed11143b7a1e"
+    },
+    {
+      "path": "tests/test_core.py",
+      "bytes": 2986,
+      "sha256": "49c250e3eb1d9f54754f4cc021a1a2f4a5aea2c47b55f5d55120e850604f08c5"
+    },
+    {
+      "path": "validate_bci_output.py",
+      "bytes": 3973,
+      "sha256": "23f19fcb82c472cd670c75368632cd1f069582e886dbec7d7904094b01d90ab3"
+    }
+  ]
+}

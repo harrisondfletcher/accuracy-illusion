@@ -1,0 +1,38 @@
+{
+  "scope": "All final Word documents rendered to PNG and visually inspected. PDF text bounds/color checks supplement, not replace, image inspection.",
+  "total_pages": 69,
+  "documents": [
+    {
+      "file": "The_Accuracy_Illusion_v4_1_REVISED.docx",
+      "pages": 43,
+      "missing_glyph_candidates": [],
+      "outside_margin_candidates": [],
+      "red_error_candidates": [],
+      "all_pages_visually_inspected": true,
+      "word_sha256": "24e937d0c9463c892f00bf4f4ffad8172c1c5cf05479be510a257eeea61f0bba"
+    },
+    {
+      "file": "Supplementary_Tables_S0_S8_v4_1_REVISED.docx",
+      "pages": 16,
+      "missing_glyph_candidates": [],
+      "outside_margin_candidates": [],
+      "red_error_candidates": [],
+      "all_pages_visually_inspected": true,
+      "word_sha256": "e5d13c06f4b5e51cd86fe7cfdd812f44fbe008ce06b884070d3764b226084f55"
+    },
+    {
+      "file": "Response_to_Reviewers_v4_1_REVISED.docx",
+      "pages": 10,
+      "missing_glyph_candidates": [],
+      "outside_margin_candidates": [],
+      "red_error_candidates": [],
+      "all_pages_visually_inspected": true,
+      "word_sha256": "4e7a83c7628dbf71cd81a2c2d2e28cfd23289c3fe6898fa62133cfcdc7e19db9"
+    }
+  ],
+  "notes": [
+    "Set difference and true-label math symbols visually verified.",
+    "No table data row is split; table headers repeat when tables span pages.",
+    "QA render PDFs and page images are not delivery artifacts."
+  ]
+}

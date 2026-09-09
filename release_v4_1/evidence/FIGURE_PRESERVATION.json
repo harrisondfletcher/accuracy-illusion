@@ -1,0 +1,62 @@
+[
+  {
+    "file": "fig1_radar.pdf",
+    "unchanged": true,
+    "sha256": "2a569351389598764ef6b9f2fedb5fa22682a907b30f1810b4c97454de1edb86"
+  },
+  {
+    "file": "fig1_radar.png",
+    "unchanged": true,
+    "sha256": "6c42c488c2cb282e9cbd682fc4904bb34f598710432ffe1710a216ef9dfd1cdf"
+  },
+  {
+    "file": "fig2_bci_subjects.pdf",
+    "unchanged": true,
+    "sha256": "e6dfe7b4e08bcc02a55cf50970b954f676098cbc379bf3bf76633cce1028c5a2"
+  },
+  {
+    "file": "fig2_bci_subjects.png",
+    "unchanged": true,
+    "sha256": "e43c5370fdcbd6c57bb3977dc38e2b7cd0ae64151b9fe7fd6cfb45e7e6a69fe3"
+  },
+  {
+    "file": "fig3_knife.pdf",
+    "unchanged": true,
+    "sha256": "be8f9aad1275bef4d6b7c8fed06f1be027a1e8ad803b1475fca17ece387fff12"
+  },
+  {
+    "file": "fig3_knife.png",
+    "unchanged": true,
+    "sha256": "2f45bc247edea422654223026219349b7c1e23220ac255f3b593f5935cd08a44"
+  },
+  {
+    "file": "fig4_confusion.pdf",
+    "unchanged": true,
+    "sha256": "6d97ef8e0d9d0afa284e02ad4a34c0c33317638f1044482ba4bc45480be3d12a"
+  },
+  {
+    "file": "fig4_confusion.png",
+    "unchanged": true,
+    "sha256": "480cb0d0bef86f550ff8c2ed008d57601cf0aa60c00fe274792f8fdfa6c23b40"
+  },
+  {
+    "file": "fig5_power.pdf",
+    "unchanged": true,
+    "sha256": "7a68e7f07ef95f623eee495a98a864b2162ec7c1ee4adb4d663c46afece0944b"
+  },
+  {
+    "file": "fig5_power.png",
+    "unchanged": true,
+    "sha256": "634e566f1823642dd19acd0875ba5dd9b87f9f57268e6e1e817e6ca75b684ce5"
+  },
+  {
+    "file": "figS8_fbcsp_confusion.pdf",
+    "unchanged": true,
+    "sha256": "ebf20e83f41e6df03611909c653aedd703efc07cab8ad44c4e194d161009e2b9"
+  },
+  {
+    "file": "figS8_fbcsp_confusion.png",
+    "unchanged": true,
+    "sha256": "f050676fc7d89894093c3e014442a2b55e81c161769c852f63a131c78e9d4d4c"
+  }
+]

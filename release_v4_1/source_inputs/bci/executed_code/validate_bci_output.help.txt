@@ -1,0 +1,13 @@
+usage: validate_bci_output.py [-h] --mode {preflight,smoke,final}
+                              [--source-manifest SOURCE_MANIFEST]
+                              [--report REPORT]
+                              path
+
+positional arguments:
+  path
+
+options:
+  -h, --help            show this help message and exit
+  --mode {preflight,smoke,final}
+  --source-manifest SOURCE_MANIFEST
+  --report REPORT

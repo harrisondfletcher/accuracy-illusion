@@ -1,0 +1,765 @@
+{
+  "scope": "Point-metric reconstruction and export; no new decoder fitting or bootstrap/permutation replay.",
+  "checks": [
+    {
+      "subject": "S1",
+      "decoder": "primary",
+      "field": "mi_plugin_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S1",
+      "decoder": "primary",
+      "field": "mi_mm_correction_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S1",
+      "decoder": "primary",
+      "field": "mi_corrected_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S1",
+      "decoder": "primary",
+      "field": "accuracy",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S1",
+      "decoder": "primary",
+      "field": "b_min_bpm",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S1",
+      "decoder": "primary",
+      "field": "itr_bpm",
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "subject": "S1",
+      "decoder": "fbcsp",
+      "field": "mi_plugin_bits",
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "subject": "S1",
+      "decoder": "fbcsp",
+      "field": "mi_mm_correction_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S1",
+      "decoder": "fbcsp",
+      "field": "mi_corrected_bits",
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "subject": "S1",
+      "decoder": "fbcsp",
+      "field": "accuracy",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S1",
+      "decoder": "fbcsp",
+      "field": "b_min_bpm",
+      "absolute_difference": 1.7763568394002505e-15
+    },
+    {
+      "subject": "S1",
+      "decoder": "fbcsp",
+      "field": "itr_bpm",
+      "absolute_difference": 1.7763568394002505e-15
+    },
+    {
+      "subject": "S2",
+      "decoder": "primary",
+      "field": "mi_plugin_bits",
+      "absolute_difference": 2.7755575615628914e-17
+    },
+    {
+      "subject": "S2",
+      "decoder": "primary",
+      "field": "mi_mm_correction_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S2",
+      "decoder": "primary",
+      "field": "mi_corrected_bits",
+      "absolute_difference": 2.7755575615628914e-17
+    },
+    {
+      "subject": "S2",
+      "decoder": "primary",
+      "field": "accuracy",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S2",
+      "decoder": "primary",
+      "field": "b_min_bpm",
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "subject": "S2",
+      "decoder": "primary",
+      "field": "itr_bpm",
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "subject": "S2",
+      "decoder": "fbcsp",
+      "field": "mi_plugin_bits",
+      "absolute_difference": 5.551115123125783e-17
+    },
+    {
+      "subject": "S2",
+      "decoder": "fbcsp",
+      "field": "mi_mm_correction_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S2",
+      "decoder": "fbcsp",
+      "field": "mi_corrected_bits",
+      "absolute_difference": 5.551115123125783e-17
+    },
+    {
+      "subject": "S2",
+      "decoder": "fbcsp",
+      "field": "accuracy",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S2",
+      "decoder": "fbcsp",
+      "field": "b_min_bpm",
+      "absolute_difference": 4.440892098500626e-16
+    },
+    {
+      "subject": "S2",
+      "decoder": "fbcsp",
+      "field": "itr_bpm",
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "subject": "S3",
+      "decoder": "primary",
+      "field": "mi_plugin_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S3",
+      "decoder": "primary",
+      "field": "mi_mm_correction_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S3",
+      "decoder": "primary",
+      "field": "mi_corrected_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S3",
+      "decoder": "primary",
+      "field": "accuracy",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S3",
+      "decoder": "primary",
+      "field": "b_min_bpm",
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "subject": "S3",
+      "decoder": "primary",
+      "field": "itr_bpm",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S3",
+      "decoder": "fbcsp",
+      "field": "mi_plugin_bits",
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "subject": "S3",
+      "decoder": "fbcsp",
+      "field": "mi_mm_correction_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S3",
+      "decoder": "fbcsp",
+      "field": "mi_corrected_bits",
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "subject": "S3",
+      "decoder": "fbcsp",
+      "field": "accuracy",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S3",
+      "decoder": "fbcsp",
+      "field": "b_min_bpm",
+      "absolute_difference": 1.7763568394002505e-15
+    },
+    {
+      "subject": "S3",
+      "decoder": "fbcsp",
+      "field": "itr_bpm",
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "subject": "S4",
+      "decoder": "primary",
+      "field": "mi_plugin_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S4",
+      "decoder": "primary",
+      "field": "mi_mm_correction_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S4",
+      "decoder": "primary",
+      "field": "mi_corrected_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S4",
+      "decoder": "primary",
+      "field": "accuracy",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S4",
+      "decoder": "primary",
+      "field": "b_min_bpm",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S4",
+      "decoder": "primary",
+      "field": "itr_bpm",
+      "absolute_difference": 4.440892098500626e-16
+    },
+    {
+      "subject": "S4",
+      "decoder": "fbcsp",
+      "field": "mi_plugin_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S4",
+      "decoder": "fbcsp",
+      "field": "mi_mm_correction_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S4",
+      "decoder": "fbcsp",
+      "field": "mi_corrected_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S4",
+      "decoder": "fbcsp",
+      "field": "accuracy",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S4",
+      "decoder": "fbcsp",
+      "field": "b_min_bpm",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S4",
+      "decoder": "fbcsp",
+      "field": "itr_bpm",
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "subject": "S5",
+      "decoder": "primary",
+      "field": "mi_plugin_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S5",
+      "decoder": "primary",
+      "field": "mi_mm_correction_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S5",
+      "decoder": "primary",
+      "field": "mi_corrected_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S5",
+      "decoder": "primary",
+      "field": "accuracy",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S5",
+      "decoder": "primary",
+      "field": "b_min_bpm",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S5",
+      "decoder": "primary",
+      "field": "itr_bpm",
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "subject": "S5",
+      "decoder": "fbcsp",
+      "field": "mi_plugin_bits",
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "subject": "S5",
+      "decoder": "fbcsp",
+      "field": "mi_mm_correction_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S5",
+      "decoder": "fbcsp",
+      "field": "mi_corrected_bits",
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "subject": "S5",
+      "decoder": "fbcsp",
+      "field": "accuracy",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S5",
+      "decoder": "fbcsp",
+      "field": "b_min_bpm",
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "subject": "S5",
+      "decoder": "fbcsp",
+      "field": "itr_bpm",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S6",
+      "decoder": "primary",
+      "field": "mi_plugin_bits",
+      "absolute_difference": 2.7755575615628914e-17
+    },
+    {
+      "subject": "S6",
+      "decoder": "primary",
+      "field": "mi_mm_correction_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S6",
+      "decoder": "primary",
+      "field": "mi_corrected_bits",
+      "absolute_difference": 2.7755575615628914e-17
+    },
+    {
+      "subject": "S6",
+      "decoder": "primary",
+      "field": "accuracy",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S6",
+      "decoder": "primary",
+      "field": "b_min_bpm",
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "subject": "S6",
+      "decoder": "primary",
+      "field": "itr_bpm",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S6",
+      "decoder": "fbcsp",
+      "field": "mi_plugin_bits",
+      "absolute_difference": 5.551115123125783e-17
+    },
+    {
+      "subject": "S6",
+      "decoder": "fbcsp",
+      "field": "mi_mm_correction_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S6",
+      "decoder": "fbcsp",
+      "field": "mi_corrected_bits",
+      "absolute_difference": 5.551115123125783e-17
+    },
+    {
+      "subject": "S6",
+      "decoder": "fbcsp",
+      "field": "accuracy",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S6",
+      "decoder": "fbcsp",
+      "field": "b_min_bpm",
+      "absolute_difference": 4.440892098500626e-16
+    },
+    {
+      "subject": "S6",
+      "decoder": "fbcsp",
+      "field": "itr_bpm",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S7",
+      "decoder": "primary",
+      "field": "mi_plugin_bits",
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "subject": "S7",
+      "decoder": "primary",
+      "field": "mi_mm_correction_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S7",
+      "decoder": "primary",
+      "field": "mi_corrected_bits",
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "subject": "S7",
+      "decoder": "primary",
+      "field": "accuracy",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S7",
+      "decoder": "primary",
+      "field": "b_min_bpm",
+      "absolute_difference": 1.7763568394002505e-15
+    },
+    {
+      "subject": "S7",
+      "decoder": "primary",
+      "field": "itr_bpm",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S7",
+      "decoder": "fbcsp",
+      "field": "mi_plugin_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S7",
+      "decoder": "fbcsp",
+      "field": "mi_mm_correction_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S7",
+      "decoder": "fbcsp",
+      "field": "mi_corrected_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S7",
+      "decoder": "fbcsp",
+      "field": "accuracy",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S7",
+      "decoder": "fbcsp",
+      "field": "b_min_bpm",
+      "absolute_difference": 1.7763568394002505e-15
+    },
+    {
+      "subject": "S7",
+      "decoder": "fbcsp",
+      "field": "itr_bpm",
+      "absolute_difference": 1.7763568394002505e-15
+    },
+    {
+      "subject": "S8",
+      "decoder": "primary",
+      "field": "mi_plugin_bits",
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "subject": "S8",
+      "decoder": "primary",
+      "field": "mi_mm_correction_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S8",
+      "decoder": "primary",
+      "field": "mi_corrected_bits",
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "subject": "S8",
+      "decoder": "primary",
+      "field": "accuracy",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S8",
+      "decoder": "primary",
+      "field": "b_min_bpm",
+      "absolute_difference": 1.7763568394002505e-15
+    },
+    {
+      "subject": "S8",
+      "decoder": "primary",
+      "field": "itr_bpm",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S8",
+      "decoder": "fbcsp",
+      "field": "mi_plugin_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S8",
+      "decoder": "fbcsp",
+      "field": "mi_mm_correction_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S8",
+      "decoder": "fbcsp",
+      "field": "mi_corrected_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S8",
+      "decoder": "fbcsp",
+      "field": "accuracy",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S8",
+      "decoder": "fbcsp",
+      "field": "b_min_bpm",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S8",
+      "decoder": "fbcsp",
+      "field": "itr_bpm",
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "subject": "S9",
+      "decoder": "primary",
+      "field": "mi_plugin_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S9",
+      "decoder": "primary",
+      "field": "mi_mm_correction_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S9",
+      "decoder": "primary",
+      "field": "mi_corrected_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S9",
+      "decoder": "primary",
+      "field": "accuracy",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S9",
+      "decoder": "primary",
+      "field": "b_min_bpm",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S9",
+      "decoder": "primary",
+      "field": "itr_bpm",
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "subject": "S9",
+      "decoder": "fbcsp",
+      "field": "mi_plugin_bits",
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "subject": "S9",
+      "decoder": "fbcsp",
+      "field": "mi_mm_correction_bits",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S9",
+      "decoder": "fbcsp",
+      "field": "mi_corrected_bits",
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "subject": "S9",
+      "decoder": "fbcsp",
+      "field": "accuracy",
+      "absolute_difference": 0.0
+    },
+    {
+      "subject": "S9",
+      "decoder": "fbcsp",
+      "field": "b_min_bpm",
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "subject": "S9",
+      "decoder": "fbcsp",
+      "field": "itr_bpm",
+      "absolute_difference": 0.0
+    }
+  ],
+  "prediction_hashes_verified": 18,
+  "prediction_matrix_reconstruction": [
+    {
+      "subject": "S1",
+      "decoder": "primary",
+      "n": 281,
+      "matrix_exact_match": true
+    },
+    {
+      "subject": "S1",
+      "decoder": "fbcsp",
+      "n": 281,
+      "matrix_exact_match": true
+    },
+    {
+      "subject": "S2",
+      "decoder": "primary",
+      "n": 283,
+      "matrix_exact_match": true
+    },
+    {
+      "subject": "S2",
+      "decoder": "fbcsp",
+      "n": 283,
+      "matrix_exact_match": true
+    },
+    {
+      "subject": "S3",
+      "decoder": "primary",
+      "n": 273,
+      "matrix_exact_match": true
+    },
+    {
+      "subject": "S3",
+      "decoder": "fbcsp",
+      "n": 273,
+      "matrix_exact_match": true
+    },
+    {
+      "subject": "S4",
+      "decoder": "primary",
+      "n": 228,
+      "matrix_exact_match": true
+    },
+    {
+      "subject": "S4",
+      "decoder": "fbcsp",
+      "n": 228,
+      "matrix_exact_match": true
+    },
+    {
+      "subject": "S5",
+      "decoder": "primary",
+      "n": 276,
+      "matrix_exact_match": true
+    },
+    {
+      "subject": "S5",
+      "decoder": "fbcsp",
+      "n": 276,
+      "matrix_exact_match": true
+    },
+    {
+      "subject": "S6",
+      "decoder": "primary",
+      "n": 215,
+      "matrix_exact_match": true
+    },
+    {
+      "subject": "S6",
+      "decoder": "fbcsp",
+      "n": 215,
+      "matrix_exact_match": true
+    },
+    {
+      "subject": "S7",
+      "decoder": "primary",
+      "n": 277,
+      "matrix_exact_match": true
+    },
+    {
+      "subject": "S7",
+      "decoder": "fbcsp",
+      "n": 277,
+      "matrix_exact_match": true
+    },
+    {
+      "subject": "S8",
+      "decoder": "primary",
+      "n": 271,
+      "matrix_exact_match": true
+    },
+    {
+      "subject": "S8",
+      "decoder": "fbcsp",
+      "n": 271,
+      "matrix_exact_match": true
+    },
+    {
+      "subject": "S9",
+      "decoder": "primary",
+      "n": 264,
+      "matrix_exact_match": true
+    },
+    {
+      "subject": "S9",
+      "decoder": "fbcsp",
+      "n": 264,
+      "matrix_exact_match": true
+    }
+  ],
+  "source_result_sha256": "5b8075d274a57153421ba078212df9554bc48e8609d42d6684c1c08b6915da38"
+}

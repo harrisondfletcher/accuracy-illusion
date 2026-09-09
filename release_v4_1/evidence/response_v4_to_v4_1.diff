@@ -1,0 +1,173 @@
+--- response_original.md
++++ Response_to_Reviewers_v4_1_REVISED.md
+@@ -1,107 +1,121 @@
+-# Response to Reviewers — Revision 4
++# Response to Reviewers — Revision 4.1
+ 
+ **Manuscript:** *The Accuracy Illusion: Measuring What Accuracy Cannot in Communicative Behavior*
+ 
+-The revision changes the measurement architecture, formal claims, simulations, power analysis, BCI workflow, supplementary data, and reproducibility package. We also found and corrected an additional simulation defect that affected both the submitted engine and the first revision: the nominal grammar-partition factor was computed but never used. We describe that correction explicitly below rather than treating the original grid as valid.
++The revision addresses the measurement definitions, formal scope, simulation implementation, power analysis, and subject-specific BCI application. The original BCI estimates were withdrawn; both replacement decoders were executed under a specification frozen before evaluation-session decoding in that replacement run. We also disclose defects found during revision rather than presenting the submitted implementation as valid.
+ 
+-The simulation results in the enclosed manuscript are final and regenerate from `python reproduce_all.py`. The replacement BCI analysis has also been executed on all nine subjects under the frozen design described below. Both predeclared decoders completed, the final output passed 713 validation checks with zero failures, and Section 6, its figures, and Supplementary Table S8 were populated mechanically from the validated result JSON. The original BCI estimates remain withdrawn and are not reused.
++Version 4.1 is a reporting and proof-precision revision of those completed analyses. Neither BCI decoder was refitted. Previously omitted uncertainty companions were recovered by deterministic replay of the original 400 core runs per agent; every archived core summary field compared matched within numerical tolerance. The new ITR, support-correction, and FBCSP threshold tables use the frozen BCI result JSON. The original 480-cell grid and power estimates are retained.
++
++**Location convention.** References below identify manuscript sections and exact line ranges in the companion `The_Accuracy_Illusion_v4_1_SOURCE_LINES.txt`. These are source-text lines, not Word page-layout line numbers; the source index reproduces the delivered Markdown verbatim. Supplementary tables are identified by their stable labels.
+ 
+ ## Reviewer 1
+ 
+ ### Comment 1. BCI preprocessing, low decoder performance, and published benchmarks
+ 
+-**Response.** We agree. The original empirical results were withdrawn and the replacement analysis was executed from the 18 official BNCI 001-2014 MAT files. The production path reads the MAT records directly so that source-run identity, one-based trigger indices, class labels, and organizer artifact masks are explicit and auditable. Each session is required to contain six 48-trial task runs, 22 EEG plus 3 EOG channels, and 250-Hz sampling. The fixed analysis window is 0.5-2.5 s after cue onset (2.5-4.5 s after the MAT trial trigger); exactly 22 EEG channels enter the decoders and EOG is excluded.
++**Response.** We agree that the original analysis did not sufficiently establish pipeline validity or reproducibility. It was withdrawn. The replacement uses all 18 official BNCI MAT files, with explicit source-run identity, trigger origins, organizer artifact flags, and T/E session labels. The analysis is subject-specific: all fitting and selection use T, followed by evaluation on E. Exactly 22 EEG channels enter the decoder; the three EOG channels are excluded. The fixed epoch is .5–2.5 s after cue onset, equivalent to 2.5–4.5 s after the source trial trigger.
+ 
+-The primary model is an 8-30 Hz fixed-window one-vs-rest CSP plus shrinkage LDA decoder. Its CSP component count (4, 6, or 8) is selected using six-fold leave-one-source-run-out cross-validation entirely within session T, then the model is refit on all clean T trials and applied once to E. A separate nine-band FBCSP-style robustness decoder performs all CSP fitting and mutual-information feature selection inside the same T-only folds. Organizer artifact flags are applied explicitly as a trial mask; a frozen-model all-scheduled sensitivity includes flagged E trials without refitting.
++The primary decoder applies an 8–30 Hz zero-phase FIR filter independently within each continuous source run. Both primary and filter-bank CSP estimate class-wise covariance from concatenated training epochs with Ledoit–Wolf shrinkage and no trace normalization. LDA uses automatic shrinkage. Primary component counts of 4, 6, or 8 and filter-bank feature counts of 16, 32, 64, or 96 are selected inside six-fold leave-one-source-run-out cross-validation on T, with all learned transforms fitted within the training folds.
+ 
+-The executed primary decoder obtained mean accuracy 0.620 and mean kappa 0.493; the FBCSP-style decoder obtained 0.692 and 0.591. These are contextualized against Ang et al. (2012), who report mean evaluation kappa .503 for OVR-CSP and .569 for OVR-FBCSP under a different causal, time-resolved, maximum-over-time competition procedure. We therefore use those values as context rather than acceptance targets. The final package includes all per-subject confusion matrices and the complete prediction records.
++Organizer flags exclude 224 of 2,592 evaluation trials, ranging from 5 to 73 exclusions per subject. Every evaluation class retains 53–72 observations and therefore satisfies beta=30. S8 reports training and evaluation counts and class-specific exclusions. Frozen-decoder all-scheduled sensitivity includes flagged E trials without refitting.
+ 
+-**Location.** Sections 6.1-6.5; Supplementary Table S8; Supplementary Code `bci_local_data.py` and `bci_pipeline.py`; `BCI_RUNBOOK_FINAL.md`.
++The primary decoder has mean accuracy .620 and mean kappa .493; the FBCSP-style decoder has .692 and .591. Ang et al.'s published OVR-CSP and OVR-FBCSP kappa values (.503 and .569) are contextual benchmarks, not exact targets, because their temporal evaluation differs. The implemented filter-bank decoder is explicitly called FBCSP-style rather than an exact replication. All confusion matrices and prediction records are retained. The published Ang report lacks the complete subject-level matrices needed to reconstruct the suite, so our fully reported stronger-decoder reanalysis addresses the underlying robustness concern.
+ 
+-### Comment 2. Pooled analysis, confidence intervals, and MI bias correction
++**Location.** Sections 6.1–6.5; manuscript source L336–L393; Tables 3a–3b; Supplementary S8a–S8i; executed BCI code.
+ 
+-**Response.** We agree. The pooled subject-level row and all operating-system interpretations of the pooled confusion matrix were removed. Table 3a now contains nine subject-specific primary-decoder rows; the robustness results are in Supplementary Table S8. A micro-average, if retained for reference, is explicitly identified as a descriptive aggregation rather than an operating BCI.
++### Comment 2. Pooling, confidence intervals, and MI correction
+ 
+-Equation 7 uses the observed-support first-order correction, `I_MM = I_plugin - (K_YZ - K_Y - K_Z + 1)/(2N ln 2)`, with the correction recomputed for each subject and each resample and no truncation at zero. Final descriptive intervals use 10,000 resamples stratified by evaluation source run and true class. Confirmatory independence inference uses 5,000 within-run label permutations with plug-in MI as the statistic and p=(b+1)/(B+1), followed by Holm adjustment across the nine subjects separately within each decoder family. All nine subject tests rejected the specified independence null after Holm correction under both decoders (raw p=1/5001 for every subject; Holm-adjusted p=9/5001=.00180). We do not interpret this as a between-subject test.
++**Response.** The pooled operating-system claim was removed. Estimates and inference are subject-specific. The observed-support first-order correction is recomputed for each subject and bootstrap resample, with no zero truncation. S8h now displays the plug-in MI, correction amount, corrected MI, and support dimensions.
+ 
+-**Location.** Sections 2.2, 6.2, 7, and 14; Table 3a; Supplementary Table S8; `bci_pipeline.py`.
++Descriptive intervals use 10,000 resamples within evaluation source-run-by-class strata. Confirmatory independence tests use plug-in MI with 5,000 within-run label permutations and p=(b+1)/(B+1), followed by Holm adjustment over nine subjects separately by decoder. All nine tests reject the specified within-subject null under both decoders (adjusted p=9/5001=.00180). These results are not interpreted as between-subject significance. The S1/S8 illustration is explicitly exploratory and includes its selection rule.
+ 
+-### Comment 3. Episode duration and comparability with ITR
++Both primary and FBCSP-style per-subject vocabulary curves are now printed in S8e, rather than only summarized across subjects or stored in JSON. The threshold is a reference criterion, not an externally established usability boundary.
+ 
+-**Response.** We agree. The original 3 s feature-window denominator was withdrawn. For each subject, the replacement analysis computes the mean of all 282 within-source-run inter-trigger intervals across the six E runs before artifact exclusion. The 18 MAT files share the same pseudorandom trigger schedule, yielding a mean cycle of 8.043 s (SD 0.271; range 7.58-8.48 s). `B_min` and the conventional Wolpaw ITR reference are both reported using this full-cycle denominator. Under the primary decoder, corrected MI spans 0.087-1.195 bits and full-cycle `B_min` spans 0.65-8.92 bits/min.
++**Location.** Sections 2.2, 6.2, and 7; manuscript source L348–L380; Table 3a; S8d, S8e, and S8h.
+ 
+-**Location.** Sections 2.1-2.2 and 6.1-6.2; `bci_pipeline.py`; Supplementary Table S8.
++### Comment 3. Episode duration and ITR comparability
+ 
+-### Comment 4. Section 4.3 was asserted rather than constructed
++**Response.** The original feature-window denominator was withdrawn. The replacement full-cycle mean uses all 282 within-source-run trigger intervals across the six E runs before artifact exclusion. Fixed cue offsets cancel in these differences; inter-run gaps do not enter the mean. The mean cycle is 8.043 s, not the two-second decision epoch or the original three-second denominator.
+ 
+-**Response.** We agree. Proposition 3 now states the general non-identifiability result: holding the base joint distribution and duration distribution fixed does not constrain behavior on disjoint held-out compositional trials. Section 4.3 also supplies explicit 4×4 matrices under a uniform prior. Agent alpha has diagonal .85 and uniform .05 errors. Agent beta has first-block diagonal .81 and second-block diagonal `q = .5467007423005`; both have MI `1.1524153202` bits to numerical precision, while `V_eff(.80)` is 4 versus 2. The text no longer infers compositional generalization from single-intent error geometry.
++Table S8d now prints conventional Wolpaw ITR beside B_min for both decoders, using this common duration. The uniform-prior/symmetric-error assumptions of the conventional ITR are explicit. The all-file trigger-schedule assertion is supported by the supplied `TRIGGER_SCHEDULE_AUDIT.json`, which compares all 18 file identities using the archived 5,184-trial ledger. That reporting-stage audit is identified as a ledger reconstruction, not a new reading of the raw EEG binaries.
+ 
+-**Location.** Proposition 3 and Section 4.3; `results/equal_mi_matrices.json`.
++**Location.** Section 6.1; manuscript source L346–L347; S8d and S8g; timing-audit JSON.
+ 
+-### Comment 5. Power claims, replication count, resampling count, and effect-size definition
++### Comment 4. Section 4.3 required an explicit construction
+ 
+-**Response.** We agree. The original power study was invalid because its nominal parameter changed while the compared programmed agents differed on multiple channels. It has been replaced completely.
++**Response.** Proposition 3 now states the base-to-held-out nonrecoverability construction, including its behavioral-channel assumptions. Section 4.3 supplies explicit four-class matrices. The first matrix has diagonal .85 and .05 off-diagonal probabilities. The second has a first-block diagonal .81 and a second-block parameter q defined by the entropy equality, numerically q=.5467007423005. Both have population MI 1.1524153202 bits at the displayed precision, but population vocabulary counts at alpha=.80 are four and two. A converse example fixes the vocabulary count and varies population MI. No compositional performance is inferred from the geometry of the base errors.
+ 
+-Each panel now perturbs one metric-specific parameter while holding the other channels equal, uses 1,000 Monte Carlo replications, reports a zero-effect empirical-size row and Wilson interval, and indexes sample size by the observations entering that metric. `C_2`, `R`, and `U` use two-sided Fisher tests. `B_min` uses the same two-sided system-label permutation test recommended for confirmatory analysis, conditional on the pooled joint table, with 1,000 label permutations per replication and `(b+1)/(B+1)` p-values. Table 2e reports both `Δp` and the corresponding population `ΔB_min`.
++Version 4.1 distinguishes these population identities from finite-sample corrected estimates. Equal population MI need not give equal Miller–Madow corrections when the matrices have different observed supports. Proposition 1 also now includes the additional replacement channel establishing monotonicity for every pair epsilon1<epsilon2, not only comparison with zero noise.
+ 
+-The revised results distinguish detecting an extreme chance-versus-.86 compositional contrast from resolving smaller differences. A .10 difference around `C_2=.50` requires about 400 held-out trials per system; a .05 difference requires approximately 1,600. For `B_min`, `Δp=.05` reaches power .665, .823, and .929 at 500, 750, and 1,000 base trials per system, respectively; `Δp=.03` reaches .798 at 2,000. Empirical size for the `B_min` permutation procedure ranges .039–.057.
++**Location.** Sections 3.4 and 4.2–4.3; manuscript source L190–L217; Propositions 1, 3, and 4.
+ 
+-**Location.** Section 5.7; Tables 2a–2e; Figure 5; Supplementary Table S7; `power_v3.py`.
++### Comment 5. Power, replication, and effect-size definitions
+ 
+-### Comment 6. Directed non-implications, circularity, and empirical non-redundancy
++**Response.** The submitted power experiment mixed programmed agent identity with the nominally varied accuracy parameter. It was replaced. Each panel now perturbs one metric-specific parameter, holds the other channels equal, uses 1,000 Monte Carlo replications, and reports a zero-effect size check and Wilson Monte Carlo intervals. Trial counts refer to observations entering the metric and, for two-system comparisons, are per system.
+ 
+-**Response.** We narrowed and formalized the claim. “Irreducible” now means functional independence under fixed ontology, duration distribution, and `V_eff` thresholds: for each reported quantity, two systems can agree on the other four and differ on that quantity. Proposition 4 proves that claim by channel construction plus the explicit equal-MI/different-`V_eff` and equal-`V_eff`/different-MI pairs.
++C2, R, and U use two-sided Fisher tests. B_min uses the two-sided system-label permutation procedure conditional on the pooled table, with 1,000 label permutations per replication and finite-permutation correction. Its exactness requires the stated exchangeability null; equality of a scalar information rate alone is not asserted to imply exchangeability. The zero-effect simulation uses a common generating distribution.
+ 
+-The programmed agents are described as a separability demonstration, not empirical validation. A separate continuously parameterized synthetic population reports the observed covariance matrix and eigenvalues. The text explicitly states which near-zero correlations follow from independently sampled latent parameters and makes no claim that real communicative behavior is intrinsically four-dimensional. Incremental validity against downstream task completion is reserved for prospective empirical work.
++The revised tables distinguish an extreme chance-versus-.86 contrast from small effects. A .10 C2 difference around .50 requires approximately 400 held-out trials per system. For B_min, a .05 base-accuracy difference has power .665, .823, and .929 at 500, 750, and 1,000 base trials per system. The corresponding population difference is .628 bits/min at the simulated .5-minute cycle. Empirical size of the B_min procedure ranges .039–.057. Newly printed S7e–S7g expose the already archived uncertainty-error-fraction sensitivities and compositional-presence Monte Carlo intervals; no power simulation was rerun for this reporting revision.
+ 
+-**Location.** Sections 3.4–3.5, 5.1, 14, and 15.1.
++**Location.** Sections 5.7 and 7; manuscript source L268–L322; Tables 2a–2e; Figure 5; S7a–S7g.
+ 
+-### Comment 7. The original uncertainty measure confounded abstention with follow-up informativeness
++### Comment 6. Non-implications, circularity, and empirical non-redundancy
+ 
+-**Response.** We agree. Equation 6 is replaced by uncertainty selectivity:
++**Response.** We distinguish functional nonrecoverability from statistical independence and from criterion validity. Proposition 4 is now explicitly a population-level construction for the nondegenerate four-class reference design with alpha=.80, adequate planned support, fixed duration, and the specified class of behavioral channels. It is not claimed for every threshold, ontology, sample allocation, or restricted learning architecture. The proof gives witnesses for each metric, rather than relying on an unexpanded symmetric-construction assertion.
+ 
+-`U = P(A=1 | E=1) − P(A=1 | E=0)`,
++The programmed agents establish controlled separability, not discovered human/animal mechanisms. A separate population of 1,000 continuously parameterized synthetic agents reports covariance and its dependence on the generator. The text disclaims general empirical dimensionality. As requested, the discussion addresses incremental validity against an external criterion: a prospective study would test whether specialized measures add prediction of downstream task completion beyond base performance. IV-2a does not elicit Ck, R, or U, so it cannot establish that validity. We do not replace missing specialized observations with zero.
+ 
+-where `A` is abstention and `E` is the observed error on a forced commitment elicited before outcome feedback. After abstention, the forced commitment uses the same unchanged stimulus, no added task-relevant information, and a fixed short delay. `U` is Youden’s J for a binary abstention signal. It equals zero for random abstention and can be negative for anti-selective abstention. It is not estimable if either error stratum is empty.
++**Location.** Sections 3.4–3.5, 6.4, 14, and 15.1–15.4; manuscript source L137–L173; Propositions 3–4; Table 1a.
+ 
+-Because always-abstaining and never-abstaining systems can both have `U=0`, the manuscript and protocol require joint reporting of abstention rate and commitment coverage, both conditional abstention rates, and both stratum counts. The construct is described as selectivity/discrimination, not probabilistic calibration. Graded confidence is evaluated with risk–coverage/AURC, with calibration assessed separately by a proper score.
++### Comment 7. Uncertainty selectivity and follow-up confounding
+ 
+-**Location.** Sections 2.6, 3.3, 11.5, and 13; Protocol S4; `metrics_u.py`.
++**Response.** The follow-up-resolution measure was replaced by U=P(A=1|E=1)−P(A=1|E=0), where E is the observed error of a forced commitment elicited before feedback on the same unchanged stimulus. It is not inferred from a difficulty label. U is selectivity/discrimination, not probabilistic calibration. Random abstention has population U=0; anti-selective behavior can produce negative values. A sample with an empty error or non-error stratum is not estimable, rather than assigned zero.
++
++Because always-abstaining and never-abstaining systems can both have U=0, reporting includes abstention rate, commitment coverage, both conditional abstention rates, and both stratum counts. S1b–S1c now fulfill this requirement for the actual core experiment. We replayed the same 400 seeded runs per agent with the unchanged archived engine to recover these fields and checked every previously reported core summary field. The Compositional core runs have mean error/non-error counts 16.70/133.30 out of 150 uncertainty trials, with mean conditional abstention rates .444/.226; these yield mean U=.217. No core run has a non-estimable U. Data S2 is explicitly a separate worked example.
++
++**Location.** Sections 2.6 and 5.5; manuscript source L89–L98; Table 1; S1b–S1c; core uncertainty CSV and reconstruction report.
+ 
+ ## Reviewer 2
+ 
+-### Major Comment 1. State what each metric requires from an experimental design
++### Major Comment 1. Experimental requirements
+ 
+-**Response.** Table 0 now lists the ground truth, trial structure, and additional design element required for every metric. Section 6.4 applies that table to IV-2a: the dataset can support only the base-channel measures; absent compositional, induced-error, and abstention channels are reported as not measurable, not as zero.
++**Response.** Table 0 identifies required ground truth, trial structure, and additional design elements for each measure. Section 6.4 applies this directly: IV-2a supports the base channel only. This is a limitation of the observations collected, not a zero score on unelicited behavior.
+ 
+-### Major Comment 2. Clarify the meaning and scope of “irreducible”
++**Location.** Sections 2.7 and 6.4; manuscript source L99–L120; Table 0.
+ 
+-**Response.** Section 3.4 distinguishes functional independence, covariance under one synthetic generator, and application-specific computability. The abstract no longer implies that all five measures are required in every application or uncorrelated in realistic populations.
++### Major Comment 2. Meaning of irreducibility
+ 
+-### Major Comment 3. Report trial allocation, null tests, and threshold sensitivity
++**Response.** Section 3.4 defines the restricted population-level nonrecoverability result and distinguishes it from covariance and application-specific computability. Scope qualifications now appear in the abstract, theorem, and discussion, and finite-sample corrections are treated separately.
+ 
+-**Response.** Section 5.7 reports channel-specific sample counts, metric-scale effects, test statistics, empirical size, and Monte Carlo uncertainty. Section 2.3 describes `.80` as a simulation reference threshold rather than a universal usability criterion. The executed Section 6.2 reports the complete primary-decoder threshold curve: subjects with at least one qualifying class number 9/9, 8/9, 7/9, 5/9, 4/9, and 0/9 at alpha=.40,.50,.60,.70,.80,.90. The FBCSP-style sensitivity yields 9/9, 9/9, 7/9, 7/9, 5/9, and 3/9, demonstrating that `V_eff` is decoder-dependent as well as threshold-dependent.
++**Location.** Section 3.4; manuscript source L137–L154.
+ 
+-### Minor Comment 1. Inconsistent 400 versus 1,000 run counts
++### Major Comment 3. Allocation, null tests, and threshold sensitivity
+ 
+-**Response.** Section 5.4 now reports the actual counts: 400 runs for core/null/counterexample profiles; 300 per matched-base configuration; 100 paired runs per grid cell; 1,000 agents in the covariance analysis; and 1,000 replications per power cell.
++**Response.** The channel allocation and actual run counts are explicit. Power is indexed by channel observations rather than a global minimum. Both decoder-specific threshold curves are printed by subject in S8e. The primary counts of subjects with at least one qualifying class are 9, 8, 7, 5, 4, and 0 at thresholds .40–.90; FBCSP-style counts are 9, 9, 7, 7, 5, and 3. Every evaluation class meets the fixed support requirement. Alpha=.80 is a reference threshold, not a universal usability criterion.
+ 
+-### Minor Comment 2. Inconsistent Miller–Madow terms
++**Location.** Sections 5.2, 5.4, 5.7, and 6.2; manuscript source L224–L241; Tables 2a–2e and 3b; S8e.
+ 
+-**Response.** Equation 7, the worked example, code, and empirical reporting shell now use the same observed-support correction. The full-support values are .175 bits for 12×12, N=500 and .0225 bits for 4×4, N=288. The estimator remains first-order; residual bias is reported and permutation tests are used for null inference.
++### Minor Comment 1. Inconsistent replication counts
+ 
+-## Additional defect identified during revision: inert grammar-partition sweep
++**Response.** Section 5.4 reports the actual counts: 400 core/null/counterexample runs, 300 runs per matched-base condition, 100 paired runs per grid cell, 1,000 covariance-population agents, and 1,000 replications per power cell. The 2,000 core runs replayed for S1b–S1c are the original seeds, not additional independent evidence.
+ 
+-During the revision audit, we identified an additional defect. In both the submitted engine and the first revision, the nominal 60/40, 70/30, and 80/20 grammar-partition parameter was computed but never used. Held-out evaluation was hard-coded at .50. The original 1,440-cell grid was therefore 480 substantive configurations repeated three times.
++**Location.** Section 5.4; manuscript source L238–L241.
+ 
+-We removed the split parameter entirely from `SimConfig` and from the grid. The Bernoulli engine models correctness on training-labelled versus held-out-labelled trial types; it does not represent individual combination identities, so a unique-combination partition cannot affect its behavior. The manuscript protocol still specifies an 80/20 grammar partition for real experiments, while the simulation states explicitly that this is an assumed protocol property rather than an engine factor. The 480 substantive cells were rerun with 100 paired replications each. A future explicit-combination engine could study partition balance, but that is a different model and is not introduced in this revision.
++### Minor Comment 2. Miller–Madow inconsistency
+ 
+-## Additional precision correction: common random numbers
++**Response.** Sample estimates use the observed-support first-order correction consistently. The full-support subtraction terms are approximately .175 bits for K=12,N=500 and .0225 bits for K=4,N=288. S8h prints the actual subject/decoder terms. Population examples are now explicitly excluded from the sample-correction convention. Residual small-sample bias remains disclosed.
+ 
+-The prior revision incorrectly said the two focal agents shared the base channel “exactly” while using different seed offsets. The revised engine now uses common random numbers. Within every Memorizer/Compositional pair, ground-truth intents, base response uniforms, and episode durations are identical. Base accuracy, MI, `B_min`, and `V_eff` are therefore exactly equal in Table 1, the matched-base sweep, and every grid cell.
++**Location.** Section 7; manuscript source L394–L406; S8h.
+ 
+-## Reproducibility package
++## Additional implementation defects disclosed during revision
+ 
+-The package now includes deterministic Data S2 with `forced_commit_error`, revised Protocol S4, a color-vision-safe Figure 5, tests for channel isolation and estimator behavior, a clean-state quick path, a SHA-256 manifest, the executed BCI pipeline, trial-level predictions, the final BCI JSON, the independent validator, and deterministic manuscript-population scripts. The final BCI validator passed 713 checks with zero failures; the core test suite reports 39 passing tests. `python reproduce_all.py --quick` does not depend on cached grid or power output, and the simulation artifacts remain unchanged by the BCI completion.
++**Inert grammar-partition factor.** In the submitted engine and the first revision, nominal 60/40, 70/30, and 80/20 settings did not affect generated trials. The nominal 1,440-cell grid therefore did not represent 1,440 distinct conditions. The factor was removed; the corrected 480-condition grid was run with 100 paired replications per cell. The Bernoulli engine distinguishes training-labelled and held-out-labelled trial types but does not instantiate actual combination identities. The real-study grammar protocol and the simulated held-out evaluation allocation are now distinguished explicitly.
+ 
++**Cross-channel contamination.** The previous base confusion matrix included specialized compositional, repair, and uncertainty episodes, allowing those behaviors to alter the quantities described as base-channel measures. The revised engine restricts B_min and V_eff to base episodes; each specialized metric uses its own channel. The affected simulation profiles and power analyses were regenerated during the earlier substantive revision.
+ 
++**Class-Biased agent mismatch.** The previous favored classes were not aligned with the high-probability Zipf classes as the manuscript description implied. The revised specification uses the three most frequent intents. The results now report the observed .565 accuracy at s=1, consistent with the analytic .566 expectation under that rule, rather than retaining the unsupported .72 claim.
++
++**Exact matched-base control.** Matching parameters under different random seeds does not produce identical realized base samples. The revised engine uses common random numbers for the paired Memorizer and Compositional base channel. Their sample-level equality is identified as a design control, not an empirical discovery.
++
++## Final reporting and format corrections
++
++The abstract is within 250 words. The Open Practices Statement appears immediately before References and distinguishes the local analysis freeze from public preregistration. Stale unpopulated-BCI instructions were removed. ITR and both decoder threshold curves are readable tables. The missing set-difference operator is encoded as editable mathematics, and table rows are kept intact in the Word versions. The reporting audit lists all additional mathematical qualifiers, including the exchangeability-null and measurement-error clarifications, without changing an executed BCI estimate.

@@ -1,0 +1,44 @@
+{
+  "command": "python scripts/reproduce_revision.py",
+  "exit_code": 0,
+  "no_BCI_refit": true,
+  "copied_package_reproduction": true,
+  "note": "re-run 2026-09-09 for the FINAL SUBMISSION 4.1 clerical variant",
+  "comparisons": [
+    {
+      "file": "The_Accuracy_Illusion_v4_1_REVISED.md",
+      "sha256": "fffad9a22f5a635e462d235da141626efe9e7ce8a0cf9617d4f304a32fabe0ee",
+      "sha256_identical": true
+    },
+    {
+      "file": "Supplementary_Tables_S0_S8_v4_1_REVISED.md",
+      "sha256": "0f2f38ea44ef1bc49eb37047beb7cf8bdd10138eb440fbc2dbcbf30836c49af9",
+      "sha256_identical": true
+    },
+    {
+      "file": "Response_to_Reviewers_v4_1_REVISED.md",
+      "sha256": "cb566355caa7faa3d7b924c02d6db86067b3c1e32d4e71bffdd3cc6b2eed8ad9",
+      "sha256_identical": true
+    },
+    {
+      "file": "evidence/CORE_UNCERTAINTY_REPORT.json",
+      "sha256": "f96ce777ff6379ee99e05d1880a463a2df237dfc0a2467bf5f08e8edf63d6d1b",
+      "sha256_identical": true
+    },
+    {
+      "file": "evidence/TRIGGER_SCHEDULE_AUDIT.json",
+      "sha256": "71c39b35bce7122b87e014d8528e0bd7dedb087a2b0a5f3ec6b125cda5a2e51d",
+      "sha256_identical": true
+    },
+    {
+      "file": "evidence/BCI_EXTENDED_TABLES.csv",
+      "sha256": "1d49e62868d837a2e9f3f6e24deb17286d6ce9356091e9f258608a6bb765705a",
+      "sha256_identical": true
+    },
+    {
+      "file": "evidence/BCI_REPORTING_CHECKS.json",
+      "sha256": "5e0a0cb4e33e641948fd89d0186f9803634d8dc8398f5f30bfe4d952b04f22d2",
+      "sha256_identical": true
+    }
+  ]
+}

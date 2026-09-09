@@ -1,0 +1,10 @@
+{
+  "equal_mi_alpha": 1.152415320175426,
+  "equal_mi_beta": 1.152415320175426,
+  "absolute_difference": 0.0,
+  "same_vocabulary_other_mi": 1.634354917847986,
+  "alpha": 0.8,
+  "q_displayed": 0.5467007423005,
+  "scope": "Numerical checks corroborate the displayed reference constructions; the manuscript gives the algebraic proofs.",
+  "intermediate_noise_kernel_identities_tested": 100
+}

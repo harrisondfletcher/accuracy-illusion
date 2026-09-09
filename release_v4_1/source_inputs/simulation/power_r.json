@@ -1,0 +1,217 @@
+{
+ "method": "two-sided Fisher exact",
+ "replications": 1000,
+ "baseline": 0.15972222222222232,
+ "cells": {
+  "0.0": {
+   "20": {
+    "rejection_probability": 0.021,
+    "power": 0.021,
+    "ci": [
+     0.0138,
+     0.0319
+    ]
+   },
+   "40": {
+    "rejection_probability": 0.028,
+    "power": 0.028,
+    "ci": [
+     0.0194,
+     0.0402
+    ]
+   },
+   "100": {
+    "rejection_probability": 0.038,
+    "power": 0.038,
+    "ci": [
+     0.0278,
+     0.0517
+    ]
+   },
+   "200": {
+    "rejection_probability": 0.047,
+    "power": 0.047,
+    "ci": [
+     0.0355,
+     0.0619
+    ]
+   },
+   "400": {
+    "rejection_probability": 0.035,
+    "power": 0.035,
+    "ci": [
+     0.0253,
+     0.0483
+    ]
+   }
+  },
+  "0.05": {
+   "20": {
+    "rejection_probability": 0.034,
+    "power": 0.034,
+    "ci": [
+     0.0244,
+     0.0471
+    ]
+   },
+   "40": {
+    "rejection_probability": 0.05,
+    "power": 0.05,
+    "ci": [
+     0.0381,
+     0.0653
+    ]
+   },
+   "100": {
+    "rejection_probability": 0.09,
+    "power": 0.09,
+    "ci": [
+     0.0738,
+     0.1093
+    ]
+   },
+   "200": {
+    "rejection_probability": 0.2,
+    "power": 0.2,
+    "ci": [
+     0.1764,
+     0.2259
+    ]
+   },
+   "400": {
+    "rejection_probability": 0.409,
+    "power": 0.409,
+    "ci": [
+     0.3789,
+     0.4398
+    ]
+   }
+  },
+  "0.1": {
+   "20": {
+    "rejection_probability": 0.061,
+    "power": 0.061,
+    "ci": [
+     0.0478,
+     0.0776
+    ]
+   },
+   "40": {
+    "rejection_probability": 0.142,
+    "power": 0.142,
+    "ci": [
+     0.1217,
+     0.165
+    ]
+   },
+   "100": {
+    "rejection_probability": 0.352,
+    "power": 0.352,
+    "ci": [
+     0.323,
+     0.3821
+    ]
+   },
+   "200": {
+    "rejection_probability": 0.631,
+    "power": 0.631,
+    "ci": [
+     0.6006,
+     0.6604
+    ]
+   },
+   "400": {
+    "rejection_probability": 0.91,
+    "power": 0.91,
+    "ci": [
+     0.8907,
+     0.9262
+    ]
+   }
+  },
+  "0.2": {
+   "20": {
+    "rejection_probability": 0.217,
+    "power": 0.217,
+    "ci": [
+     0.1926,
+     0.2436
+    ]
+   },
+   "40": {
+    "rejection_probability": 0.444,
+    "power": 0.444,
+    "ci": [
+     0.4135,
+     0.475
+    ]
+   },
+   "100": {
+    "rejection_probability": 0.875,
+    "power": 0.875,
+    "ci": [
+     0.8531,
+     0.8941
+    ]
+   },
+   "200": {
+    "rejection_probability": 0.996,
+    "power": 0.996,
+    "ci": [
+     0.9898,
+     0.9984
+    ]
+   },
+   "400": {
+    "rejection_probability": 1.0,
+    "power": 1.0,
+    "ci": [
+     0.9962,
+     1.0
+    ]
+   }
+  },
+  "0.25": {
+   "20": {
+    "rejection_probability": 0.296,
+    "power": 0.296,
+    "ci": [
+     0.2685,
+     0.325
+    ]
+   },
+   "40": {
+    "rejection_probability": 0.617,
+    "power": 0.617,
+    "ci": [
+     0.5865,
+     0.6466
+    ]
+   },
+   "100": {
+    "rejection_probability": 0.974,
+    "power": 0.974,
+    "ci": [
+     0.9622,
+     0.9822
+    ]
+   },
+   "200": {
+    "rejection_probability": 0.999,
+    "power": 0.999,
+    "ci": [
+     0.9944,
+     0.9998
+    ]
+   },
+   "400": {
+    "rejection_probability": 1.0,
+    "power": 1.0,
+    "ci": [
+     0.9962,
+     1.0
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,162 @@
+{
+  "freeze_utc": "2026-09-09T03:37:41.260093+00:00",
+  "design_fingerprint": "eabbe1298c88df656e514eb6ea04b112788b5d16bbe3bb29e4994c8ec92642dd",
+  "fingerprint_payload": {
+    "schema_version": "4.1",
+    "config": {
+      "epoch_tmin_postcue": 0.5,
+      "epoch_tmax_postcue": 2.5,
+      "event_anchor": "mat_trial_trigger",
+      "epoch_tmin_post_trigger": 2.5,
+      "epoch_tmax_post_trigger": 4.5,
+      "primary_fmin": 8.0,
+      "primary_fmax": 30.0,
+      "primary_component_grid": [
+        4,
+        6,
+        8
+      ],
+      "fbcsp_components_per_class_band": 4,
+      "fbcsp_feature_grid": [
+        16,
+        32,
+        64,
+        96
+      ],
+      "cv_scheme": "leave-one-source-run-out",
+      "tie_rule": "first-best-in-ascending-grid (simpler candidate wins ties)",
+      "csp_regularization": "ledoit_wolf",
+      "veff_beta": 30,
+      "n_bootstrap": 10000,
+      "n_permutations": 5000,
+      "bootstrap_scheme": "stratified by (E source run x true class), paired across decoders",
+      "permutation_scheme": "true labels permuted within each source E run against frozen predictions; statistic = plug-in MI; Phipson-Smyth (1+exceed)/(B+1)",
+      "artifact_policy": "organizer run.artifacts mask, explicit exclusion",
+      "random_seed": 42
+    },
+    "code_sha256": {
+      "bci_pipeline.py": "04fb5d11853439b05addbb5659ab09617504e0d99f3bc746e402e092b1e2d66a",
+      "bci_local_data.py": "725b9e22e6fbb00ffd727bb7c117531c2129e5bce526de7d66826ffd90125f82"
+    },
+    "software_versions": {
+      "moabb": "1.7.1",
+      "mne": "1.12.1",
+      "scikit-learn": "1.8.0",
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8"
+    },
+    "data_files": [
+      {
+        "name": "A01T.mat",
+        "source": "official BNCI 001-2014",
+        "bytes": 42806453,
+        "sha256": "054f02e70cf9c4ada1517e9b9864f45407939c1062c6793516585c6f511d0325"
+      },
+      {
+        "name": "A01E.mat",
+        "source": "official BNCI 001-2014",
+        "bytes": 43772146,
+        "sha256": "53d415f39c3d7b0c88b894d7b08d99bcdfe855ede63831d3691af1a45607fb62"
+      },
+      {
+        "name": "A02T.mat",
+        "source": "official BNCI 001-2014",
+        "bytes": 43068077,
+        "sha256": "5ddd5cb520b1692c3ba1363f48d98f58f0e46f3699ee50d749947950fc39db27"
+      },
+      {
+        "name": "A02E.mat",
+        "source": "official BNCI 001-2014",
+        "bytes": 44218409,
+        "sha256": "d63c454005d3a9b41d8440629482e855afc823339bdd0b5721842a7ee9cc7b12"
+      },
+      {
+        "name": "A03T.mat",
+        "source": "official BNCI 001-2014",
+        "bytes": 44057065,
+        "sha256": "7e731ee8b681d5da6ecb11ae1d4e64b1653c7f15aad5d6b7620b25ce53141e80"
+      },
+      {
+        "name": "A03E.mat",
+        "source": "official BNCI 001-2014",
+        "bytes": 42316292,
+        "sha256": "d4229267ec7624fa8bd3af5cbebac17f415f7c722de6cb676748f8cb3b717d97"
+      },
+      {
+        "name": "A04T.mat",
+        "source": "official BNCI 001-2014",
+        "bytes": 37150377,
+        "sha256": "15850d81b95fc88cc8b9589eb9b713d49fa071e28adaf32d675b3eaa30591d6e"
+      },
+      {
+        "name": "A04E.mat",
+        "source": "official BNCI 001-2014",
+        "bytes": 41730824,
+        "sha256": "81916dff2c12997974ba50ffc311da006ea66e525010d010765f0047e771c86a"
+      },
+      {
+        "name": "A05T.mat",
+        "source": "official BNCI 001-2014",
+        "bytes": 42452392,
+        "sha256": "77387d3b669f4ed9a7c1dac4dcba4c2c40c8910bae20fb961bb7cf5a94912950"
+      },
+      {
+        "name": "A05E.mat",
+        "source": "official BNCI 001-2014",
+        "bytes": 44392496,
+        "sha256": "8b357470865610c28b2f1d351beac247a56a856f02b2859d650736eb2ef77808"
+      },
+      {
+        "name": "A06T.mat",
+        "source": "official BNCI 001-2014",
+        "bytes": 44581256,
+        "sha256": "4dc3be1b0d60279134d1220323c73c68cf73799339a7fb224087a3c560a9a7e2"
+      },
+      {
+        "name": "A06E.mat",
+        "source": "official BNCI 001-2014",
+        "bytes": 43395510,
+        "sha256": "bf67a40621b74b6af7a986c2f6edfff7fc2bbbca237aadd07b575893032998d1"
+      },
+      {
+        "name": "A07T.mat",
+        "source": "official BNCI 001-2014",
+        "bytes": 42809746,
+        "sha256": "43b6bbef0be78f0ac2b66cb2d9679091f1f5b7f0a5d4ebef73d2c7cc8e11aa96"
+      },
+      {
+        "name": "A07E.mat",
+        "source": "official BNCI 001-2014",
+        "bytes": 42242294,
+        "sha256": "b9aaec73dcee002fab84ee98e938039a67bf6a3cbf4fc86d5d8df198cfe4c323"
+      },
+      {
+        "name": "A08T.mat",
+        "source": "official BNCI 001-2014",
+        "bytes": 45032065,
+        "sha256": "7a4b3bd602d5bc307d3f4527fca2cf076659e94aca584dd64f6286fd413a82f2"
+      },
+      {
+        "name": "A08E.mat",
+        "source": "official BNCI 001-2014",
+        "bytes": 46282127,
+        "sha256": "0eedbd89790c7d621c8eef68065ddecf80d437bbbcf60321d9253e2305f294f7"
+      },
+      {
+        "name": "A09T.mat",
+        "source": "official BNCI 001-2014",
+        "bytes": 44785478,
+        "sha256": "b28d8a262c779c8cad9cc80ee6aa9c5691cfa6617c03befe490a090347ebd15c"
+      },
+      {
+        "name": "A09E.mat",
+        "source": "official BNCI 001-2014",
+        "bytes": 44780912,
+        "sha256": "5d79649a42df9d51215def8ffbdaf1c3f76c54b88b9bbaae721e8c6fd972cc36"
+      }
+    ]
+  },
+  "amendments_sha256": "2f7a5db091218c8f19ac85a62bf03a77f1f66bf5f7fed311bb40056e4a504ce8",
+  "registration_note": "Revision-stage analysis of a public dataset with accessible E labels; frozen before any E-session decoding performance was computed. Not a newly preregistered unseen study."
+}
